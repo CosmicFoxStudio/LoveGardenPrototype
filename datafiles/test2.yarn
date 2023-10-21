@@ -1,0 +1,39 @@
+#__PrivCrochet_version:1
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 583,209
+__PrivCrochet_tags: 
+title: Start
+---
+<<bg(0)>>
+Girassol: Olá, planta!
+    -> Olá!
+        Girassol: Vamos mudar de cenário?
+            -> Sim!
+                Girassol: Bora! #+5 #0 #0 #sound
+                <<jump Option A>>
+            -> Não.
+                Girassol: Tá bom. #-5 #0 #0 #sound
+    -> Bom dia.
+        Girassol: Que resposta seca, tu não foi regada hoje não?
+            -> Não, vamos nos hidratar!
+                Girassol: Bora!
+            -> Não te interessa, palhaça.
+                Girassol: Nossa.
+    -> OINSSS
+        Girassol: Ixi, tá doida.
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 881,241
+__PrivCrochet_tags: 
+title: Option A
+---
+<<bg(1)>>
+Girassol: Mudamos de lugar!
+    -> Legal!
+        Girassol: Vamos voltar. VIAGEM NO TEMPO!
+        <<jump Start>>
+    -> Achei aqui feio.
+        Girassol: Ninguém te perguntou.
+    -> *Silêncio Constrangedor*
+        Girassol: É isso.
+===

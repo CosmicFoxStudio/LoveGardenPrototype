@@ -31,6 +31,7 @@
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"test.yarn","CopyToMask":-1,"filePath":"datafiles",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"test2.yarn","CopyToMask":-1,"filePath":"datafiles",},
   ],
   "isEcma": false,
   "LibraryEmitters": [],

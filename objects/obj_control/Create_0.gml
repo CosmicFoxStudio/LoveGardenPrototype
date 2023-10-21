@@ -1,7 +1,7 @@
 // Inicializar chatterbox e setar variáveis
 
 // Carregar arquivo
-ChatterboxLoadFromFile("test.yarn");
+ChatterboxLoadFromFile("test2.yarn");
 
 ChatterboxAddFunction("bg", background_set_index); // Add função para mudar background
 chatterbox = ChatterboxCreate();                   // Criar chatterbox

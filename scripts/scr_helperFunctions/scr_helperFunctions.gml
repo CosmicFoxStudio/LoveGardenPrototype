@@ -7,6 +7,13 @@ function wrap(_val, _min, _max) {
 	else return _val;
 }
 
+// mantém mantém _val entre _min e _max
+function wrapInside(_val, _min, _max) {
+	if _val > _max return _max;
+	else if _val <_min return _min;
+	else return _val;
+}
+
 // desenha um retângulo a partir do centro, as cores são mudadas e depois resetadas
 function draw_rectangle_center(_x, _y, _width, _height, _outline, _color, _alpha) {
 	var _oldColor = draw_get_color();
