@@ -1,0 +1,12 @@
+{
+  "FolderOrderSettings": [
+    {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
+    {"name":"Sounds","order":3,"path":"folders/Sounds.yy",},
+    {"name":"Scripts","order":5,"path":"folders/Scripts.yy",},
+    {"name":"Fonts","order":7,"path":"folders/Fonts.yy",},
+    {"name":"Objects","order":9,"path":"folders/Objects.yy",},
+    {"name":"Rooms","order":10,"path":"folders/Rooms.yy",},
+    {"name":"Particle Systems","order":15,"path":"folders/Particle Systems.yy",},
+  ],
+  "ResourceOrderSettings": [],
+}
