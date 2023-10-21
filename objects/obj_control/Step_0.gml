@@ -18,6 +18,7 @@ if ChatterboxIsWaiting(chatterbox) and keyboard_check_pressed(vk_space) {
 	
 	if keyboard_check_pressed(vk_space) {
 		ChatterboxSelect(chatterbox, option_index);
+		audio_play_sound(snd_test, 0, false, 1, 0, random_range(0.8, 1.2));
 		
 		// Verificar metadata
 		// WATER, SUN, EARTH, MUSIC
