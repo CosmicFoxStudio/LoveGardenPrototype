@@ -5,11 +5,12 @@ __PrivCrochet_tags:
 title: Start
 ---
 <<personagem(3)>>
+[Use as SETAS para escolher falas e\na BARRA DE ESPAÇO para confirmar/passar]
 Dia 1 - Dormitório
-MANDACARU: Ei, <Fulano>.
-MANDACARU: <Fulano>?
+MANDACARU: Ei.
+MANDACARU: Tá ouvindo?
 MANDACARU: ...
-MANDACARU: Acorda, <Fulano>!
+MANDACARU: Acorda!
 MANDACARU: Ugh...
 Você acorda já atrasada para seu primeiro\ndia de aula, pois seu despertador não tocou.
 Quem lhe acorda é seu colega de quarto, já\nveterano, e que não tem aula nesse horário.
@@ -17,7 +18,7 @@ Quem lhe acorda é seu colega de quarto, já\nveterano, e que não tem aula ness
 MANDACARU: Uau, finalmente! Como dorme!
 MANDACARU: Por sinal... Você não deveria\nestar na aula? Já são 8h00...
 Você questiona o sadismo daqueles que decidiram\no horário de 7h30 para uma aula matinal.
-<Fulano>: Ahh! Droga... Estou atrasada!
+VOCÊ: Ahh! Droga... Estou atrasada!
 MANDACARU: Pois é, e é logo seu primeiro dia. Vixe.
 MANDACARU: Eu até lhe diria que está tudo bem, que essas\ncoisas acontecem. Mas com o professor\nsendo logo o Seu Mamba, acho difícil!
 Com toda a pressa do universo,\nvocê se arruma para sair.

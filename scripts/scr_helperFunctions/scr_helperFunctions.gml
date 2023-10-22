@@ -50,7 +50,8 @@ function next_room(_sala) {
 		case "corredor2": room_goto(rm_corredor2); break;
 		case "pensamento": room_goto(rm_pensamento); break;
 		case "parque": room_goto(rm_parque); break;
-		case "quarto": room_goto(rm_quarto2); break;
+		case "quarto2": room_goto(rm_quarto2); break;
+		case "menu": room_goto(rm_menu_test); break;
 		default: break;
 	}
 }
@@ -70,4 +71,21 @@ function nutricao() {
 
 function parque() {
 	return global.status.parque;
+}
+
+function flag(_nome) {
+	switch (_nome) {
+		case "parque": global.status.parque = true; break;
+		case "quarto": global.status.quarto = true; break;
+		case "loveending": global.status.loveending = true; break;
+		case "badending": global.status.badending = true; break;
+	}
+}
+
+function love() {
+	return global.status.loveending;
+}
+
+function bad() {
+	return global.status.badending;
 }

@@ -29,7 +29,7 @@ if ChatterboxIsWaiting(chatterbox) and keyboard_check_pressed(vk_space) {
 			if (_metadata[1] != "") { global.status.humor = wrapInside(obj_sunbar.fillBar + real(_metadata[1]), 0, 10); obj_sunbar.fillBar = global.status.humor; }
 			if (_metadata[2] != "") { global.status.nutricao = wrapInside(obj_earthbar.fillBar + real(_metadata[2]), 0, 10); obj_earthbar.fillBar = global.status.nutricao; }
 			if (_metadata[3] != "") audio_play_sound(asset_get_index(_metadata[3]), 10, false);
-			if (_metadata[4] != "") show_debug_message(_metadata[4]);
+			if (_metadata[4] != "") flag(_metadata[4]);
 		}
 		
 		option_index = 0;

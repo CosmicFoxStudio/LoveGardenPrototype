@@ -1,0 +1,85 @@
+#__PrivCrochet_version:1
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -50,-50
+__PrivCrochet_tags: 
+title: Start
+---
+<<personagem(1)>>
+IPÊ: Olha, chegamos no Parque Ecológico!\nBem-vinde ao meu habitat natural.
+VOCÊ: É realmente um lugar incrível, Ipê. Cara,\ne pensar que eu nunca tinha vindo aqui antes.
+IPÊ: Eu te disse, é demais, né? Agora, o que acha daqui\ncomo um ambiente de estudo?\nAcha que dá pra regar umas ideias?
+IPÊ: Sabe, eu não esperava conhecer alguém que já conseguisse\nconversar assim tão bem logo no primeiro dia.\nEssas coisas costumam demorar mais pra mim.
+VOCÊ: Você tinha mencionado mais cedo\nque tem dificuldade com trabalho em\ngrupo, e também acha difícil interagir com outras\npessoas. Quer falar sobre isso?
+IPÊ: Bom, eu sempre tive\nmuita timidez, desde criança.
+IPÊ: Já tive alguns problemas,\nsabe... Em que eu...
+IPÊ: Eu acabava sumindo dos trabalhos\ne deixando meus colegas na mão. Alguns\ndeles ficaram bem irritados comigo.
+IPÊ: Tudo porque eu... Eu não sei.\nEu só não tinha forças pra levantar\nda cama e ir para aula.. Eu tinha muito\nmedo das pessoas.
+VOCÊ: ...
+VOCÊ: Entendi.
+    -> Não há nada que você não possa vencer agora.\nEu acredito em você.
+        IPÊ: Obrigado. Eu acredito que as coisas serão melhores agora.\nAliás, já está sendo. #0 #0 #+2 #0 #0
+        <<jump Conversa>>
+    -> Mas veja. Isso acontecia porque eles\nte deixavam desconfortável, né?
+        IPÊ: Eu me sentia meio desconfortável, realmente... #0 #0 #+1 #0 #0
+        <<jump Conversa>>
+    -> Você tem que ser forte e superar essa\ntimidez. Só assim as coisas vão melhorar.
+        IPÊ: Ahh... Sim, você está certo. E-eu vou me esforçar. #-2 #0 #0 #0 #badending
+        <<jump FinalParque>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 294,-269
+__PrivCrochet_tags: 
+title: Conversa
+---
+IPÊ: Aquelas épocas... O sentimento era algo\nbem diferente de como me sinto aqui com você.
+IPÊ: ...
+IPÊ: Ahh... Uhn...! Desculpe, espero não ter soado estranho.
+<<if love()>>
+    Você viu nesse momento a sua chance\nde demonstrar seus sentimentos.
+    VOCÊ: Eu na verdade queria dizer o mesmo.
+    VOCÊ: É surpreendente o tanto que\nme sinto bem estando contigo, Ipê.
+    VOCÊ: Eu sinto um florescimento dentro\nde mim quando estou perto de você.
+    IPÊ: ...
+    IPÊ: Hahaha. Até interessante você citar isso.\nPor que no meu caso, é bem fácil perceber quando estou\nflorescendo. As flores do meu cabelo mudam de cor.
+    IPÊ: Huh... É até algo que me traz mais insegurança,\nvou ter que admitir. É meio embaraçoso que as\noutras pessoas saibam o que estou sentindo por\nconta de uma reação que eu não posso controlar.
+    IPÊ: Por isso eu não explico o que\ncada cor significa para as pessoas. 
+    IPÊ: Mas se nos tornarmos mais próximos,\nvocê vai acabar percebendo por si só.
+    O tempo passa, e mais conversa vai e vem.\nVocês percebem que o clima entre vocês está bem agradável,\nmas que já está ficando tarde e\no trabalho precisa ser feito.
+    <<jump FinalParque>>
+<<else>>
+    VOCÊ: Sem problemas. Fico feliz que te deixo confortável.
+    IPÊ: ...
+    VOCÊ: Hahaha. Olha só... Já mudou de cor de novo... Que bonitinho.
+    IPÊ: Ahh!!! É bem fácil perceber quando estou\nflorescendo, né? As flores do meu cabelo mudam de cor...
+    IPÊ: Huh... É até algo que me traz mais insegurança,\nvou ter que admitir. É meio embaraçoso que as outras\npessoas saibam o que estou sentindo por\nconta de uma reação que eu não posso controlar.
+    IPÊ: Por isso eu geralmente não\nexplico o que cada cor significa. 
+    VOCÊ: Tudo bem, eu respeito isso. 
+    VOCÊ: ... Mas não se preocupe, eu quero\nque você fique tranquila quando\nestiver perto de mim.
+    VOCÊ: Eu não iria lhe julgar\nnem me aproveitar para fazer\nqualquer brincadeira.
+    IPÊ: Obrigado, você é muito gente boa.
+    IPÊ: E assim, quanto mais nós nos\ntornamos amigos, você vai acabar\npercebendo por si só.
+    O tempo passa, e mais conversa vai e vem.\nVocês percebem que o clima entre vocês\nestá bem agradável, mas que já está ficando tarde\ne o trabalho precisa ser feito.
+    <<jump FinalParque>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 312,80
+__PrivCrochet_tags: 
+title: FinalParque
+---
+IPÊ: Bom, acho melhor focarmos em\nfazer logo esse trabalho, né?
+VOCÊ: Com certeza! Vamos estudar botânica\nno meio da natureza, não teria como ser mais adequado.
+IPÊ: Ha ha..!
+IPÊ: Ah, e eu trouxe alguns lanches saudáveis. Quer um?
+VOCÊ: Claro, estou precisando de nutrição. O que você tem?
+IPÊ: Uma variedade de sementes, celulose e,\nclaro, água. Nada como um bom drink de água, né?
+VOCÊ: Haha, você realmente leva a sério a hidratação, não é?
+IPÊ: Bom, somos plantas, afinal. Hidratação\né essencial. Na verdade, acho que qualquer organismo\nvivo precisa ser bem regado diariamente.
+Vocês finalmente se focam no trabalho,\ne tudo parece fluir bem.
+IPÊ: Ahhh, que dia incrível...!\nObrigado por me fazer companhia no parque\ne por toda a sua compreensão.
+VOCÊ: Foi um dia bem divertido, Ipê.\nEstou feliz por ter te conhecido.
+IPÊ: Espero que possamos continuar nos\ndando bem e enfrentar juntos os desafios da universidade.\nE quem sabe, outros trabalhos em grupo.
+VOCÊ: Com certeza, Ipê. Estou ansioso\npara o que o futuro reserva para nós!
+Assim, o primeiro dia na universidade se\nencerra com uma nova amizade brotando, e\nquem sabe, até algo mais no horizonte...
+CONTINUA...
+<<nextRoom("menu")>>
+===

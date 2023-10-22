@@ -1,0 +1,49 @@
+#__PrivCrochet_version:1
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -50,-50
+__PrivCrochet_tags: 
+title: Start
+---
+<<personagem(2)>>
+MANDACARU: Humm, quem te viu, quem te vê...\nOlha quem me aparece com uma\nvisita pela primeira vez. Quem é elu?
+<<personagem(1)>>
+IPÊ: Ah... Hum. Oi!
+IPÊ: ... Eu não esperava que\nvocê morava com mais alguém...
+<<personagem(2)>>
+VOCÊ: Ah. É meu novo amigue. Estamos\nfazendo uma atividade em dupla,\ne aí trouxe elu aqui em casa.
+MANDACARU: Vejo que o primeiro dia de aula foi bom, então.
+VOCÊ: Foi radiante. Conheci Ipê,\ne o professor é... uma figura. 
+MANDACARU: Ah sim, nem me fale. O Mamba\nparece que saiu de um filme de fantasia.
+MANDACARU: Mas uh... Eu não estava esperando visita,\nentão não sei bem o que fazer. Vocês\nacham melhor eu sair para vocês ficarem trabalhando\naqui? Já não tem muito espaço aqui no quarto....
+VOCÊ: Ah... Eu não tinha pensado nisso.
+<<personagem(1)>>
+IPÊ: Er... Uh. Me desculpe por atrapalhar.\nSe quiser, eu posso só-
+<<personagem(2)>>
+MANDACARU: Não, não. Fica tranquila,\nnão está atrapalhando nada não, moça. 
+MANDACARU: Sorte de vocês, eu já tinha que ir no mercado mesmo.
+VOCÊ: Foi mal. Eu achei que você estaria em aula agora.
+MANDACARU: Nossa, mas como é desligade!\nJá te falei que a minha aula é noturna.
+VOCÊ: Aaah... É verdade. Nossa. Toda vez eu esqueço\nque vocês cactus se sustentam bem até de noite.
+VOCÊ: Ipê até queria passar no Parque da Cidade\ndepois da aula para estudarmos lá, mas\nachei melhor não... Vacilei. #-1 #0 #0 #0 #0
+MANDACARU: Parque? Logo no primeiro dia que se conheceram?\nEu sinto algo sendo nutrido entre vocês, hein...
+VOCÊ: Haha, engraçado você, Mandacaru.\nSó porque somos plantas, né?
+VOCÊ: A ideia era ir pro parque porque\nlá poderíamos nos sentir em casa\npara fazer a atividade de botânica.
+VOCÊ: Tô querendo levar essa matéria bastante a\nsério. Acho que o Professor Mamba vai continuar fazendo\nesse esquema de passar atividades em dupla.
+MANDACARU: Como ex-aluno do Mamba, eu posso\ndizer que essa é uma ótima ideia. Você não vai\nquerer se enroscar logo na matéria dele...
+MANDACARU: Enfim, vou vazar aqui para deixar vocês a sós. 
+MANDACARU: Boa sorte com isso, amigo e Ipê. 
+MANDACARU: Só tenham juízo, tá? Eu moro aqui também.
+<<personagem(3)>>
+Mandacaru tomou seu rumo, e você pode jurar que as\nflores de Ipê mudam para vermelho por um segundo\ndepois dessa última fala dele.
+<<personagem(1)>>
+IPÊ: Bom, acho melhor focarmos em\nfazer logo esse trabalho, né?
+VOCÊ: Bom ponto.
+IPÊ: Ah, e eu trouxe alguns lanches saudáveis. Quer um?
+VOCÊ: Claro, estou precisando de nutrição. O que você tem?
+IPÊ: Uma variedade de sementes, celulose e,\nclaro, água. Nada como um bom drink de água, né?
+VOCÊ: Haha, você realmente leva a sério a hidratação, não é?
+IPÊ: Bom, somos plantas, afinal. Hidratação é essencial.\nNa verdade, acho que qualquer organismo vivo\nprecisa ser bem regado diariamente.
+Vocês finalmente se focam no trabalho,\ne tudo parece fluir bem.
+CONTINUA...
+<<nextRoom("menu")>>
+===

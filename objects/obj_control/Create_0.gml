@@ -9,6 +9,8 @@ ChatterboxAddFunction("personagem", characterOnScreen); // Add função para des
 ChatterboxAddFunction("hidratacao", hidratacao);        // Add função que retorna hidratacao
 ChatterboxAddFunction("nutricao", nutricao);            // Add função que retorna nutricao
 ChatterboxAddFunction("parque", parque);                // Add função pra saber se vai pro parque
+ChatterboxAddFunction("love", love);                    // Love ending
+ChatterboxAddFunction("bad", bad);                      // Bad ending
 
 chatterbox = ChatterboxCreate("Cena1.yarn");       // Criar chatterbox
 ChatterboxJump(chatterbox, "Start");               // Ir para o node "Start"

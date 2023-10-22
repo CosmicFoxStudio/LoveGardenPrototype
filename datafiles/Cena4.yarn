@@ -18,5 +18,5 @@ Você se perde em seus próprios pensamentos.\nTeria algo aflorado ali entre voc
 <<if parque()>>
     <<nextRoom("parque")>>
 <<else>>
-    <<nextRoom("quarto")>>
+    <<nextRoom("quarto2")>>
 ===
