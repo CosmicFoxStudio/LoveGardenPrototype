@@ -44,8 +44,10 @@ function chatterbox_update() {
 
 // função que muda cena
 function next_room(_sala) {
+	show_debug_message(_sala);
 	switch (_sala[0]) {
 		case "corredor1": room_goto(rm_corredor); break;
+		case "corredor2": room_goto(rm_corredor2); break;
 		default: break;
 	}
 }
@@ -53,4 +55,8 @@ function next_room(_sala) {
 // função para escolher personagem na tela
 function characterOnScreen(_num) {
 	obj_characters.characterToDraw = _num[0];
+}
+
+function hidratacao() {
+	return global.status.hidratacao;
 }

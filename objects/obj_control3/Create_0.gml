@@ -1,9 +1,9 @@
 // Inicializar chatterbox e setar variáveis
 
 // Carregar arquivo
-ChatterboxLoadFromFile("Cena2.yarn");
+ChatterboxLoadFromFile("Cena3.yarn");
 
-chatterbox = ChatterboxCreate("Cena2.yarn");       // Criar chatterbox
+chatterbox = ChatterboxCreate("Cena3.yarn");       // Criar chatterbox
 ChatterboxJump(chatterbox, "Start");               // Ir para o node "Start"
 chatterbox_update();                               // Pegar node e texto atual
 

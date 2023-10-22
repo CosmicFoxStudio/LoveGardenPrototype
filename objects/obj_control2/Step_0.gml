@@ -25,9 +25,9 @@ if ChatterboxIsWaiting(chatterbox) and keyboard_check_pressed(vk_space) {
 		var _metadata = ChatterboxGetContentMetadata(chatterbox, 0);
 		//show_debug_message(_metadata);
 		if (array_length(_metadata) > 0) {
-			if (_metadata[0] != "") obj_waterbar.fillBar = wrapInside(obj_waterbar.fillBar + real(_metadata[0]), 0, 10);
-			if (_metadata[1] != "") obj_sunbar.fillBar = wrapInside(obj_sunbar.fillBar + real(_metadata[1]), 0, 10);
-			if (_metadata[2] != "") obj_earthbar.fillBar = wrapInside(obj_earthbar.fillBar + real(_metadata[2]), 0, 10);
+			if (_metadata[0] != "") { global.status.hidratacao = wrapInside(obj_waterbar.fillBar + real(_metadata[0]), 0, 10); obj_waterbar.fillBar = global.status.hidratacao; }
+			if (_metadata[1] != "") { global.status.humor = wrapInside(obj_sunbar.fillBar + real(_metadata[1]), 0, 10); obj_sunbar.fillBar = global.status.humor; }
+			if (_metadata[2] != "") { global.status.nutricao = wrapInside(obj_earthbar.fillBar + real(_metadata[2]), 0, 10); obj_earthbar.fillBar = global.status.nutricao; }
 			if (_metadata[3] != "") audio_play_sound(asset_get_index(_metadata[3]), 10, false);
 			if (_metadata[4] != "") show_debug_message(_metadata[4]);
 		}
