@@ -4,25 +4,25 @@ __PrivCrochet_position: 583,209
 __PrivCrochet_tags: 
 title: Start
 ---
-Girassol: Olá, planta!
+Ipê: Olá, planta!
     -> Olá!
-        Girassol: Esse quarto é seu?
+        Ipê: Esse quarto é seu?
             -> Sim! 
-                Girassol: Bonito! #+5 #0 #0 #0
+                Ipê: Bonito! #+5 #0 #0 #0
                 <<jump Option A>>
             -> Não.
-                Girassol: Tá bom. #-5 #0 #0 #0
+                Ipê: Tá bom. #-5 #0 #0 #0
                 <<jump Option B>>
     -> Bom dia.
-        Girassol: Que resposta seca, tu não foi regada hoje não?
+        Ipê: Que resposta seca, tu não foi regada hoje não?
             -> Não, vamos nos hidratar!
-                Girassol: Bora! #0 #+3 #0 #0
+                Ipê: Bora! #0 #+3 #0 #0
                 <<jump Start>>
             -> Não te interessa, palhaça.
-                Girassol: Nossa. #0 #-3 #0 #0
+                Ipê: Nossa. #0 #-3 #0 #0
                 <<jump Start>>
     -> OINSSS 
-        Girassol: Ixi, tá doida. #0 #0 #-1 #0
+        Ipê: Ixi, tá doida. #0 #0 #-1 #0
         <<jump Start>>
 ===
 __PrivCrochet_colorID: 0
@@ -30,15 +30,15 @@ __PrivCrochet_position: 909,69
 __PrivCrochet_tags: 
 title: Option A
 ---
-Girassol: Vou morar com você!
+Ipê: Vou morar com você!
     -> Legal!
-        Girassol: Vamos voltar. VIAGEM NO TEMPO!
+        Ipê: Vamos voltar. VIAGEM NO TEMPO!
         <<jump Start>>
     -> Parece uma ideia horrível!
-        Girassol: Ninguém te perguntou. #0 #-2 #0 #0
+        Ipê: Ninguém te perguntou. #0 #-2 #0 #0
         <<jump Start>>
     -> *Silêncio Constrangedor*
-        Girassol: É isso. #-2 #-2 #0 #0
+        Ipê: É isso. #-2 #-2 #0 #0
         <<jump Start>>
 ===
 __PrivCrochet_colorID: 0
@@ -46,14 +46,14 @@ __PrivCrochet_position: 880,333
 __PrivCrochet_tags: 
 title: Option B
 ---
-Girassol: Você me negou moradia.
+Ipê: Você me negou moradia.
     -> Sim!
-        Girassol: Vamos voltar. VIAGEM NO TEMPO!
+        Ipê: Vamos voltar. VIAGEM NO TEMPO!
         <<jump Start>>
     -> Oush, bicha, vai trabalhar!
-        Girassol: Ninguém te perguntou. #0 #-2 #0 #0
+        Ipê: Ninguém te perguntou. #0 #-2 #0 #0
         <<jump Start>>
     -> Me arrependi. Venha morar comigo!
-        Girassol: Nunca fui triste! #+2 #0 #+2 #0
+        Ipê: Nunca fui triste! #+2 #0 #+2 #0
         <<jump Start>>
 ===

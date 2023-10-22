@@ -91,6 +91,7 @@
     {"id":{"name":"__ChatterboxEscapeForCSV","path":"scripts/__ChatterboxEscapeForCSV/__ChatterboxEscapeForCSV.yy",},},
     {"id":{"name":"ChatterboxVariablesResetAll","path":"scripts/ChatterboxVariablesResetAll/ChatterboxVariablesResetAll.yy",},},
     {"id":{"name":"Love_Garden_Room","path":"sprites/Love_Garden_Room/Love_Garden_Room.yy",},},
+    {"id":{"name":"spr_ipe","path":"sprites/spr_ipe/spr_ipe.yy",},},
     {"id":{"name":"__ChatterboxClassBodySubstring","path":"scripts/__ChatterboxClassBodySubstring/__ChatterboxClassBodySubstring.yy",},},
     {"id":{"name":"ChatterboxGetAllContentString","path":"scripts/ChatterboxGetAllContentString/ChatterboxGetAllContentString.yy",},},
     {"id":{"name":"ChatterboxVariableReset","path":"scripts/ChatterboxVariableReset/ChatterboxVariableReset.yy",},},

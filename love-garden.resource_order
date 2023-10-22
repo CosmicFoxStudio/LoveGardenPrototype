@@ -61,6 +61,7 @@
     {"name":"__ChatterboxEscapeForCSV","order":8,"path":"scripts/__ChatterboxEscapeForCSV/__ChatterboxEscapeForCSV.yy",},
     {"name":"ChatterboxVariablesResetAll","order":10,"path":"scripts/ChatterboxVariablesResetAll/ChatterboxVariablesResetAll.yy",},
     {"name":"Love_Garden_Room","order":3,"path":"sprites/Love_Garden_Room/Love_Garden_Room.yy",},
+    {"name":"spr_ipe","order":7,"path":"sprites/spr_ipe/spr_ipe.yy",},
     {"name":"__ChatterboxClassBodySubstring","order":1,"path":"scripts/__ChatterboxClassBodySubstring/__ChatterboxClassBodySubstring.yy",},
     {"name":"ChatterboxVariableReset","order":2,"path":"scripts/ChatterboxVariableReset/ChatterboxVariableReset.yy",},
     {"name":"ChatterboxGetOptionCount","order":4,"path":"scripts/ChatterboxGetOptionCount/ChatterboxGetOptionCount.yy",},
