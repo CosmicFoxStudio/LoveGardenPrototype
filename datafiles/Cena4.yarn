@@ -1,0 +1,22 @@
+#__PrivCrochet_version:1
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -50,-50
+__PrivCrochet_tags: 
+title: Start
+---
+<<personagem(3)>>
+Esse foi um dia bastante inesperado...
+Pelo jeito como a manhã começou,\nvocê não achava que tiraria nada de bom dele.
+Mas conhecer Ipê foi\ncertamente um diferencial.
+Você se perde em seus próprios pensamentos.\nTeria algo aflorado ali entre vocês?
+    -> Acho que tem uma paixão germinando...
+        Sua mente volta a realidade\nquando vocês chegam no seu destino. #0 #0 #0 #0 #loveending
+    -> Nah. Somos apenas amigos.
+        Sua mente volta a realidade\nquando vocês chegam no seu destino.
+    -> Eu não quero nada com ela.
+        Sua mente volta a realidade\nquando vocês chegam no seu destino. #0 #0 #0 #0 #badending
+<<if parque()>>
+    <<nextRoom("parque")>>
+<<else>>
+    <<nextRoom("quarto")>>
+===

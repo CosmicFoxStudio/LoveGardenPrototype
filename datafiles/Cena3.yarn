@@ -13,32 +13,44 @@ title: Start
             IPÊ: Cara, você é uma planta muito gente boa!
         -> Me meti em enrascada por você, mereço algo em troca?
             IPÊ: ... #-2 #0 #0 #0 #0
-IPÊ: Prometo me esforçar em nosso trabalho, mesmo\neu não mandando tão bem em trabalho em grupo…
+IPÊ: Prometo me esforçar em nosso trabalho, mesmo\neu não mandando tão bem em trabalho em grupo...
 <Fulano>: Se não for problema perguntar,\npor que você não gosta?
-IPÊ: Ah… É besteira minha só. Fico achando\nque sou um peso, muitas vezes não\nconsigo tomar a iniciativa. Mas eu…
+IPÊ: Ah... É besteira minha só. Fico achando\nque sou um peso, muitas vezes não\nconsigo tomar a iniciativa. Mas eu...
 IPÊ: Eu também tenho dificuldade de\ninteragir com as pessoas, sabe? Às vezes...
 IPÊ: *suspiro*
-IPÊ: Mas… Nessa universidade eu quero fazer diferente.\nQuero ser mais consistente e responsável, quero\nfazer coisas incríveis, e ter amizades incríveis!
+IPÊ: Mas... Nessa universidade eu quero fazer diferente.\nQuero ser mais consistente e responsável, quero\nfazer coisas incríveis, e ter amizades incríveis!
 IPÊ: Não vou ser um peso. Nunca mais.
 <Fulano>: Isso me parece bastante determinação.\nQueria eu ter um pouquinho disso, mal começou\no semestre e já me sinto tão cansada.
 <Fulano>: Queria só poder tomar sol e dormir.
 IPÊ: Eu consigo entender isso. Afinal, tem\ncoisa melhor do que tomar um sol no parque?\nÉ meu lugar favorito na face dessa Terra!
 <Fulano>: Ah é? Nunca fui no parque dessa\ncidade, mas deve ser bem bacana.
 IPÊ: Pera, é sério? Você nunca foi?
-<Fulano>: Não… Eu na verdade não\nsou daqui. Vim transferido.
+<Fulano>: Não... Eu na verdade não\nsou daqui. Vim transferido.
 <Fulano>: É bacana lá no parque? O que você tanto gosta?
 IPÊ: Cara!! Lá no parque tem tanta coisa,\ntudo é verde, natureza, tem uma estufa, tem mesa\nde jogos, banquinhos pra estudar. Super legal!
 IPÊ: Eu sei que pode parecer\nclichê, né? Uma pessoa planta que\nama um parque ecológico, haha.
 IPÊ: Mas tem algo de tão reconfortante de\nestar no meio lá, camuflado junto ao\nverde de toda a vegetação.
-Por um segundo, dá para perceber\nos olhos de Ipê como se brilhando,\niluminados por uma paixão…
+Por um segundo, dá para perceber\nos olhos de Ipê como se brilhando,\niluminados por uma paixão...
 Você sente que Ipê é muito\nmais do que uma planta tímida.
     -> Bora no parque então, aí podemos estudar lá.
-        IPÊ: Nossa. Você quer mesmo? #0 #0 #+2 #0 #0
+        IPÊ: Nossa. Você quer mesmo? #0 #0 #+2 #0 #parque
         Ipê não consegue esconder sua\nanimação, e você percebe seu cabelo mudando\nde cor para um tom avermelhado.
+        <<if ((hidratacao() > 8) && (nutricao() >= 5))>>
+            <<nextRoom("pensamento")>>
+        <<else>>
+            <<nextRoom("parque")>>
     -> Eu adoraria ir ao parque um dia.\nMas hoje precisamos terminar o trabalho.
-        IPÊ: Ah… Tudo bem, então!
+        IPÊ: Ah... Tudo bem, então! #0 #0 #0 #0 #quarto
         IPÊ: Podemos ir pra lá, sim. Se você\nse sente mais confortável por lá.
+        <<if ((hidratacao() > 8) && (nutricao() >= 5))>>
+            <<nextRoom("pensamento")>>
+        <<else>>
+            <<nextRoom("quarto")>>
     -> Meu quarto tá cheio de coisa verde.
-        IPÊ: Haha, seu quarto deve ser um mini jardim secreto, então! #-3 #0 #0 #0 #0
+        IPÊ: Haha, seu quarto deve ser um mini jardim secreto, então! #-3 #0 #0 #0 #quarto
         IPÊ: Mas o parque ainda é o melhor\nlugar para pegar um pouco de ar fresco.
+        <<if ((hidratacao() > 8) && (nutricao() >= 3))>>
+            <<nextRoom("pensamento")>>
+        <<else>>
+            <<nextRoom("quarto")>>
 ===

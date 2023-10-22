@@ -8,7 +8,7 @@ title: Start
 Dia 1 - Corredores da universidade
 
 <Fulano>: ...
-<Fulano>: ... Ah. Tenho que ver qual a sala. Ainda bem que anotei,\neu sou profissional em esquecer essas coisas.
+<Fulano>: ... Ah. Tenho que ver qual a sala. Ainda\nbem que anotei, eu sou profissional\nem esquecer essas coisas.
 Você sabe que se não tivesse anotado estaria\nem maus lençóis, pois o único outro lugar\npara obter essa informação nesses tempos modernos\nseria pelo aplicativo super confuso da universidade.
 Ô coisa difícil é achar qualquer coisa por lá.
 ...
@@ -18,31 +18,31 @@ Elu não parece perceber que alguém se aproxima.
 
     -> Precisa de ajuda?
         A pessoa a sua frente se vira em sua\ndireção, com uma expressão confusa.
-            -> Ah… Perdão. Não queria lhe dar um susto.
+            -> Ah... Perdão. Não queria lhe dar um susto.
                 ???: Ah..! Eu estou bem. Não se preocupe.\nApenas não esperava alguém falar comigo. #0 #0 #+1 #0 #0
-                <Fulano>: Ahh… Entendi.
+                <Fulano>: Ahh... Entendi.
                 <Fulano>: Por acaso você está procurando sua sala?
                 <<jump Nome>>
             -> Está tudo bem?
                 ???: Ah..! Eu estou bem. Não se preocupe.\nApenas não esperava alguém falar comigo. #0 #0 #+1 #0 #0
-                <Fulano>: Ahh… Entendi.
+                <Fulano>: Ahh... Entendi.
                 <Fulano>: Por acaso você está procurando sua sala?
                 <<jump Nome>>
-    -> Huh… Oi. Você por acaso está perdide?
-        ???: E-eu? Perdide? Ha-ha… Por que você acha isso?
+    -> Huh... Oi. Você por acaso está perdide?
+        ???: E-eu? Perdide? Ha-ha... Por que você acha isso?
         <Fulano>: Me desculpe por assumir assim.\nÉ porque você está no corredor já há algum tempo.
         ???: Não diria que estou perdide,\napenas não sei o número da minha sala.
             -> ...
                 <<jump Nome>>
             -> Isso não seria o mesmo que estar perdide?
-                ???: Huh… Acho que você tem um ponto… #-1 #0 #0 #0
+                ???: Huh... Acho que você tem um ponto... #-1 #0 #0 #0
                 ???: Bom, é minha primeira vez na universidade,\nentão admito que estou um pouco confuse com tudo...
-                <Fulano>: Ah… é. Eu bem que te entendo. Não\nacredito que me atrasei logo pro primeiro dia…
+                <Fulano>: Ah... é. Eu bem que te entendo. Não\nacredito que me atrasei logo pro primeiro dia...
                 ???: Tudo bem, eu te entendo. Também estou atrasade!
                 <Fulano>: Hum. Por acaso você está procurando sua sala?
                 <<jump Nome>>
     -> Eai, vai ficar plantade aí?
-        ???: Ah… uh… plantade haha, entendi… #-2 #0 #0 #0 #badending
+        ???: Ah... uh... plantade haha, entendi... #-2 #0 #0 #0 #badending
         <<jump Professor>>
 ===
 __PrivCrochet_colorID: 0
@@ -51,7 +51,7 @@ __PrivCrochet_tags:
 title: Nome
 ---
 <Fulano>: Você também é do curso de botânica?\nEu me chamo <Fulano>! E você? Qual o seu nome?
-IPÊ: Ah, eu me chamo Ipê! Prazer te conhecer, <Fulano>!
+IPÊ: Ah, eu me chamo Ipê!\nPrazer te conhecer, <Fulano>!
 <<jump Professor>>
 ===
 __PrivCrochet_colorID: 0
@@ -62,12 +62,12 @@ title: Professor
 ???: Que conversinha toda é essa aqui fora da sala? #0 #0 #0 #snd_door #0
 <<personagem(0)>>
 Um senhor com uma extensa barba folheada\nabre a porta de uma das salas ali perto.\nDefinitivamente um professor.
-???: Hum… Vocês devem ser <Fulano> e Ipê.
+???: Hum... Vocês devem ser <Fulano> e Ipê.
 <Fulano>: Ahh, uhn. Como você sabe disso?
 PROFESSOR: Bom, eu sou o professor de botânica, a matéria\nministrada nessa sala de\naula que vocês estão de frente.
 PROFESSOR: Me chamo Samambaia, mas\ntodos me chamam de Professor Mamba.
 PROFESSOR: Tem dois alunos que faltaram na chamada,\ne estou presumindo que são vocês.
-<Fulano>: Oops… Você está certo. Foi mal, professor.
+<Fulano>: Oops... Você está certo. Foi mal, professor.
 <Fulano>: Acabamos de nos conhecer, por acaso\nestávamos os dois com dificuldades de\nencontrar a sala. Por favorzinho, não leve a mal.
 PROFESSOR: Eu não sou alguém de levar nada a mal, acredite.
 PROFESSOR: O fato é que a turma já se dividiu\nem duplas e trios para fazer o projeto, e\nacredito que só sobrou vocês dois sem grupo.
@@ -76,7 +76,7 @@ PROFESSOR: Nesse caso, não terão\nescolha senão formar uma dupla.
         PROFESSOR: Bom, a aula ainda não acabou.\nEntão se não quiserem ganhar mais uma falta,\nrecomendo que entrem. #0 #0 #+2 #0 #0
         <Fulano>: Claro, claro!
         <<jump Sala>>
-    -> Ah, poxa. Tudo bem, compreendo…
+    -> Ah, poxa. Tudo bem, compreendo...
         PROFESSOR: Bom, a aula ainda não acabou. Então se não\nquiserem ganhar mais uma falta, recomendo que entrem. #-1 #0 #0 #0 #0
         <Fulano>: Claro, claro!
         <<jump Sala>>
@@ -90,8 +90,7 @@ title: Sala
 <<if hidratacao() == 10>>
     Você e Ipê acompanham o professor para dentro,\ne buscam sentar juntos no cantinho da sala.
     <<nextRoom("corredor2")>>
-
-<<if hidratacao() < 10>>
-    Você e Ipê acompanham o professor para dentro da sala, mas\nvocê percebe que Ipê buscou sentar afastada de você. Será proposital?
+<<else>>
+    Você e Ipê acompanham o professor para\ndentro da sala, mas você percebe que Ipê\nbuscou sentar afastada de você. Será proposital?
     <<nextRoom("corredor2")>>
 ===

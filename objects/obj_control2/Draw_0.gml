@@ -20,7 +20,7 @@ if IsChatterbox(chatterbox) and text != undefined {
 		draw_set_halign(fa_center);
 		
 		var _width = 450;
-		var _height = 24;
+		var _height = 32;
 		
 		// Lógica para colocar sempre 3 opções
 		for (var i = 0; i < ChatterboxGetOptionCount(chatterbox); i++) {

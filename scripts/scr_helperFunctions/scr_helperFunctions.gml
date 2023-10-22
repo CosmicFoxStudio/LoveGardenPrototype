@@ -44,10 +44,13 @@ function chatterbox_update() {
 
 // função que muda cena
 function next_room(_sala) {
-	show_debug_message(_sala);
+	//show_debug_message(_sala);
 	switch (_sala[0]) {
 		case "corredor1": room_goto(rm_corredor); break;
 		case "corredor2": room_goto(rm_corredor2); break;
+		case "pensamento": room_goto(rm_pensamento); break;
+		case "parque": room_goto(rm_parque); break;
+		case "quarto": room_goto(rm_quarto2); break;
 		default: break;
 	}
 }
@@ -59,4 +62,12 @@ function characterOnScreen(_num) {
 
 function hidratacao() {
 	return global.status.hidratacao;
+}
+
+function nutricao() {
+	return global.status.nutricao;
+}
+
+function parque() {
+	return global.status.parque;
 }
