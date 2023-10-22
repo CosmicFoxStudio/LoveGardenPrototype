@@ -10,8 +10,8 @@
     {"name":"inst_401219F9","path":"rooms/rm_quarto/rm_quarto.yy",},
     {"name":"inst_4C75BB42","path":"rooms/rm_quarto/rm_quarto.yy",},
     {"name":"inst_7F0AB7A3","path":"rooms/rm_quarto/rm_quarto.yy",},
-    {"name":"inst_66206556","path":"rooms/rm_quarto/rm_quarto.yy",},
     {"name":"inst_6F12C6BB","path":"rooms/rm_quarto/rm_quarto.yy",},
+    {"name":"inst_66206556","path":"rooms/rm_quarto/rm_quarto.yy",},
   ],
   "isDnd": false,
   "layers": [

@@ -15,6 +15,8 @@
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2f5a022c-3889-45e4-bd3c-6c3bc8df8c31",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"34c936f5-cdcb-4d42-84b4-698e7830ec2b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f8188934-db7a-4513-a789-6f58a8f8bd75",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"73d3d3b0-04ff-4dcb-8635-4c666ff64dc9",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -67,7 +69,7 @@
     "events": {"resourceType":"KeyframeStore<MessageEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "eventStubScript": null,
     "eventToFunction": {},
-    "length": 2.0,
+    "length": 4.0,
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
@@ -80,6 +82,8 @@
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"2f5a022c-3889-45e4-bd3c-6c3bc8df8c31","path":"sprites/Plantas/Plantas.yy",},},},"Disabled":false,"id":"6b971b94-e026-4ee1-bb68-be58e35c6180","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"34c936f5-cdcb-4d42-84b4-698e7830ec2b","path":"sprites/Plantas/Plantas.yy",},},},"Disabled":false,"id":"80b2cfb4-e60e-4ca8-97d0-20dc882d8baa","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"f8188934-db7a-4513-a789-6f58a8f8bd75","path":"sprites/Plantas/Plantas.yy",},},},"Disabled":false,"id":"6912f5fd-a010-41ee-ab1a-7c619b0ca9d8","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"73d3d3b0-04ff-4dcb-8635-4c666ff64dc9","path":"sprites/Plantas/Plantas.yy",},},},"Disabled":false,"id":"c70c2bf0-0137-42a6-9005-8459f896c7d4","IsCreationKey":false,"Key":3.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

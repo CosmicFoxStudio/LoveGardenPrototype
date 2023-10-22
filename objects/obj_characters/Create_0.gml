@@ -1,0 +1,1 @@
+characterToDraw = 0;
