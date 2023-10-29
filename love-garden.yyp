@@ -29,9 +29,9 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Scripts","folderPath":"folders/Scripts.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sounds","folderPath":"folders/Sounds.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sprites","folderPath":"folders/Sprites.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"final","folderPath":"folders/Sprites/final.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Placeholders","folderPath":"folders/Sprites/Placeholders.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Quarto","folderPath":"folders/Sprites/Quarto.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"final","folderPath":"folders/Sprites/final.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"Cena1.yarn","CopyToMask":-1,"filePath":"datafiles",},
@@ -47,7 +47,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.8.2.108",
+    "IDEVersion": "2023.8.1.102",
   },
   "resources": [
     {"id":{"name":"Vinhas","path":"sprites/Vinhas/Vinhas.yy",},},
@@ -142,6 +142,7 @@
     {"id":{"name":"spr_sunBar","path":"sprites/spr_sunBar/spr_sunBar.yy",},},
     {"id":{"name":"UI","path":"sprites/UI/UI.yy",},},
     {"id":{"name":"spr_samambaia","path":"sprites/spr_samambaia/spr_samambaia.yy",},},
+    {"id":{"name":"fnt_definitive","path":"fonts/fnt_definitive/fnt_definitive.yy",},},
     {"id":{"name":"rm_pensamento","path":"rooms/rm_pensamento/rm_pensamento.yy",},},
     {"id":{"name":"ChatterboxAddFunction","path":"scripts/ChatterboxAddFunction/ChatterboxAddFunction.yy",},},
     {"id":{"name":"ChatterboxGetOptionMetadata","path":"scripts/ChatterboxGetOptionMetadata/ChatterboxGetOptionMetadata.yy",},},

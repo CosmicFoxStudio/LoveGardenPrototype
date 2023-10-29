@@ -11,7 +11,7 @@ MANDACARU: Ei.
 MANDACARU: Tá ouvindo?
 MANDACARU: ...
 MANDACARU: Acorda!
-MANDACARU: Ugh...
+VOCÊ: Ugh...
 Você acorda já atrasada para seu primeiro\ndia de aula, pois seu despertador não tocou.
 Quem lhe acorda é seu colega de quarto, já\nveterano, e que não tem aula nesse horário.
 <<personagem(2)>>
@@ -21,6 +21,7 @@ Você questiona o sadismo daqueles que decidiram\no horário de 7h30 para uma au
 VOCÊ: Ahh! Droga... Estou atrasada!
 MANDACARU: Pois é, e é logo seu primeiro dia. Vixe.
 MANDACARU: Eu até lhe diria que está tudo bem, que essas\ncoisas acontecem. Mas com o professor\nsendo logo o Seu Mamba, acho difícil!
+<<personagem(3)>>
 Com toda a pressa do universo,\nvocê se arruma para sair.
 Você se sente nervosa, pois é seu\nprimeiro dia de aula e não conhece ninguém,\nmas já está chegando atrasada... Putz!
 <<nextRoom("corredor1")>>

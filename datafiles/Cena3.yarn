@@ -5,14 +5,13 @@ __PrivCrochet_tags:
 title: Start
 ---
 <<personagem(1)>>
-<<if hidratacao() >= 8>>
-    IPÊ: Então, acabou que não deu tempo de\nfalar antes. Mas muito obrigado por tentar me\najudar hoje mais cedo. Tenho apenas gratidão.
-        -> Sem problemas, estamos nessa juntos.
-            IPÊ: Cara, você é uma planta muito gente boa!
-        -> Só bora, garote. Vai dar bom. 
-            IPÊ: Cara, você é uma planta muito gente boa!
-        -> Me meti em enrascada por você, mereço algo em troca?
-            IPÊ: ... #-2 #0 #0 #0 #0
+IPÊ: Então, acabou que não deu tempo de falar antes.\nMas obrigado por chegar atrasade comigo.
+    -> Sem problemas, estamos nessa juntos.
+        IPÊ: Cara, você é uma planta muito gente boa!
+    -> Só bora, garote. Vai dar bom. 
+        IPÊ: Cara, você é uma planta muito gente boa!
+    -> Me meti em enrascada por você, mereço algo em troca?
+        IPÊ: ... #-2 #0 #0 #0 #0
 IPÊ: Prometo me esforçar em nosso trabalho, mesmo\neu não mandando tão bem em trabalho em grupo...
 VOCÊ: Se não for problema perguntar,\npor que você não gosta?
 IPÊ: Ah... É besteira minha só. Fico achando\nque sou um peso, muitas vezes não\nconsigo tomar a iniciativa. Mas eu...

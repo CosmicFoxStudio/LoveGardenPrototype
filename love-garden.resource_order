@@ -18,8 +18,8 @@
     {"name":"Scripts","order":5,"path":"folders/Scripts.yy",},
     {"name":"Sounds","order":3,"path":"folders/Sounds.yy",},
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
-    {"name":"Quarto","order":6,"path":"folders/Sprites/Quarto.yy",},
     {"name":"final","order":18,"path":"folders/Sprites/final.yy",},
+    {"name":"Quarto","order":6,"path":"folders/Sprites/Quarto.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"Vinhas","order":9,"path":"sprites/Vinhas/Vinhas.yy",},
@@ -104,6 +104,7 @@
     {"name":"spr_sunBar","order":2,"path":"sprites/spr_sunBar/spr_sunBar.yy",},
     {"name":"UI","order":8,"path":"sprites/UI/UI.yy",},
     {"name":"spr_samambaia","order":17,"path":"sprites/spr_samambaia/spr_samambaia.yy",},
+    {"name":"fnt_definitive","order":2,"path":"fonts/fnt_definitive/fnt_definitive.yy",},
     {"name":"rm_pensamento","order":7,"path":"rooms/rm_pensamento/rm_pensamento.yy",},
     {"name":"ChatterboxAddFunction","order":1,"path":"scripts/ChatterboxAddFunction/ChatterboxAddFunction.yy",},
     {"name":"ChatterboxGetOptionMetadata","order":5,"path":"scripts/ChatterboxGetOptionMetadata/ChatterboxGetOptionMetadata.yy",},

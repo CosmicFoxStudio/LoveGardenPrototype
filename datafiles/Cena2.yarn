@@ -13,8 +13,9 @@ Você sabe que se não tivesse anotado estaria\nem maus lençóis, pois o único
 Ô coisa difícil é achar qualquer coisa por lá.
 ...
 Logo ali em frente parece ter uma pessoa\nainda mais perdida que você,\no que é até uma raridade.
-<<personagem(1)>>
 Elu não parece perceber que alguém se aproxima.
+<<personagem(1)>>
+...
 
     -> Precisa de ajuda?
         A pessoa a sua frente se vira em sua\ndireção, com uma expressão confusa.
@@ -35,7 +36,7 @@ Elu não parece perceber que alguém se aproxima.
             -> ...
                 <<jump Nome>>
             -> Isso não seria o mesmo que estar perdide?
-                ???: Huh... Acho que você tem um ponto... #-1 #0 #0 #0
+                ???: Huh... Acho que você tem um ponto... #-1 #0 #0 #0 #0
                 ???: Bom, é minha primeira vez na universidade,\nentão admito que estou um pouco confuse com tudo...
                 VOCÊ: Ah... é. Eu bem que te entendo. Não\nacredito que me atrasei logo pro primeiro dia...
                 ???: Tudo bem, eu te entendo. Também estou atrasade!

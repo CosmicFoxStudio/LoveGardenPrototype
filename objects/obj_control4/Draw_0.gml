@@ -1,6 +1,6 @@
 // Desenhar texto e opções
 
-draw_set_font(fnt_teste2);
+draw_set_font(fnt_definitive);
 draw_set_valign(fa_middle);
 
 var _marginText = 64;     // Horizontal text margin
