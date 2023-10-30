@@ -1,6 +1,11 @@
 // Desenhar texto e opções
 
 draw_set_font(fnt_definitive);
+
+if (global.DEBUG) {
+	draw_text(30, 30, "option_index: " + string(option_index));
+	draw_text(30, 40, "option_hovered: " + string(option_hovered)); 
+}
 draw_set_valign(fa_middle);
 
 var _marginText = 64;     // Horizontal text margin
