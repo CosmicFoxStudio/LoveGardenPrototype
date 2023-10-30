@@ -7,7 +7,7 @@
   "option_operagx_game_name": "Love Garden",
   "option_operagx_guid": "038f591d-2fad-4a16-bb3b-a463d4175556",
   "option_operagx_internalShareUrl": "https://gx.games/games/xd0wjw/love-garden/tracks/d79c9192-e9c3-463b-8169-e3ba9773c7b4/",
-  "option_operagx_interpolate_pixels": true,
+  "option_operagx_interpolate_pixels": false,
   "option_operagx_mod_editUrl": "",
   "option_operagx_mod_game_name": "Love Garden",
   "option_operagx_mod_guid": "",
