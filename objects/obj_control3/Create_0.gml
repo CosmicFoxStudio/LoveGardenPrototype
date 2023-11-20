@@ -1,10 +1,10 @@
 // Inicializar chatterbox e setar variáveis
 
 // Carregar arquivo
-ChatterboxLoadFromFile("Cena3.yarn");
+ChatterboxLoadFromFile("node3_schoolcorridorafter_ype.yarn");
 
-chatterbox = ChatterboxCreate("Cena3.yarn");       // Criar chatterbox
-ChatterboxJump(chatterbox, "Start");               // Ir para o node "Start"
+chatterbox = ChatterboxCreate("node3_schoolcorridorafter_ype.yarn");       // Criar chatterbox
+ChatterboxJump(chatterbox, "NodeStart");               // Ir para o node "Start"
 chatterbox_update();                               // Pegar node e texto atual
 
 option_index = 0;                                  // Inicializar option index

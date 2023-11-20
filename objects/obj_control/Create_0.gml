@@ -1,7 +1,7 @@
 // Inicializar chatterbox e setar variáveis
 
 // Carregar arquivo
-ChatterboxLoadFromFile("Cena1.yarn");
+ChatterboxLoadFromFile("node1_initial.yarn");
 
 ChatterboxAddFunction("bg", background_set_index);      // Add função para mudar background
 ChatterboxAddFunction("nextRoom", next_room);           // Add função para mudar de cena
@@ -12,8 +12,8 @@ ChatterboxAddFunction("parque", parque);                // Add função pra sabe
 ChatterboxAddFunction("love", love);                    // Love ending
 ChatterboxAddFunction("bad", bad);                      // Bad ending
 
-chatterbox = ChatterboxCreate("Cena1.yarn");       // Criar chatterbox
-ChatterboxJump(chatterbox, "Start");               // Ir para o node "Start"
+chatterbox = ChatterboxCreate("node1_initial.yarn");       // Criar chatterbox
+ChatterboxJump(chatterbox, "NodeStart");               // Ir para a node inicial
 chatterbox_update();                               // Pegar node e texto atual
 
 option_index = 0;                                  // Inicializar option index

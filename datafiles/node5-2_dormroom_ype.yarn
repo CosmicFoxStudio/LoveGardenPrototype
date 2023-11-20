@@ -2,15 +2,19 @@
 __PrivCrochet_colorID: 0
 __PrivCrochet_position: -50,-50
 __PrivCrochet_tags: 
-title: Start
+title: NodeStart
 ---
 <<personagem(2)>>
-MANDACARU: Humm, quem te viu, quem te vê...\nOlha quem me aparece com uma\nvisita pela primeira vez. Quem é elu?
+MANDACARU: ...
+MANDACARU: Humm, quem te viu, quem te vê...\n
+MANDACARU: Olha quem me aparece com uma\nvisita pela primeira vez. 
+MANDACARU: Quem é elu?
 <<personagem(1)>>
 IPÊ: Ah... Hum. Oi!
 IPÊ: ... Eu não esperava que\nvocê morava com mais alguém...
-<<personagem(2)>>
+<<personagem(3)>>
 VOCÊ: Ah. É meu novo amigue. Estamos\nfazendo uma atividade em dupla,\ne aí trouxe elu aqui em casa.
+<<personagem(2)>>
 MANDACARU: Vejo que o primeiro dia de aula foi bom, então.
 VOCÊ: Foi radiante. Conheci Ipê,\ne o professor é... uma figura. 
 MANDACARU: Ah sim, nem me fale. O Mamba\nparece que saiu de um filme de fantasia.
