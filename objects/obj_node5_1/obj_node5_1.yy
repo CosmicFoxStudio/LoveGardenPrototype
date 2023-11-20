@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Controllers",
-    "path": "folders/Objects/Controllers.yy",
+    "name": "Nodes (old)",
+    "path": "folders/Objects/Nodes (old).yy",
   },
   "parentObjectId": null,
   "persistent": false,

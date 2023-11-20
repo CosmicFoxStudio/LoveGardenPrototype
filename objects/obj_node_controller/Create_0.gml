@@ -22,6 +22,8 @@ ChatterboxJump(chatterbox, "NodeStart");               // Ir para a node inicial
 chatterbox_update();                               // Pegar node e texto atual
 */
 
+depth = -100;
+sala = "";
 option_index = 0;                                
 
 // Lógica para o mouse

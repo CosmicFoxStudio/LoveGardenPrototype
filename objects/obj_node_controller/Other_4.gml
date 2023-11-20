@@ -1,38 +1,40 @@
 /// @description 
 
+sala = room_get_name(room);
+
 // Criar chatterbox
-	switch (_sala[0]) {
-		case "quarto1":
+	switch (sala) {
+		case "rm_quarto1":
 			chatterbox = ChatterboxCreate("node1_initial.yarn");
 			ChatterboxJump(chatterbox, "NodeStart");             
 			chatterbox_update();  
 		break;
 		
-		case "corredor1": 
+		case "rm_corredor1": 
 			chatterbox = ChatterboxCreate("node2_schoolcorridor_ype.yarn");
 			ChatterboxJump(chatterbox, "NodeStart");             
 			chatterbox_update();  
 		break;
 		
-		case "corredor2": 
+		case "rm_corredor2": 
 			chatterbox = ChatterboxCreate("node3_schoolcorridorafter_ype.yarn");
 			ChatterboxJump(chatterbox, "NodeStart");             
 			chatterbox_update();  
 		break;
 		
-		case "pensamento": 
+		case "rm_pensamento": 
 			chatterbox = ChatterboxCreate("node4_mcthoughts.yarn");
 			ChatterboxJump(chatterbox, "NodeStart");             
 			chatterbox_update();  
 		break;
 		
-		case "parque": 
+		case "rm_parque": 
 			chatterbox = ChatterboxCreate("node5-1_ecopark.yarn");
 			ChatterboxJump(chatterbox, "NodeStart");             
 			chatterbox_update();  
 		break;
 		
-		case "quarto2":
+		case "rm_quarto2":
 			chatterbox = ChatterboxCreate("node5-2_dormroom_ype.yarn");
 			ChatterboxJump(chatterbox, "NodeStart");             
 			chatterbox_update();  

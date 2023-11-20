@@ -2,7 +2,7 @@
 draw_self();
 
 // desenhar a fonte
-draw_set_font(fnt_pixel_teste);
+draw_set_font(fnt_menu);
 
 // centralizar o a fonte
 draw_set_halign(fa_center);

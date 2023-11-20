@@ -1,6 +1,6 @@
 // Desenhar texto e opções
 
-draw_set_font(fnt_definitive);
+draw_set_font(fnt_dialogue);
 
 if (global.DEBUG) {
 	draw_text(30, 30, "option_index: " + string(option_index));

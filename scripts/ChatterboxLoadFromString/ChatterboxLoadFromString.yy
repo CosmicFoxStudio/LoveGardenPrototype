@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Setup",
-    "path": "folders/Chatterbox/Setup.yy",
+    "path": "folders/Libraries/Chatterbox/Setup.yy",
   },
 }

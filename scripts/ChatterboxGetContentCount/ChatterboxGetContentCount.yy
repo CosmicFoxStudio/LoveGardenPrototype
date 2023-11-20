@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Content Getters",
-    "path": "folders/Chatterbox/Content Getters.yy",
+    "path": "folders/Libraries/Chatterbox/Content Getters.yy",
   },
 }

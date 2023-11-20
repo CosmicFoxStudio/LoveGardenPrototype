@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Chatterboxes",
-    "path": "folders/Chatterbox/Chatterboxes.yy",
+    "path": "folders/Libraries/Chatterbox/Chatterboxes.yy",
   },
 }
