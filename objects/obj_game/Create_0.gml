@@ -1,5 +1,4 @@
 
-
 global.DEBUG = false;
 
 global.status = {

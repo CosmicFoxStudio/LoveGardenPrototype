@@ -2,38 +2,53 @@
 __PrivCrochet_colorID: 0
 __PrivCrochet_position: -50,-50
 __PrivCrochet_tags: 
-title: NodeStart
+title: Start
 ---
 <<personagem(1)>>
-IPÊ: Então, acabou que não deu tempo de falar antes.\nMas obrigado por chegar atrasade comigo.
-    -> Sem problemas, estamos nessa juntos.
+IPÊ: Ei, acabou que não deu tempo de falar antes.
+IPÊ: Mas obrigade por tentar me ajudar hoje mais cedo.
+IPÊ: Mas obrigade por tentar me ajudar hoje mais cedo.
+    -> Sem problemas, estamos nessa juntes.
         IPÊ: Cara, você é uma planta muito gente boa!
     -> Só bora, garote. Vai dar bom. 
         IPÊ: Cara, você é uma planta muito gente boa!
     -> Me meti em enrascada por você, mereço algo em troca?
         IPÊ: ... #-2 #0 #0 #0 #0
-IPÊ: Prometo me esforçar em nosso trabalho, mesmo\neu não mandando tão bem em trabalho em grupo...
-VOCÊ: Se não for problema perguntar,\npor que você não gosta?
-IPÊ: Ah... É besteira minha só. Fico achando\nque sou um peso, muitas vezes não\nconsigo tomar a iniciativa. Mas eu...
-IPÊ: Eu também tenho dificuldade de\ninteragir com as pessoas, sabe? Às vezes...
-IPÊ: *suspiro*
-IPÊ: Mas... Nessa universidade eu quero fazer diferente.\nQuero ser mais consistente e responsável, quero\nfazer coisas incríveis, e ter amizades incríveis!
+IPÊ: Sobre nosso trabalho, vou me esforçar.
+IPÊ: Mesmo eu não mandando tão bem\nem trabalho em grupo...
+VOCÊ: Huh, é mesmo? Você não gosta?
+IPÊ: Ah... É besteira minha só. 
+IPÊ: Fico achando que sou um peso,\nmuitas vezes não consigo tomar a iniciativa.
+IPÊ: Eu também tenho dificuldade de\ninteragir com as pessoas, sabe?
+IPÊ: Mas--! 
+IPÊ: Nessa universidade eu quero fazer diferente.
+IPÊ: Quero ser mais consistente e responsável! 
+IPÊ: Quero fazer coisas incríveis, e ter amizades incríveis!
 IPÊ: Não vou ser um peso. Nunca mais.
-VOCÊ: Isso me parece bastante determinação.\nQueria eu ter um pouquinho disso, mal começou\no semestre e já me sinto tão cansada.
+VOCÊ: Isso me parece bastante determinação.\nQueria eu ter um pouquinho disso. 
+VOCÊ: Mal começou o semestre e já\nme sinto tão cansade.
 VOCÊ: Queria só poder tomar sol e dormir.
-IPÊ: Eu consigo entender isso. Afinal, tem\ncoisa melhor do que tomar um sol no parque?\nÉ meu lugar favorito na face dessa Terra!
-VOCÊ: Ah é? Nunca fui no parque dessa\ncidade, mas deve ser bem bacana.
-IPÊ: Pera, é sério? Você nunca foi?
-VOCÊ: Não... Eu na verdade não\nsou daqui. Vim transferido.
+IPÊ: Ha ha! Eu te entendo!
+IPÊ: Afinal, tem coisa melhor do que\ntomar um sol no parque?
+IPÊ: É meu lugar favorito na face da Terra!
+VOCÊ: Ah é? Nunca fui no parque da\ncidade, mas deve ser bem bacana.
+IPÊ: Pera, é sério? Você nunca foi ao parque?
+VOCÊ: Não... Pelo menos não nessa cidade.
+VOCÊ: Eu na verdade não sou daqui.\nVim de outro reino.
 VOCÊ: É bacana lá no parque? O que você tanto gosta?
-IPÊ: Cara!! Lá no parque tem tanta coisa,\ntudo é verde, natureza, tem uma estufa, tem mesa\nde jogos, banquinhos pra estudar. Super legal!
-IPÊ: Eu sei que pode parecer\nclichê, né? Uma pessoa planta que\nama um parque ecológico, haha.
-IPÊ: Mas tem algo de tão reconfortante de\nestar no meio lá, camuflado junto ao\nverde de toda a vegetação.
-Por um segundo, dá para perceber\nos olhos de Ipê como se brilhando,\niluminados por uma paixão...
-Você sente que Ipê é muito\nmais do que uma planta tímida.
+IPÊ: Cara!! Lá no parque tem tanta coisa...!
+IPÊ: Pensa tudo bem verdinho...\nTem até uma estufa com várias plantas maravilhosas!
+IPÊ: Ah! Tem também mesas de jogos.\nE bancos que são ótimos pra ler um livro e estudar.
+IPÊ: Eu também amo escutar o som da água corrente do riacho...
+Por um segundo, dá para perceber os olhos de Ipê\ncomo se brilhando, iluminados por uma paixão... 
+Você sente que Ipê é muito mais do que uma pessoa tímida.
+IPÊ: Eu sei que pode parecer clichê, né?\nUma pessoa planta que ama um parque ecológico, ha ha...
+IPÊ: Mas tem algo de tão reconfortante em estar lá,\ncamuflade junto ao\nverde de toda a vegetação.
+IPÊ: É um lugar que posso chamar de casa, sabe?
+IPÊ: É um lugar que posso chamar de casa, sabe?
     -> Bora no parque então, aí podemos estudar lá.
-        IPÊ: Nossa. Você quer mesmo? #0 #0 #+2 #0 #parque
-        Ipê não consegue esconder sua\nanimação, e você percebe seu cabelo mudando\nde cor para um tom avermelhado.
+        IPÊ: Nossa. Você quer mesmo ir? #0 #0 #+2 #0 #parque
+        Ipê não consegue esconder sua animação,\ne você percebe as flores de seu cabelo \nmudando de cor, para um tom avermelhado.
         <<if ((hidratacao() > 8) && (nutricao() >= 5))>>
             <<nextRoom("pensamento")>>
         <<else>>
@@ -45,9 +60,11 @@ Você sente que Ipê é muito\nmais do que uma planta tímida.
             <<nextRoom("pensamento")>>
         <<else>>
             <<nextRoom("quarto2")>>
-    -> Meu quarto tá cheio de coisa verde.
-        IPÊ: Haha, seu quarto deve ser um mini jardim secreto, então! #-3 #0 #0 #0 #quarto
+    -> Olha, meu quarto tá cheio de coisa verde.
+        IPÊ: Haha, seu quarto deve ser um jardim, então! #-3 #0 #0 #0 #quarto
         IPÊ: Mas o parque ainda é o melhor\nlugar para pegar um pouco de ar fresco.
+		Vocês então decidem por retornar ao dormitório.
+		Ipê parece um pouco relutante, mas mesmo assim te acompanha.
         <<if ((hidratacao() > 8) && (nutricao() >= 3))>>
             <<nextRoom("pensamento")>>
         <<else>>

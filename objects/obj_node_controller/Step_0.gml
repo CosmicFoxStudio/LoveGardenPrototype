@@ -66,15 +66,3 @@ if ChatterboxIsWaiting(chatterbox) {
 if ChatterboxIsStopped(chatterbox) {
     instance_destroy();
 }
-
-
-
-
-
-
-
-
-
-
-
-
