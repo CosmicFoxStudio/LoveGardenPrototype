@@ -53,12 +53,10 @@ if ChatterboxIsWaiting(chatterbox) {
     }
 	
 // Se tiver opções para escolher	
-} else if _count {
-	var key_up = keyboard_check_pressed(vk_up);
-    var key_down = keyboard_check_pressed(vk_down);
-	
+} else if _count {	
 	// Precisa ser reiniciada em todo início do loop (ou então torná-la local)
 	option_hovered = -1;
+	
     // Mouse input
     for (var i = 0; i < _count; i++) {
         var _xx = room_width / 2;
@@ -79,7 +77,7 @@ if ChatterboxIsWaiting(chatterbox) {
     }
 
 	// Keyboard input
-	var _key = key_down - key_up;
+	var _key = f_checkVerticalInput();
 	repeat(1 + (ChatterboxGetOptionConditionBool(chatterbox, wrap(option_index + _key, 0, _count - 1)) == false)) {
 		option_index = wrap(option_index + _key, 0, _count - 1);
 	}

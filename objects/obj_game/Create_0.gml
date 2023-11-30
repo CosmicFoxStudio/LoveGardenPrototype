@@ -1,5 +1,5 @@
-
-global.DEBUG = false;
+global.DEBUG = true;
+global.lang = "EN";
 
 global.status = {
 	hidratacao: 10,
@@ -15,3 +15,5 @@ global.status = {
 //global.PRESSED_CONFIRM = false; # Unused
 global.MOUSE_CONFIRM = false;
 global.SPACE_CONFIRM = false;
+global.PRESSED_UP = false;
+global.PRESSED_DOWN = false;
