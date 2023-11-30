@@ -1,7 +1,7 @@
 // Feather disable all
 #macro CHATTERBOX_DEFAULT_SINGLETON             true
 #macro CHATTERBOX_ALLOW_SCRIPTS                 true
-#macro CHATTERBOX_FUNCTION_ARRAY_ARGUMENTS      true
+#macro CHATTERBOX_FUNCTION_ARRAY_ARGUMENTS      false
 #macro CHATTERBOX_SINGLETON_WAIT_BEFORE_OPTION  false
 #macro CHATTERBOX_WAIT_BEFORE_STOP              true
 #macro CHATTERBOX_SHOW_REJECTED_OPTIONS         true

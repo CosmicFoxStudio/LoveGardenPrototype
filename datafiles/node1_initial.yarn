@@ -4,7 +4,7 @@ __PrivCrochet_position: 938,-8
 __PrivCrochet_tags: 
 title: Start
 ---
-<<personagem(3)>>
+<<personagem("vazio")>>
 [Use o MOUSE ou as SETAS para escolher falas]\n[Use o MOUSE ou a BARRA DE ESPAÇO para confirmar]
 Dia 1 - Dormitório
 ???: Ei.
@@ -15,16 +15,16 @@ VOCÊ: Ugh...
 Você acorda já atrasade para seu primeiro\ndia de aula.
 Parece que seu despertador não tocou...
 Quem lhe acorda é seu colega de quarto, Mandacaru.
-<<personagem(2)>>
-MANDACARU: Uau, finalmente! Como dorme!
-MANDACARU: Por sinal... Você não deveria\nestar na aula? Já são 8h40...
+<<personagem("mandacaru")>>
+MANDACARU: Uau, finalmente! Como dorme! #0 #0 #0 #0 #0 #0
+MANDACARU: Por sinal... Você não deveria\nestar na aula? Já são 8h40... #+1 #0 #0 #0 #0 #0
 Por um segundo, você questiona o sadismo daqueles que \ndecidiram o horário de 7h30 para uma aula matinal...
 VOCÊ: Ahh--! Droga... Estou atrasade!
 MANDACARU: Pois é, e logo no seu primeiro dia. Vixe.
 MANDACARU: Eu até diria que está tudo bem, que essas\ncoisas acontecem.
 MANDACARU: Mas honestamente, depende mais do professor...
 MANDACARU: É bom torcer pra que seja alguém legal.
-<<personagem(3)>>
+<<personagem("vazio")>>
 Com toda a pressa do universo,\nvocê se arruma para sair.
 Você se sente nervose, pois é seu\nprimeiro dia de aula e não conhece ninguém,\nmas já está chegando fora do horário...
 <<nextRoom("corredor1")>>

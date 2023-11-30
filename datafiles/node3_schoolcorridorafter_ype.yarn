@@ -4,7 +4,7 @@ __PrivCrochet_position: -50,-50
 __PrivCrochet_tags: 
 title: Start
 ---
-<<personagem(1)>>
+<<personagem("ipe")>>
 IPÊ: Ei, acabou que não deu tempo de falar antes.
 IPÊ: Mas obrigade por tentar me ajudar hoje mais cedo.
 IPÊ: Mas obrigade por tentar me ajudar hoje mais cedo.
@@ -13,7 +13,7 @@ IPÊ: Mas obrigade por tentar me ajudar hoje mais cedo.
     -> Só bora, garote. Vai dar bom. 
         IPÊ: Cara, você é uma planta muito gente boa!
     -> Me meti em enrascada por você, mereço algo em troca?
-        IPÊ: ... #-2 #0 #0 #0 #0
+        IPÊ: ... #0 #-2 #0 #0 #0 #0
 IPÊ: Sobre nosso trabalho, vou me esforçar.
 IPÊ: Mesmo eu não mandando tão bem\nem trabalho em grupo...
 VOCÊ: Huh, é mesmo? Você não gosta?
@@ -47,21 +47,21 @@ IPÊ: Mas tem algo de tão reconfortante em estar lá,\ncamuflade junto ao\nverd
 IPÊ: É um lugar que posso chamar de casa, sabe?
 IPÊ: É um lugar que posso chamar de casa, sabe?
     -> Bora no parque então, aí podemos estudar lá.
-        IPÊ: Nossa. Você quer mesmo ir? #0 #0 #+2 #0 #parque
+        IPÊ: Nossa. Você quer mesmo ir? #0 #0 #0 #+2 #0 #parque
         Ipê não consegue esconder sua animação,\ne você percebe as flores de seu cabelo \nmudando de cor, para um tom avermelhado.
         <<if ((hidratacao() > 8) && (nutricao() >= 5))>>
             <<nextRoom("pensamento")>>
         <<else>>
             <<nextRoom("parque")>>
     -> Eu adoraria ir ao parque um dia.\nMas hoje precisamos terminar o trabalho.
-        IPÊ: Ah... Tudo bem, então! #0 #0 #0 #0 #quarto
+        IPÊ: Ah... Tudo bem, então! #0 #0 #0 #0 #0 #quarto
         IPÊ: Podemos ir pra lá, sim. Se você\nse sente mais confortável por lá.
         <<if ((hidratacao() > 8) && (nutricao() >= 5))>>
             <<nextRoom("pensamento")>>
         <<else>>
             <<nextRoom("quarto2")>>
     -> Olha, meu quarto tá cheio de coisa verde.
-        IPÊ: Haha, seu quarto deve ser um jardim, então! #-3 #0 #0 #0 #quarto
+        IPÊ: Haha, seu quarto deve ser um jardim, então! #0 #-3 #0 #0 #0 #quarto
         IPÊ: Mas o parque ainda é o melhor\nlugar para pegar um pouco de ar fresco.
 		Vocês então decidem por retornar ao dormitório.
 		Ipê parece um pouco relutante, mas mesmo assim te acompanha.

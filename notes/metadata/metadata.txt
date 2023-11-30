@@ -1,0 +1,6 @@
+[0] character expression
+[1] hidratacao
+[2] humor
+[3] nutricao
+[4] som
+[5] flag

@@ -5,7 +5,7 @@ __PrivCrochet_tags:
 title: Start
 ---
 <<bg(0)>>
-<<personagem(1)>>
+<<personagem("ipe")>>
 IPÊ: Olha, chegamos no Parque Ecológico!\nBem-vinde ao meu habitat natural.
 VOCÊ: É realmente um lugar incrível, Ipê. 
 VOCÊ: Cara, e pensar que eu nunca tinha vindo aqui antes.
@@ -28,13 +28,13 @@ VOCÊ: Entendi.
 -> Não há nada que você não possa vencer agora.\nEu acredito em você.
 	IPÊ: Obrigade...
 	IPÊ: Eu acredito que as coisas serão melhores agora.
-	IPÊ: Aliás, já está sendo. #0 #0 #+2 #0 #0
+	IPÊ: Aliás, já está sendo. #0 #0 #0 #+2 #0 #0
     <<jump Conversa>>
 -> Mas veja. Isso acontecia porque eles\nte deixavam desconfortável, né?
-	IPÊ: Eu me sentia meio desconfortável, realmente... #0 #0 #+1 #0 #0
+	IPÊ: Eu me sentia meio desconfortável, realmente... #0 #0 #0 #+1 #0 #0
 	<<jump Conversa>>
 -> Você tem que ser forte e superar essa\ntimidez. Só assim as coisas vão melhorar.
-	IPÊ: Ahh... Sim, você tem razão. E-eu vou me esforçar. #-2 #0 #0 #0 #badending
+	IPÊ: Ahh... Sim, você tem razão. E-eu vou me esforçar. #0 #-2 #0 #0 #0 #badending
 	<<jump FinalParque>>
 ===
 __PrivCrochet_colorID: 0
@@ -59,7 +59,7 @@ IPÊ: Ahh...! Desculpe, espero que não tenha soado estranho...
     IPÊ: Por isso eu não explico o que\ncada cor significa para as pessoas.
     IPÊ: Você teria que descobrir por si só. 
     IPÊ: Mas se ficarmos mais próximes,\nvocê vai acabar percebendo.
-	<<personagem(3)>>
+	<<personagem("vazio")>>
     O tempo passa, e mais conversa vai e vem.
     Vocês percebem que o clima entre vocês\nestá bem agradável, mas que já está ficando tarde\ne o trabalho precisa ser feito.
 	...
@@ -97,20 +97,20 @@ IPÊ: Nada como um bom drink de água, né?
 VOCÊ: Haha, você realmente leva a sério a hidratação, não é?
 IPÊ: Bom, podemos ser pessoas mas também somos plantas.\nNo fim das contas, hidratação é essencial! 
 IPÊ: Na verdade, acho que qualquer organismo\nvivo precisa ser bem regado diariamente.
-<<personagem(3)>>
+<<personagem("vazio")>>
 <<bg(1)>>
 ...
 Vocês finalmente se focam no trabalho,\ne tudo parece fluir bem.
 O tempo passa...
 ...
 <<bg(0)>>
-<<personagem(1)>>
+<<personagem("ipe")>>
 IPÊ: Ahhh, que dia incrível...!
 IPÊ: Obrigade por me fazer companhia no parque\ne por toda a sua compreensão.
 VOCÊ: Foi um dia bem divertido, Ipê.\nEstou feliz por ter te conhecido.
 IPÊ: Espero que a gente possa continuar nos\ndando bem e enfrentar juntos os desafios da universidade.\nE quem sabe, outros trabalhos em grupo.
 VOCÊ: Com certeza, Ipê. Também estou ansiose para isso.
-<<personagem(3)>>
+<<personagem("vazio")>>
 Assim, o primeiro dia na universidade se\nencerra com uma nova amizade brotando, e\nquem sabe, até algo mais no horizonte...
 CONTINUA...
 <<nextRoom("menu")>>

@@ -14,7 +14,11 @@ if IsChatterbox(chatterbox) and text != undefined {
 	
 	draw_set_halign(fa_center);
 	var _xx = room_width/2 + 22;
+	
+	// Desenha o texto de diálogo
 	draw_text(_xx, _yy, ChatterboxGetContentSpeech(chatterbox, 0));
+	
+	// Desenha a nametag
 	draw_text(room_width/2 - 230, room_height - (_marginText/2) - 8, ChatterboxGetContentSpeaker(chatterbox, 0));
 	
 	// Se tem opções, colocar no meio da tela

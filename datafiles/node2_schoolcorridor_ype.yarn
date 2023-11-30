@@ -4,7 +4,7 @@ __PrivCrochet_position: -50,-50
 __PrivCrochet_tags: 
 title: Start
 ---
-<<personagem(3)>>
+<<personagem("vazio")>>
 Dia 1 - Corredores da universidade
 
 VOCÊ: ...
@@ -16,7 +16,7 @@ Pois o único outro jeito de obter essa informação\nnesses tempos modernos ser
 ...
 Logo ali em frente parece ter uma pessoa ainda mais\nperdida que você, o que é até uma raridade.
 Elu não parece perceber que alguém se aproxima.
-<<personagem(1)>>
+<<personagem("ipe")>>
 ???: Ah... Qual será...? 
 ???: Hum...
 ???: *suspiro*
@@ -26,11 +26,11 @@ Elu não parece perceber que alguém se aproxima.
 	???: Huh?
 	???: Huh?
 	-> Ah... Perdão. Não queria lhe dar um susto.
-		???: Ah..! Eu estou bem. Não se preocupe.\nApenas não esperava alguém falar comigo. #0 #0 #+1 #0 #0
+		???: Ah..! Eu estou bem. Não se preocupe.\nApenas não esperava alguém falar comigo. #1 #0 #0 #+1 #0 #0
 		VOCÊ: Ahh... Entendi.
 		<<jump Nome>>
 	-> Está tudo bem?
-		???: Ah..! Eu estou bem. Não se preocupe.\nApenas não esperava alguém falar comigo. #0 #0 #+1 #0 #0
+		???: Ah..! Eu estou bem. Não se preocupe.\nApenas não esperava alguém falar comigo. #0 #0 #0 #+1 #0 #0
 		VOCÊ: Ahh... Entendi.
 		<<jump Nome>>
 -> Huh... Oi. Você por acaso está perdide?
@@ -41,14 +41,14 @@ Elu não parece perceber que alguém se aproxima.
 	-> ...
 		<<jump Nome>>
     -> Isso não seria o mesmo que estar perdide?
-		???: Huh... Acho que você tem um ponto... #-1 #0 #0 #0 #0
+		???: Huh... Acho que você tem um ponto... #0 #-1 #0 #0 #0 #0
 		???: Bom, é minha primeira vez na universidade,\nentão admito que estou um pouco confuse com tudo...
 		VOCÊ: Ah... é. Eu bem que te entendo. Não\nacredito que me atrasei logo pro primeiro dia...
 		???: Tudo bem, eu te entendo. Também estou atrasade!
 		VOCÊ: Hum. Por acaso você está procurando sua sala?
 		<<jump Nome>>
 -> Eai, vai ficar plantade aí?
-	???: Ah... uh... plantade haha, entendi... #-2 #0 #0 #0 #badending
+	???: Ah... uh... plantade haha, entendi... #0 #-2 #0 #0 #0 #badending
 	<<jump Professor>>
 ===
 __PrivCrochet_colorID: 0
@@ -66,8 +66,8 @@ __PrivCrochet_position: 303,192
 __PrivCrochet_tags: 
 title: Professor
 ---
-???: Que conversa toda é essa aqui fora da sala? #0 #0 #0 #snd_door #0
-<<personagem(0)>>
+???: Que conversa toda é essa aqui fora da sala? #0 #0 #0 #0 #snd_door #0
+<<personagem("mamba")>>
 Um senhor com uma extensa barba folheada\nabre a porta de uma das salas ali perto.
 ???: Hum... Seu nome eu esqueci agora,\nmas você deve ser Ipê.
 VOCÊ: Opa. Como você sabe disso?
@@ -82,12 +82,12 @@ PROFESSOR: O fato é que a turma já se dividiu\nem duplas e trios para fazer o 
 PROFESSOR: Nesse caso, não terão\nescolha senão formar uma dupla.
 PROFESSOR: Nesse caso, não terão\nescolha senão formar uma dupla.
 -> Por mim sem problemas, professor!
-	PROFESSOR: Bom, a aula ainda não acabou. #0 #0 #+2 #0 #0
+	PROFESSOR: Bom, a aula ainda não acabou. #0 #0 #0 #+2 #0 #0
 	PROFESSOR: Então se não quiserem receber mais uma falta,\nrecomendo que entrem. 
 	VOCÊ: Claro, claro!
 	<<jump Sala>>
 -> Ah, poxa. Tudo bem, compreendo...
-	PROFESSOR: Bom, a aula ainda não acabou. #-1 #0 #0 #0 #0
+	PROFESSOR: Bom, a aula ainda não acabou. #0 #-1 #0 #0 #0 #0
 	PROFESSOR: Então se não quiserem receber mais uma falta,\nrecomendo que entrem. 
 	VOCÊ: Claro, claro!
 	<<jump Sala>>
@@ -97,7 +97,7 @@ __PrivCrochet_position: 580,-56
 __PrivCrochet_tags: 
 title: Sala
 ---
-<<personagem(3)>>
+<<personagem("vazio")>>
 <<if hidratacao() == 10>>
     Você e Ipê acompanham o professor para\no restante da aula.
 	Vocês buscam sentar juntes no cantinho da sala.

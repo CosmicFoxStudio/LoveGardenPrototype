@@ -42,37 +42,3 @@ sala = room_get_name(room);
 		
 		default: break;
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

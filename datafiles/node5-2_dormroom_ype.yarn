@@ -4,18 +4,18 @@ __PrivCrochet_position: -50,-50
 __PrivCrochet_tags: 
 title: Start
 ---
-<<personagem(2)>>
+<<personagem("mandacaru")>>
 MANDACARU: ...
 MANDACARU: Humm, quem te viu, quem te vê...\n
 MANDACARU: Olha quem me aparece com uma\nvisita pela primeira vez. 
 MANDACARU: Quem é elu?
-<<personagem(1)>>
+<<personagem("ipe")>>
 IPÊ: ... Hum. Oi!
 IPÊ: ... (Eu não esperava que\nvocê morava com mais alguém)...
-<<personagem(3)>>
+<<personagem("vazio")>>
 VOCÊ: Eaí, Mandacaru. Trouxe une colega. 
 VOCÊ: Estamos\nfazendo uma atividade em dupla,\ne aí trouxe elu aqui em casa.
-<<personagem(2)>>
+<<personagem("mandacaru")>>
 MANDACARU: Tô vendo que o primeiro dia de aula foi bom, então.
 VOCÊ: Foi radiante. Conheci Ipê,\ne o professor de botânica é... uma figura. 
 MANDACARU: Ah, sim. O barbudo lá de botânica, né?\nNem me fale.
@@ -26,9 +26,9 @@ MANDACARU: ... Então não sei bem o que fazer.
 MANDACARU: Vocês acham melhor eu sair para vocês\nficarem estudando aqui?
 MANDACARU: Já não tem muito espaço aqui no quarto...
 VOCÊ: Ah... Eu não tinha pensado nisso.
-<<personagem(1)>>
+<<personagem("ipe")>>
 IPÊ: Er... Uh. Me desculpe por atrapalhar.\nSe quiser, eu posso só-
-<<personagem(2)>>
+<<personagem("mandacaru")>>
 MANDACARU: Não, não. Fica de boa aí.\nNão está atrapalhando nada não, queride.
 MANDACARU: Sorte de vocês, eu já tinha que ir no mercado mesmo.
 VOCÊ: Foi mal. Eu achei que você estaria em aula agora.
@@ -36,7 +36,7 @@ MANDACARU: Ai ai, você.\nComo sempre nas nuvens, né?
 MANDACARU: Já te falei que a minha aula é noturna.
 VOCÊ: Aaah... É verdade. Nossa. 
 VOCÊ: Toda vez eu esqueço\nque vocês cactus se sustentam bem até de noite.
-VOCÊ: Ipê até queria passar no Parque da Cidade\ndepois da aula para estudarmos lá, mas\nachei melhor não... Vacilei. #-1 #0 #0 #0 #0
+VOCÊ: Ipê até queria passar no Parque da Cidade\ndepois da aula para estudarmos lá, mas\nachei melhor não... Vacilei. #0 #-1 #0 #0 #0 #0
 MANDACARU: Parque? Logo no primeiro dia que se conheceram?
 MANDACARU: Eu sinto algo sendo nutrido entre vocês, hein...
 VOCÊ: Haha, engraçado você, Mandacaru.
@@ -47,9 +47,9 @@ MANDACARU: Isso é uma boa ideia, eu acho.
 MANDACARU: Enfim, vou vazar aqui para deixar vocês a sós. 
 MANDACARU: Boa sorte com isso. 
 MANDACARU: Só tenham juízo, tá? Eu moro aqui também.
-<<personagem(3)>>
+<<personagem("vazio")>>
 Mandacaru tomou seu rumo, e você pode jurar que as\nflores de Ipê mudam para vermelho por um segundo\ndepois dessa última fala dele.
-<<personagem(1)>>
+<<personagem("ipe")>>
 IPÊ: Bom, acho melhor focarmos em\nfazer logo esse trabalho, né?
 VOCÊ: Bom ponto.
 IPÊ: Por sinal, eu trouxe alguns lanches saudáveis. Quer um?
@@ -59,7 +59,7 @@ VOCÊ: Humm... Pena que eu prefiro um suco de fruta.
 VOCÊ: Brincadeira, haha. Você realmente\nleva a sério a hidratação, não é?
 IPÊ: Bom, somos plantas, afinal. No fim das contas, hidratação é essencial!
 IPÊ: Na verdade, acho que qualquer organismo vivo\nprecisa ser bem regado diariamente.
-<<personagem(3)>>
+<<personagem("vazio")>>
 Vocês finalmente se focam no trabalho,\ne tudo parece fluir bem.
 CONTINUA...
 <<nextRoom("menu")>>

@@ -1,1 +1,2 @@
-characterToDraw = 0;
+chara = noone;
+characterExpression = 0;

@@ -33,7 +33,7 @@ function background_set_index(_arr) {
 	var lay_id = layer_get_id("Background");
 	var back_id = layer_background_get_id(lay_id);
 	
-	layer_background_index(back_id, _arr[0]);
+	layer_background_index(back_id, _arr);
 }
 
 // função para evitar repetir essas linhas
@@ -45,7 +45,7 @@ function chatterbox_update() {
 // função que muda cena
 function next_room(_sala) {
 	//show_debug_message(_sala);
-	switch (_sala[0]) {
+	switch (_sala) {
 		case "corredor1": room_goto(rm_corredor1); break;
 		case "corredor2": room_goto(rm_corredor2); break;
 		case "pensamento": room_goto(rm_pensamento); break;
@@ -57,20 +57,40 @@ function next_room(_sala) {
 }
 
 // função para escolher personagem na tela
-function characterOnScreen(_num) {
-	obj_characters.characterToDraw = _num[0];
+function characterOnScreen(_name) {
+	var _sprite = noone;
+	if (_name) == "ipe" {
+		_sprite = spr_ipe;
+	}
+	else if (_name) == "mandacaru" {
+		_sprite = spr_mandacaru;
+	}
+	else if (_name) == "mamba" {
+		_sprite = spr_mamba;
+	}
+	else if (_name) == "vazio" {
+		_sprite = spr_noone;
+	}
+	//else {
+	//	_sprite = spr_noone;
+	//}
+	
+	obj_characters.chara = _sprite;
 }
 
+// função para escolher a expressão do personagem na tela
+function characterExpressionOnScreen(_num) {
+	obj_characters.characterExpression = _num;
+}
+
+// getHidratacao
 function hidratacao() {
 	return global.status.hidratacao;
 }
 
+// getNutricao
 function nutricao() {
 	return global.status.nutricao;
-}
-
-function parque() {
-	return global.status.parque;
 }
 
 function flag(_nome) {
@@ -80,6 +100,10 @@ function flag(_nome) {
 		case "loveending": global.status.loveending = true; break;
 		case "badending": global.status.badending = true; break;
 	}
+}
+
+function parque() {
+	return global.status.parque;
 }
 
 function love() {

@@ -5,6 +5,49 @@ var _count = ChatterboxGetOptionCount(chatterbox); // número de opções
 // Esperando por user input ou esperando pela escolha da opção
 if ChatterboxIsWaiting(chatterbox) {
     if (global.SPACE_CONFIRM || global.MOUSE_CONFIRM) {
+		#region METADATA 
+		var _once = false;
+	    var _metadata = ChatterboxGetContentMetadata(chatterbox, 0);
+		// Se tiver metadados no conteúdo daquela linha
+		if (_once == false) {
+		    if (array_length(_metadata) > 0) {
+				// EXPRESSÃO - Índice da subimagem (frame) da expressão de personagem
+				if (_metadata[0] != "") {
+					characterExpressionOnScreen(real(_metadata[0]));
+					_once = true;
+				}
+				// HIDRATAÇÃO - Adiciona/remove pontos do status "hidratação"
+		        if (_metadata[1] != "") { 
+					global.status.hidratacao = wrapInside(obj_waterbar.fillBar + real(_metadata[1]), 0, 10); 
+					obj_waterbar.fillBar = global.status.hidratacao; 
+					_once = true;
+				}
+				// HUMOR - Adiciona/remove pontos do status "humor"
+		        if (_metadata[2] != "") { 
+					global.status.humor = wrapInside(obj_sunbar.fillBar + real(_metadata[2]), 0, 10); 
+					obj_sunbar.fillBar = global.status.humor; 
+					_once = true;
+				}
+				// NUTRIÇÃO - Adiciona/remove pontos do status "nutrição"
+		        if (_metadata[3] != "") { 
+					global.status.nutricao = wrapInside(obj_earthbar.fillBar + real(_metadata[3]), 0, 10); 
+					obj_earthbar.fillBar = global.status.nutricao; 
+					_once = true;
+				}
+				// SOM - Dê o nome do sound asset
+		        if (_metadata[4] != "") {
+					audio_play_sound(asset_get_index(_metadata[4]), 10, false);
+					_once = true;
+				}
+				// FLAG - Dê o nome da flag
+		        if (_metadata[5] != "") {
+					flag(_metadata[5]);
+					_once = true;
+				}
+		    }
+		}
+		#endregion METADATA 
+
         ChatterboxContinue(chatterbox);
         chatterbox_update();
     }
@@ -43,20 +86,13 @@ if ChatterboxIsWaiting(chatterbox) {
 	
     // Confirmação da opção 
     if  (
-		global.SPACE_CONFIRM || 
-		(global.MOUSE_CONFIRM && option_hovered != -1)
-	) {
+			global.SPACE_CONFIRM || 
+			(global.MOUSE_CONFIRM && option_hovered != -1)
+		) 
+	{
         ChatterboxSelect(chatterbox, option_index);
         audio_play_sound(snd_test, 0, false, 1, 0, random_range(0.8, 1.2));
 		
-        var _metadata = ChatterboxGetContentMetadata(chatterbox, 0);
-        if (array_length(_metadata) > 0) {
-            if (_metadata[0] != "") { global.status.hidratacao = wrapInside(obj_waterbar.fillBar + real(_metadata[0]), 0, 10); obj_waterbar.fillBar = global.status.hidratacao; }
-            if (_metadata[1] != "") { global.status.humor = wrapInside(obj_sunbar.fillBar + real(_metadata[1]), 0, 10); obj_sunbar.fillBar = global.status.humor; }
-            if (_metadata[2] != "") { global.status.nutricao = wrapInside(obj_earthbar.fillBar + real(_metadata[2]), 0, 10); obj_earthbar.fillBar = global.status.nutricao; }
-            if (_metadata[3] != "") audio_play_sound(asset_get_index(_metadata[3]), 10, false);
-            if (_metadata[4] != "") flag(_metadata[4]);
-        }
         option_index = 0;
         chatterbox_update();
     }
