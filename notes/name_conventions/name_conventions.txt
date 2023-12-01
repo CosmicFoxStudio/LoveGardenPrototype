@@ -1,0 +1,4 @@
+Custom functions should start with a " f_ " prefix.
+Example: f_myFunction()
+
+

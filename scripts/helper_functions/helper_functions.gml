@@ -2,4 +2,3 @@
 function f_checkVerticalInput() {	
 	return global.PRESSED_DOWN - global.PRESSED_UP;
 }
-

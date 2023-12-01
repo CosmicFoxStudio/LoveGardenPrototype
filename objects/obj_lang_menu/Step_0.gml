@@ -1,5 +1,3 @@
-/// @description 
-
 // Mover no menu
 pos += f_checkVerticalInput();
 
@@ -7,7 +5,7 @@ pos += f_checkVerticalInput();
 if (pos >= option_length) pos = 0; // volta p/ pos 1
 if pos < 0 pos = option_length - 1; // vai pra última pos
 
-// Escolher uma opção
+// Escolher uma opção de linguagem
 if (global.SPACE_CONFIRM) {
 	switch(pos) {
 		case 0: 
