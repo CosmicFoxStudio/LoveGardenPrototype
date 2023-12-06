@@ -1,10 +1,10 @@
 // Carregar arquivos
-ChatterboxLoadFromFile("node1_initial.yarn");
-ChatterboxLoadFromFile("node2_schoolcorridor_ype.yarn");
-ChatterboxLoadFromFile("node3_schoolcorridorafter_ype.yarn");
-ChatterboxLoadFromFile("node4_mcthoughts.yarn");
-ChatterboxLoadFromFile("node5-1_ecopark.yarn");
-ChatterboxLoadFromFile("node5-2_dormroom_ype.yarn");
+ChatterboxLoadFromFile("scenes/node1_initial.yarn");
+ChatterboxLoadFromFile("scenes/node2_schoolcorridor_ype.yarn");
+ChatterboxLoadFromFile("scenes/node3_schoolcorridorafter_ype.yarn");
+ChatterboxLoadFromFile("scenes/node4_mcthoughts.yarn");
+ChatterboxLoadFromFile("scenes/node5-1_ecopark.yarn");
+ChatterboxLoadFromFile("scenes/node5-2_dormroom_ype.yarn");
 
 // Custom Chatterbox Functions 
 ChatterboxAddFunction("bg", background_set_index);						// Add função para mudar background
@@ -17,51 +17,10 @@ ChatterboxAddFunction("parque", parque);									// Add função pra saber se va
 ChatterboxAddFunction("love", love);											// Love ending
 ChatterboxAddFunction("bad", bad);											// Bad ending
 
-
-/* Settando agora em Room Start
-chatterbox = ChatterboxCreate("node1_initial.yarn");			// Criar chatterbox
-ChatterboxJump(chatterbox, "NodeStart");						// Ir para a node inicial
-chatterbox_update();												// Pegar node e texto atual
-*/
-
 depth = -100;
 sala = "";
 option_index = 0;                                
 
 // Lógica para o mouse
 option_hovered = -1; 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -43,6 +43,7 @@
     {"name":"spr_lang_box","order":1,"path":"sprites/spr_lang_box/spr_lang_box.yy",},
     {"name":"ChatterboxVariableGet","order":1,"path":"scripts/ChatterboxVariableGet/ChatterboxVariableGet.yy",},
     {"name":"ChatterboxStop","order":8,"path":"scripts/ChatterboxStop/ChatterboxStop.yy",},
+    {"name":"spr_button_small","order":10,"path":"sprites/spr_button_small/spr_button_small.yy",},
     {"name":"obj_snd_room","order":1,"path":"objects/obj_snd_room/obj_snd_room.yy",},
     {"name":"obj_buttons_play","order":2,"path":"objects/obj_buttons_play/obj_buttons_play.yy",},
     {"name":"ChatterboxLoadFromBuffer","order":3,"path":"scripts/ChatterboxLoadFromBuffer/ChatterboxLoadFromBuffer.yy",},

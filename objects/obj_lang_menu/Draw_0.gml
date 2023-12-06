@@ -5,6 +5,22 @@ if (global.DEBUG) {
 		20, 80, 
 		"Menu pos: " + "(" + string(x) + " / " + string(y) + ")"
 	);
+	draw_text(
+		20, 120,
+		"Selected? " + string(selected)
+	);
+	draw_text(
+		20, 130,
+		"Pressed Space: " + string(global.SPACE_CONFIRM)
+	);
+	draw_text(
+		20, 140,
+		"Pressed Cancel: " + string(global.BACKSPACE_CANCEL)
+	);
+	draw_text(
+		20, 150,
+		"Button Position: " + string(pos_buttons)
+	);
 }
 
 draw_set_font(fnt_dialogue);
@@ -39,7 +55,7 @@ for (var i = 0; i < option_length; i++) {
 
 	var _cor = c_white; 
 	// Opção selecionada
-	if (pos == i) {
+	if (pos == i && selected == true) {
 		// Na iteração atual, a cor do texto muda
 		_cor = c_yellow;
 		
@@ -60,6 +76,58 @@ for (var i = 0; i < option_length; i++) {
 	);
 }
 
+#region Buttons
+
+var _btn_confirm_alpha = 1;
+var _btn_cancel_alpha = 1;
+
+if (selected) { 
+	if (pos_buttons == 0) {
+		_btn_confirm_alpha = 0.5; 
+		_btn_cancel_alpha = 1; // Selected button
+	} 
+	else if (pos_buttons == 1) {
+		_btn_confirm_alpha = 1; // Selected button
+		_btn_cancel_alpha = 0.5; 
+	}
+}
+else {
+	// Both unavailable
+	_btn_confirm_alpha = 0.5; 
+	_btn_cancel_alpha = 0.5; 	
+}
+
+var _btn_width = 125;
+
+// Cancel Button
+draw_sprite_ext(
+	spr_button_small, 
+	0, 250, 260, 1, 1, 0, 
+	c_white, _btn_cancel_alpha
+);
+
+// Cancel Text
+draw_text_ext_color(
+	230, 255, "Cancel", 1, _btn_width,
+	c_white, c_white, c_white, c_white, _btn_cancel_alpha
+);
+
+//Confirm Button
+draw_sprite_ext(
+	spr_button_small, 
+	0, 390, 260, 1, 1, 0, 
+	c_white, _btn_confirm_alpha
+);
+
+//Confirm Text
+draw_text_ext_color(
+	380, 255, "Confirm", 1, _btn_width,
+	c_white, c_white, c_white, c_white, _btn_confirm_alpha
+);
+
+#endregion Buttons
+
 // Reset
 draw_set_valign(-1);
 draw_set_halign(-1);
+draw_set_alpha(1);

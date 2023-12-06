@@ -10,17 +10,25 @@ if	(mouse_check_button_pressed(mb_left)) {
 	global.MOUSE_CONFIRM = false;
 }
 
-// Espaço
+// Space Bar
 if (keyboard_check_pressed(vk_space)) {
 	global.SPACE_CONFIRM = true;
-	//global.PRESSED_CONFIRM = true;
 }else{
 	global.SPACE_CONFIRM = false;
 }
 
-//global.PRESSED_CONFIRM = false;
-
 #endregion CONFIRM
+
+#region CANCEL
+
+// Backspace
+if (keyboard_check_pressed(vk_backspace)) {
+	global.BACKSPACE_CANCEL = true;
+}else{
+	global.BACKSPACE_CANCEL = false;
+}
+
+#endregion  CANCEL
 
 #region CIMA / BAIXO
 

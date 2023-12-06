@@ -7,4 +7,11 @@ if (room = rm_menu_test) {
 	global.status.loveending = false;
 	global.status.parque = false;
 	global.status.quarto = false;
+	
+	if (global.lang == "EN") {
+		//ChatterboxLocalizationLoad(GM_project_filename + "lang/" ); 
+	}
+	else if (global.lang == "PT") {
+		//ChatterboxLocalizationLoad(GM_project_filename + "lang/" ); 		
+	}
 }

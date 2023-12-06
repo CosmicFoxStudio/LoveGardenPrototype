@@ -15,5 +15,6 @@ global.status = {
 //global.PRESSED_CONFIRM = false; # Unused
 global.MOUSE_CONFIRM = false;
 global.SPACE_CONFIRM = false;
+global.BACKSPACE_CANCEL = false;
 global.PRESSED_UP = false;
 global.PRESSED_DOWN = false;
