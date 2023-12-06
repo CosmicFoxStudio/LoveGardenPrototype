@@ -9,9 +9,6 @@ if (room = rm_menu_test) {
 	global.status.quarto = false;
 	
 	if (global.lang == "EN") {
-		//ChatterboxLocalizationLoad(GM_project_filename + "lang/" ); 
-	}
-	else if (global.lang == "PT") {
-		//ChatterboxLocalizationLoad(GM_project_filename + "lang/" ); 		
+		//ChatterboxLocalizationLoad(GM_project_filename + "datafiles/lang/en_dialogues.csv"); 
 	}
 }

@@ -21,6 +21,9 @@ if (global.DEBUG) {
 		20, 150,
 		"Button Position: " + string(pos_buttons)
 	);
+	//draw_text(20, 160, filename_dir("lang/en_dialogues.csv"));
+	//draw_text(20, 170, filename_dir(GM_project_filename));
+	
 }
 
 draw_set_font(fnt_dialogue);

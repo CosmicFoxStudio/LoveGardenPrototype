@@ -11,13 +11,13 @@ sala = room_get_name(room);
 		break;
 		
 		case "rm_corredor1": 
-			chatterbox = ChatterboxCreate("scenes/node2_schoolcorridor_ype.yarn");
+			chatterbox = ChatterboxCreate("scenes/node2_unicorridor_ype.yarn");
 			ChatterboxJump(chatterbox, "Start");             
 			chatterbox_update();  
 		break;
 		
 		case "rm_corredor2": 
-			chatterbox = ChatterboxCreate("scenes/node3_schoolcorridorafter_ype.yarn");
+			chatterbox = ChatterboxCreate("scenes/node3_unicorridorafter_ype.yarn");
 			ChatterboxJump(chatterbox, "Start");             
 			chatterbox_update();  
 		break;

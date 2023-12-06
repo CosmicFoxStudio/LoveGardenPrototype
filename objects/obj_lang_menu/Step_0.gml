@@ -13,13 +13,11 @@ if (selected == false) {
 			case 0: 
 				selected = true;
 				global.lang = "EN";
-				exit;
 			break;
 	
 			case 1: 
 				selected = true;
 				global.lang = "PT";
-				exit;
 			break;
 		}
 	}
