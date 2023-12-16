@@ -1,1 +1,5 @@
-#macro CHATTERBOX_FUNCTION_ARRAY_ARGUMENTS      false (original: true)
+#macro CHATTERBOX_FUNCTION_ARRAY_ARGUMENTS			false (original: true)
+#macro CHATTERBOX_LOCALIZATION_ACKNOWLEDGE_WARNING	true (original: false)
+
+Didn't change this but it's a nice touch that we can change the root folder:
+#macro CHATTERBOX_INCLUDED_FILES_SUBDIRECTORY  ""

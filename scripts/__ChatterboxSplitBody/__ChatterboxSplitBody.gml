@@ -56,7 +56,7 @@ function __ChatterboxSplitBody(_source_buffer, _source_buffer_start, _source_buf
     
     var _func_read_string = function(_substring_array, _buffer, _string_start, _string_end, _type, _line, _indent, _buffer_offset)
     {
-        if (_string_start >= _string_end)
+        if (_string_start > _string_end)
         {
             if (_type == "text")
             {
@@ -82,7 +82,9 @@ function __ChatterboxSplitBody(_source_buffer, _source_buffer_start, _source_buf
             __ChatterboxTrace("Read \"", _text, "\", writing as type=", _type, ", line=", _line, ", indent=", _indent);
         }
         
-        array_push(_substring_array, new __ChatterboxClassBodySubstring(_text, _type, _line, _indent, _buffer_offset + _string_start, _buffer_offset + _string_end));
+        var _substring = new __ChatterboxClassBodySubstring(_text, _type, _line, _indent, _buffer_offset + _string_start, _buffer_offset + _string_end);
+        array_push(_substring_array, _substring);
+        return _substring;
     }
     
     if (__CHATTERBOX_DEBUG_SPLITTER) __ChatterboxTrace("Line = ", _line);
@@ -226,11 +228,12 @@ function __ChatterboxSplitBody(_source_buffer, _source_buffer_start, _source_buf
             {
                 if (__CHATTERBOX_DEBUG_SPLITTER) __ChatterboxTrace("Found end of action");
                 
-                _func_read_string(_substring_array,
-                                  _buffer, _string_start, _string_end,
-                                  _type, _line, _indent,
-                                  _line, _indent,
-                                  _buffer_offset);
+                var _substring = _func_read_string(_substring_array, 
+                                                   _buffer, _string_start, _string_end,
+                                                   _type, _line, _indent,
+                                                   _buffer_offset);
+                //Correct the buffer position for when we apply localisation
+                _substring.buffer_end += 2;
                 
                 _type = _line_is_option? "option" : "text";
                 _in_action = false;

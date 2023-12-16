@@ -17,6 +17,9 @@ ChatterboxAddFunction("parque", parque);									// Add função pra saber se va
 ChatterboxAddFunction("love", love);											// Love ending
 ChatterboxAddFunction("bad", bad);											// Bad ending
 
+// Chatterbox Load Localization
+loaded = false;
+
 depth = -100;
 sala = "";
 option_index = 0;                                
@@ -25,10 +28,10 @@ option_index = 0;
 option_hovered = -1; 
 
 // Localization
-var _csvPath = filename_dir(GM_project_filename) + "datafiles/lang/";
+var _csvPath = filename_dir(GM_project_filename) + "\\datafiles\\lang\\";
 csvPathArray = [_csvPath + "en_dialogues.csv"];
 
-var _yarnPath = filename_dir(GM_project_filename) + "datafiles/scenes/";
+var _yarnPath = filename_dir(GM_project_filename) + "\\datafiles\\scenes\\";
 yarnPathArray = [
 	_yarnPath + "node1_initial.yarn",
 	_yarnPath + "node2_unicorridor_ype.yarn",
@@ -38,4 +41,4 @@ yarnPathArray = [
 	_yarnPath + "node5-2_dormroom_ype.yarn"
 ];
 
-//ChatterboxLocalizationBuild(yarnPathArray, csvPathArray);
+ChatterboxLocalizationBuild(yarnPathArray, csvPathArray);

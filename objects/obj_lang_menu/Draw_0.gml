@@ -24,6 +24,8 @@ if (global.DEBUG) {
 	//draw_text(20, 160, filename_dir("lang/en_dialogues.csv"));
 	//draw_text(20, 170, filename_dir(GM_project_filename));
 	
+var _yarnPath = filename_dir(GM_project_filename) + "\\datafiles\\scenes\\";
+	draw_text(20, 320, _yarnPath);
 }
 
 draw_set_font(fnt_dialogue);

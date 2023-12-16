@@ -2,6 +2,16 @@
 
 sala = room_get_name(room);
 
+/*
+if (loaded == false) { 
+	if (global.lang == "EN") {
+		var _csvPath = filename_dir(GM_project_filename) + "\\datafiles\\lang\\";
+		ChatterboxLocalizationLoad(_csvPath + "en_dialogues.csv"); 
+		loaded = true;
+	}
+}
+*/
+	
 // Criar chatterbox
 	switch (sala) {
 		case "rm_quarto1":
