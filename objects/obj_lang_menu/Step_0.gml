@@ -41,6 +41,7 @@ if (selected == true) {
 		}
 		else if (pos_buttons == 1) {
 			selected_button = "CONFIRM";
+			// f_load_localization() is set at rm_menu_test's creation code
 			room_goto_next();
 	    }
 	}

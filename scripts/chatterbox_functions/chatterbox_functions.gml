@@ -115,3 +115,12 @@ function love() {
 function bad() {
 	return global.status.badending;
 }
+
+// localization
+function f_load_localization() {
+	// If "English" was selected, load new dialogue lines
+	if (global.lang == "en") {
+		ChatterboxLocalizationLoad("lang/" + global.lang + "_dialogues.csv"); 
+		show_debug_message("English translation loaded!");
+	}
+}

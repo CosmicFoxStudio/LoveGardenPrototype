@@ -23,6 +23,13 @@ if (global.DEBUG) {
 	}
 	#endregion CHARACTERS
 	
+	#region DIALOGUE FILES
+	if (global.DEBUG) show_debug_message("All dialogue files: " + string(global.dialogueList));
+	for (var _file = 0; _file < array_length(global.dialogueList); _file++) {
+		show_debug_message("Is " + string(global.dialogueList[_file]) + " loaded?: " + string(ChatterboxIsLoaded(global.dialogueList[_file])));
+	}
+	#endregion DIALOGUE FILES
+	
 	#region GRID
 	var _string = "Show Grid: G ";
 	draw_text(room_width - string_width(_string), 10, _string);
