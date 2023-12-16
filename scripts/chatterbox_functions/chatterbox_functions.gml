@@ -1,4 +1,6 @@
-// funções auxiliares
+// Feather disable all
+
+// Funções Auxiliares
 
 // mantém _val entre _min e _max encapsulando de forma cíclica valores fora do range
 function wrap(_val, _min, _max) {

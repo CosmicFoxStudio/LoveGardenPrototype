@@ -1,5 +1,6 @@
 global.DEBUG = true;
-global.lang = "EN";
+global.lang = "en"; // "en", "pt"
+global.lang_loaded = false;
 
 global.status = {
 	hidratacao: 10,

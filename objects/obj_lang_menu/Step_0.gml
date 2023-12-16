@@ -12,13 +12,13 @@ if (selected == false) {
 		switch(pos) {
 			case 0: 
 				selected = true;
-				global.lang = "EN";
+				global.lang = "en";
 				exit;
 			break;
 	
 			case 1: 
 				selected = true;
-				global.lang = "PT";
+				global.lang = "pt";
 				exit;
 			break;
 		}
