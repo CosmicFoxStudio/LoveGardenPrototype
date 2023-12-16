@@ -19,7 +19,6 @@ ChatterboxAddFunction("parque", parque);							// Add função pra saber se vai 
 ChatterboxAddFunction("love", love);								// Love ending
 ChatterboxAddFunction("bad", bad);									// Bad ending
 
-loaded = false;
 node = "Start";
 depth = -100;
 sala = "";
@@ -37,40 +36,33 @@ function f_load_dialogue_files() {
 	var _fileCounter = 0;
 	var _fileName = file_find_first(working_directory + "scenes\\" + "*.yarn", fa_archive);
 	show_debug_message("File found: " + string(_fileName));
-	ChatterboxLoadFromFile("scenes\\" + _fileName);
+	ChatterboxLoadFromFile("scenes/" + _fileName);
 	array_push(global.dialogueList, "scenes\\" + _fileName);
 	while (_fileName != "") {
 		_fileName = file_find_next();
 		if (_fileName == "") break;
 		show_debug_message("File found: " + string(_fileName));
-		ChatterboxLoadFromFile("scenes\\" + _fileName);
+		ChatterboxLoadFromFile("scenes/" + _fileName);
 		array_push(global.dialogueList, "scenes\\" + _fileName);
 		_fileCounter += 1;
 	}
 	file_find_close();
-	//show_message(_fileName);
-	//show_message("Is " + string(_fileName) + " loaded?: " + string(ChatterboxIsLoaded(_fileName)));
 }
 
 f_load_dialogue_files();
 
 // Only uncomment this next line when there are NEW dialogue lines to be generated!!
 // (You will also need do disable sandboxing temporarily)
-ChatterboxLocalizationBuild(global.dialogueList, [("lang\\" + "en_dialogues.csv")]);
+//ChatterboxLocalizationBuild(global.dialogueList, [("lang\\" + "en_dialogues.csv")]);
 
 // Load localization
-if (global.lang_loaded == false) { 
-	// If "English" was selected, load new dialogue lines
-	if (global.lang == "en") {
-		ChatterboxLocalizationLoad("lang\\" + global.lang + "_dialogues.csv"); 
-		show_debug_message("English translation loaded!");
-		global.lang_loaded = true;
-	}
+// If "English" was selected, load new dialogue lines
+if (global.lang == "en") {
+	ChatterboxLocalizationLoad("lang\\" + global.lang + "_dialogues.csv"); 
+	show_debug_message("English translation loaded!");
 }
 
 #endregion Localization
-
-loaded = true;
 
 /*
 ChatterboxLoadFromFile("scenes/node1_initial.yarn");

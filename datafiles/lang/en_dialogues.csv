@@ -12,7 +12,7 @@ Status,File,Node,Line ID,Hash,Text
 ,,,"#6e4123","#f9c75d","Looks like your alarm clock didn't go off…"
 ,,,"#3009e7","#fe4d1c","You are awakened by your roommate, Mandacaru."
 ,,,"#79ceda","#b04f54","MANDACARU: Wow, finally! You’re such a heavy sleeper!"
-,,,"#c31ed1","#0a636b","MANDACARU: Por sinal..."
+,,,"#c31ed1","#0a636b","MANDACARU: By the way…"
 ,,,"#966273","#1879c4","MANDACARU: Você não deveria\nestar na aula? Já são 8h40..."
 ,,,"#44de14","#16ab74","Por um segundo, você questiona o sadismo daqueles que \ndecidiram o horário de 7h30 para uma aula matinal..."
 ,,,"#d82166","#395f22","VOCÊ: Ahh--! Droga... Estou atrasade!"
@@ -24,10 +24,10 @@ Status,File,Node,Line ID,Hash,Text
 ,,,"#12b01e","#87f6e1","Você se sente nervose, pois é seu\nprimeiro dia de aula e não conhece ninguém,\nmas já está chegando fora do horário..."
 ,"scenes\node2_unicorridor_ype.yarn",,,,
 ,,"Start",,,
-,,,"#adf93e","#5b8c5d","Dia 1 - Corredores da universidade"
-,,,"#261832","#02be97","VOCÊ: ..."
-,,,"#bf8a56","#bbfc3c","VOCÊ: ... Ah. Tenho que ver qual a minha sala."
-,,,"#1c78d6","#344597","VOCÊ: Ainda bem que anotei, eu vivo esquecendo essas coisas."
+,,,"#adf93e","#5b8c5d","Day 1 – University corridors"
+,,,"#261832","#02be97","YOU: ..."
+,,,"#bf8a56","#bbfc3c","YOU: ... Ah. Tenho que ver qual a minha sala."
+,,,"#1c78d6","#344597","YOU: Ainda bem que anotei, eu vivo esquecendo essas coisas."
 ,,,"#fe37e1","#1dbe76","Se você não tivesse anotado estaria em maus lençóis."
 ,,,"#a57f96","#71e2fe","Pois o único outro jeito de obter essa informação\nnesses tempos modernos seria pelo aplicativo\nsuper confuso da universidade."
 ,,,"#b38d17","#43d0bc","Ô coisa difícil é achar qualquer coisa por lá."

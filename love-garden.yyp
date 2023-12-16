@@ -40,7 +40,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Lang","folderPath":"folders/Sprites/UI/Lang.yy",},
   ],
   "IncludedFiles": [
-    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":".~lock.en_dialogues.csv#","CopyToMask":-1,"filePath":"datafiles/lang",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"en_dialogues.csv","CopyToMask":-1,"filePath":"datafiles/lang",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"node1_initial.yarn","CopyToMask":-1,"filePath":"datafiles/scenes",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"node2_unicorridor_ype.yarn","CopyToMask":-1,"filePath":"datafiles/scenes",},

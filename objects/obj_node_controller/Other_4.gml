@@ -2,11 +2,10 @@
 if (global.DEBUG) show_debug_message("All dialogue files: " + string(global.dialogueList));
 sala = room_get_name(room);
 
-for (var _file = 0; _file > array_length(global.dialogueList); _file++) {
-	show_message("Is " + string(global.dialogueList[_file]) + " loaded?: " + string(ChatterboxIsLoaded(global.dialogueList[_file])));
+for (var _file = 0; _file < array_length(global.dialogueList); _file++) {
+	show_debug_message("Is " + string(global.dialogueList[_file]) + " loaded?: " + string(ChatterboxIsLoaded(global.dialogueList[_file])));
 }
 
-if (loaded) { 
 // Criar chatterbox
 	switch (sala) {
 		case "rm_quarto1":
@@ -47,4 +46,3 @@ if (loaded) {
 		
 		default: break;
 	}
-}
