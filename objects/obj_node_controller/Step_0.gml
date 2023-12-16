@@ -35,7 +35,7 @@ if ChatterboxIsWaiting(chatterbox) {
 					_once = true;
 				}
 				// SOM - Dê o nome do sound asset
-		        if (_metadata[4] != "") {
+		        if (_metadata[4] != "" && _metadata[4] != "0") {
 					audio_play_sound(asset_get_index(_metadata[4]), 10, false);
 					_once = true;
 				}

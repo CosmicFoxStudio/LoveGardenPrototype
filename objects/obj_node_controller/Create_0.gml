@@ -41,4 +41,4 @@ yarnPathArray = [
 	_yarnPath + "node5-2_dormroom_ype.yarn"
 ];
 
-ChatterboxLocalizationBuild(yarnPathArray, csvPathArray);
+//ChatterboxLocalizationBuild(yarnPathArray, csvPathArray);
