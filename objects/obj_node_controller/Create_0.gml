@@ -1,13 +1,3 @@
-// Carregar arquivos
-/*
-ChatterboxLoadFromFile("scenes/node1_initial.yarn");
-ChatterboxLoadFromFile("scenes/node2_unicorridor_ype.yarn");
-ChatterboxLoadFromFile("scenes/node3_unicorridorafter_ype.yarn");
-ChatterboxLoadFromFile("scenes/node4_mcthoughts.yarn");
-ChatterboxLoadFromFile("scenes/node5-1_ecopark.yarn");
-ChatterboxLoadFromFile("scenes/node5-2_dormroom_ype.yarn");
-*/
-
 // Custom Chatterbox Functions 
 ChatterboxAddFunction("bg", background_set_index);					// Add função para mudar background
 ChatterboxAddFunction("nextRoom", next_room);						// Add função para mudar de cena
@@ -23,6 +13,4 @@ node = "Start";
 depth = -100;
 sala = "";
 option_index = 0;                                
-
-// Lógica para o mouse
 option_hovered = -1; 

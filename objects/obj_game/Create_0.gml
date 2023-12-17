@@ -1,6 +1,5 @@
 global.DEBUG = true;
 global.lang = "en"; // "en", "pt"
-global.lang_loaded = false;
 
 global.status = {
 	hidratacao: 10,
@@ -49,6 +48,6 @@ f_load_dialogue_files();
 
 // Only uncomment this next line when there are NEW dialogue lines to be generated!!
 // (You will also need do disable sandboxing temporarily)
-//ChatterboxLocalizationBuild(global.dialogueList, [("lang/" + "en_dialogues.csv")]);
+// ChatterboxLocalizationBuild(global.dialogueList, [("lang/" + "en_dialogues.csv")]);
 
 #endregion Chatterbox Localization Build
