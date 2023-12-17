@@ -16,27 +16,27 @@ VOCÊ: Digo o mesmo! Fico feliz que já conheci alguém\ncom quem consigo conver
 VOCÊ: Ah! Por sinal... #0 #0 #0 #0 #0 #0 #line:fd020b
 VOCÊ: Você tinha mencionado mais cedo que tem\ndificuldade com trabalho em grupo. #0 #0 #0 #0 #0 #0 #line:60cc93
 VOCÊ: E que também tem dificuldade em interagir. #0 #0 #0 #0 #0 #0 #line:bf3a1e 
-VOCÊ: Quer falar sobre isso? #0 #0 #0 #0 #0 #0 #line:668a6b
-IPÊ: Bom, eu sempre tive muita timidez,\ndesde criança. #0 #0 #0 #0 #0 #0 #line:b2e7cf
-IPÊ: Já tive alguns problemas, sabe...\nEm que eu... #0 #0 #0 #0 #0 #0 #line:266e31
-IPÊ: Eu acabava sumindo dos trabalhos e deixando\nmeus colegas na mão... #0 #0 #0 #0 #0 #0 #line:473c29
-IPÊ: Alguns ficavam bem irritades comigo...\nE eu sei que com razão. #0 #0 #0 #0 #0 #0 #line:1b4e3e
-IPÊ: Tudo porque eu... Eu não sei. #0 #0 #0 #0 #0 #0 #line:7c0ab2
-IPÊ: Eu só não tinha forças pra levantar da cama e ir para aula... #0 #0 #0 #0 #0 #0 #line:d6109a 
-IPÊ: Eu sempre tive muito medo das pessoas.\nMedo de, sei lá, elas brigarem comigo... #0 #0 #0 #0 #0 #0 #line:8a19c4
-VOCÊ: ... #0 #0 #0 #0 #0 #0 #line:4db09d
-VOCÊ: Entendi. #0 #0 #0 #0 #0 #0 #line:276e1b
-VOCÊ: Entendi. #0 #0 #0 #0 #0 #0 #line:f560d1
--> Não há nada que você não possa vencer agora.\nEu acredito em você. #line:ccd382
-	IPÊ: Obrigade... #0 #0 #0 #0 #0 #0 #line:4a8a9f
-	IPÊ: Eu acredito que as coisas serão melhores agora. #0 #0 #0 #0 #0 #0 #line:8d2e7e
+VOCÊ: Quer falar sobre isso? #3 #0 #0 #0 #0 #0 #line:668a6b
+IPÊ: Bom, eu sempre tive muita timidez,\ndesde criança. #3 #0 #0 #0 #0 #0 #line:b2e7cf
+IPÊ: Já tive alguns problemas, sabe...\nEm que eu... #8 #0 #0 #0 #0 #0 #line:266e31
+IPÊ: Eu acabava sumindo dos trabalhos e deixando\nmeus colegas na mão... #8 #0 #0 #0 #0 #0 #line:473c29
+IPÊ: Alguns ficavam bem irritades comigo...\nE eu sei que com razão. #8 #0 #0 #0 #0 #0 #line:1b4e3e
+IPÊ: Tudo porque eu... Eu não sei. #8 #0 #0 #0 #0 #0 #line:7c0ab2
+IPÊ: Eu só não tinha forças pra levantar da cama e ir para aula... #8 #0 #0 #0 #0 #0 #line:d6109a 
+IPÊ: Eu sempre tive muito medo das pessoas.\nMedo de, sei lá, elas brigarem comigo... #8 #0 #0 #0 #0 #0 #line:8a19c4
+VOCÊ: ... #8 #0 #0 #0 #0 #0 #line:4db09d
+VOCÊ: Entendi. #8 #0 #0 #0 #0 #0 #line:276e1b
+VOCÊ: Entendi. #8 #0 #0 #0 #0 #0 #line:f560d1
+-> Não há nada que você não possa vencer agora.\nEu acredito em você. #4 #0 #0 #0 #0 #0 #line:ccd382
+	IPÊ: Obrigade... #4 #0 #0 #0 #0 #0 #line:4a8a9f
+	IPÊ: Eu acredito que as coisas serão melhores agora. #4 #0 #0 #0 #0 #0 #line:8d2e7e
 	IPÊ: Aliás, já está sendo. #0 #0 #0 #+2 #0 #0 #line:2e6350
     <<jump Chitchat>>
--> Mas veja. Isso acontecia porque eles\nte deixavam desconfortável, né? #line:863673
-	IPÊ: Eu me sentia meio desconfortável, realmente... #0 #0 #0 #+1 #0 #0 #line:c19751
+-> Mas veja. Isso acontecia porque eles\nte deixavam desconfortável, né? #3 #0 #0 #0 #0 #0 #line:863673
+	IPÊ: Eu me sentia meio desconfortável, realmente... #3 #0 #0 #+1 #0 #0 #line:c19751
 	<<jump Chitchat>>
--> Você tem que ser forte e superar essa\ntimidez. Só assim as coisas vão melhorar. #line:277dab
-	IPÊ: Ahh... Sim, você tem razão. E-eu vou me esforçar. #0 #-2 #0 #0 #0 #badending #line:108ebd
+-> Você tem que ser forte e superar essa\ntimidez. Só assim as coisas vão melhorar. #1 #0 #0 #0 #0 #0 #line:277dab
+	IPÊ: Ahh... Sim, você tem razão. E-eu vou me esforçar. #1 #-2 #0 #0 #0 #badending #line:108ebd
 	<<jump EcoParkAfter>>
 ===
 __PrivCrochet_colorID: 0
@@ -44,22 +44,22 @@ __PrivCrochet_position: 294,-269
 __PrivCrochet_tags: 
 title: Chitchat
 ---
-IPÊ: Aquelas épocas... O sentimento era algo\nbem diferente de como me sinto aqui com você. #0 #0 #0 #0 #0 #0 #line:f4eb03
-IPÊ: Me sinto bem mais segure... #0 #0 #0 #0 #0 #0 #line:aa41d6
-IPÊ: ... #0 #0 #0 #0 #0 #0 #line:6f4c2c
-IPÊ: Ahh...! Desculpe, espero que não tenha soado estranho... #0 #0 #0 #0 #0 #0 #line:ca4ff2
+IPÊ: Aquelas épocas... O sentimento era algo\nbem diferente de como me sinto aqui com você. #4 #0 #0 #0 #0 #0 #line:f4eb03
+IPÊ: Me sinto bem mais segure... #7 #0 #0 #0 #0 #0 #line:aa41d6
+IPÊ: ... #6 #0 #0 #0 #0 #0 #line:6f4c2c
+IPÊ: Ahh...! Desculpe, espero que não tenha soado estranho... #6 #0 #0 #0 #0 #0 #line:ca4ff2
 <<if love()>>
-    Você viu nesse momento a sua chance\nde demonstrar seus sentimentos. #0 #0 #0 #0 #0 #0 #line:4d300d
-    VOCÊ: Eu na verdade queria dizer o mesmo. #0 #0 #0 #0 #0 #0 #line:654ae2
-    VOCÊ: É surpreendente o tanto que\nme sinto bem estando contigo, Ipê. #0 #0 #0 #0 #0 #0 #line:7c57b2
-    VOCÊ: Eu sinto um florescimento dentro\nde mim quando estou perto de você. #0 #0 #0 #0 #0 #0 #line:7c0e41
-    IPÊ: ... #0 #0 #0 #0 #0 #0 #line:e2feb5
-    IPÊ: Ha ha ha... Até interessante você citar isso. #0 #0 #0 #0 #0 #0 #line:5990bc
-    IPÊ: Por que no meu caso, é bem fácil perceber quando estou\nflorescendo. Certeza que você já notou... #0 #0 #0 #0 #0 #0 #line:9f3834
-    VOCÊ: Ah sim, suas flores mudam de cor. É bem fofo. #0 #0 #0 #0 #0 #0 #line:8b8b9b
-    IPÊ: Uhum... É até algo que me traz uma insegurança,\nvou ter que admitir. #0 #0 #0 #0 #0 #0 #line:74dd43 
-    IPÊ: É meio embaraçoso que as outras pessoas saibam o que\nestou sentindo por conta de uma reação que eu\nnão posso controlar. #0 #0 #0 #0 #0 #0 #line:8dd598
-    IPÊ: Por isso eu não explico o que\ncada cor significa para as pessoas. #0 #0 #0 #0 #0 #0 #line:2ef3c9
+    Você viu nesse momento a sua chance\nde demonstrar seus sentimentos. #3 #0 #0 #0 #0 #0 #line:4d300d
+    VOCÊ: Eu na verdade queria dizer o mesmo. #7 #0 #0 #0 #0 #0 #line:654ae2
+    VOCÊ: É surpreendente o tanto que\nme sinto bem estando contigo, Ipê. #7 #0 #0 #0 #0 #0 #line:7c57b2
+    VOCÊ: Eu sinto um florescimento dentro\nde mim quando estou perto de você. #7 #0 #0 #0 #0 #0 #line:7c0e41
+    IPÊ: ... #4 #0 #0 #0 #0 #0 #line:e2feb5
+    IPÊ: Ha ha ha... Até interessante você citar isso. #4 #0 #0 #0 #0 #0 #line:5990bc
+    IPÊ: Por que no meu caso, é bem fácil perceber quando estou\nflorescendo. Certeza que você já notou... #2 #0 #0 #0 #0 #0 #line:9f3834
+    VOCÊ: Ah sim, suas flores mudam de cor. É bem fofo. #2 #0 #0 #0 #0 #0 #line:8b8b9b
+    IPÊ: Uhum... É até algo que me traz uma insegurança,\nvou ter que admitir. #1 #0 #0 #0 #0 #0 #line:74dd43 
+    IPÊ: É meio embaraçoso que as outras pessoas saibam o que\nestou sentindo por conta de uma reação que eu\nnão posso controlar. #3 #0 #0 #0 #0 #0 #line:8dd598
+    IPÊ: Por isso eu não explico o que\ncada cor significa para as pessoas. #3 #0 #0 #0 #0 #0 #line:2ef3c9
     IPÊ: Você teria que descobrir por si só. #0 #0 #0 #0 #0 #0 #line:c2142b 
     IPÊ: Mas se ficarmos mais próximes,\nvocê vai acabar percebendo. #0 #0 #0 #0 #0 #0 #line:18ff24
 	<<personagem("vazio")>>
@@ -69,17 +69,17 @@ IPÊ: Ahh...! Desculpe, espero que não tenha soado estranho... #0 #0 #0 #0 #0 #
 	... #0 #0 #0 #0 #0 #0 #line:a913af
     <<jump EcoParkAfter>>
 <<else>>
-    VOCÊ: Sem problemas. Fico feliz que te deixo confortável. #0 #0 #0 #0 #0 #0 #line:60ca82
-    IPÊ: ... #0 #0 #0 #0 #0 #0 #line:1ab4ba
+    VOCÊ: Sem problemas. Fico feliz que te deixo confortável. #4 #0 #0 #0 #0 #0 #line:60ca82
+    IPÊ: ... #4 #0 #0 #0 #0 #0 #line:1ab4ba
     VOCÊ: Olha só... Já mudou de cor de novo... Que bonitinho. #0 #0 #0 #0 #0 #0 #line:c3650b
-    IPÊ: Ahh! É bem fácil perceber quando estou\nflorescendo, né? As flores do meu cabelo mudam de cor... #0 #0 #0 #0 #0 #0 #line:12d6ee
-    IPÊ: Huh... É até algo que me traz uma insegurança,\nvou ter que admitir. #0 #0 #0 #0 #0 #0 #line:407b4f 
-    IPÊ: É meio embaraçoso que as outras\npessoas saibam o que estou sentindo por\nconta de uma reação que eu não posso controlar. #0 #0 #0 #0 #0 #0 #line:55c03c
-    IPÊ: Por isso eu geralmente não\nexplico o que cada cor significa. #0 #0 #0 #0 #0 #0 #line:fd0943 
+    IPÊ: Ahh! É bem fácil perceber quando estou\nflorescendo, né? As flores do meu cabelo mudam de cor... #2 #0 #0 #0 #0 #0 #line:12d6ee
+    IPÊ: Huh... É até algo que me traz uma insegurança,\nvou ter que admitir. #1 #0 #0 #0 #0 #0 #line:407b4f 
+    IPÊ: É meio embaraçoso que as outras\npessoas saibam o que estou sentindo por\nconta de uma reação que eu não posso controlar. #3 #0 #0 #0 #0 #0 #line:55c03c
+    IPÊ: Por isso eu geralmente não\nexplico o que cada cor significa. #3 #0 #0 #0 #0 #0 #line:fd0943 
     VOCÊ: Tudo bem, eu respeito isso. #0 #0 #0 #0 #0 #0 #line:28bd6e 
     VOCÊ: ... Mas ao mesmo tempo, não precisa se preocupar. #0 #0 #0 #0 #0 #0 #line:b671f9
     VOCÊ: Eu sempre tento dar o meu melhor\npara que as pessoas se sintam confortáveis. #0 #0 #0 #0 #0 #0 #line:b437e3
-    VOCÊ: Eu não iria lhe julgar\nnem me aproveitar para fazer\nqualquer brincadeira. #0 #0 #0 #0 #0 #0 #line:eb8782
+    VOCÊ: Eu não iria lhe julgar\nnem me aproveitar para fazer\nqualquer brincadeira. #4 #0 #0 #0 #0 #0 #line:eb8782
     IPÊ: Obrigade, você é muito gentil. #0 #0 #0 #0 #0 #0 #line:9becc1
     IPÊ: E assim, quanto mais nós nos\ntornamos amigos, você vai acabar\npercebendo por si só. #0 #0 #0 #0 #0 #0 #line:b52f2e
     ... O tempo passa, e mais conversa vai e vem. #0 #0 #0 #0 #0 #0 #line:f95ce6
