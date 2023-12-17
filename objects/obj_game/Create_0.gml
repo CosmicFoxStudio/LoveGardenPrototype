@@ -48,6 +48,6 @@ f_load_dialogue_files();
 
 // Only uncomment this next line when there are NEW dialogue lines to be generated!!
 // (You will also need do disable sandboxing temporarily)
-//ChatterboxLocalizationBuild(global.dialogueList, [("lang/" + "en_dialogues.csv")]);
+// ChatterboxLocalizationBuild(global.dialogueList, [("lang/" + "en_dialogues.csv")]);
 
 #endregion Chatterbox Localization Build
