@@ -9,6 +9,7 @@ NAME CONVENTIONS FOR CODE
 		
 	-- Functions --
 		Custom functions should start with a " f_ " prefix.
+		They can be written in camelCase or snake_case. But preferably in camelCase.
 			Example: f_myFunction()
 		This will help us differentiate our custom functions from 
 		GameMaker native functions or JujuAdams' libraries functions.
@@ -17,7 +18,7 @@ NAME CONVENTIONS FOR CODE
 		Enums must be written with a "e_" prefix.
 		
 	-- Arrays --
-		Arrays must contain the word "list" in its name.
+		Arrays must be written in camelCase and contain the word "list" in their names. 
 		Example: global.dialogueList
 
 NAME CONVENTIONS FOR YARN FILES
@@ -29,18 +30,15 @@ NAME CONVENTIONS FOR YARN FILES
 		
 		[Prefix] + [_] + [SceneID] + [_] + [Descriptor] + [_] + [*Modifier] + [.yarn]
 
-	We're using snake case for the file naming. Meaning: all characters must be lowercase.
+	We're using snake_case for the file naming. Meaning: all characters must be lowercase.
 	
 	-- Prefix --
 		Either one of these:
-		- main: Denotes the main storyline.
-		- chara: A character name. Represents character-specific routes.
-
-		Main Story:
+		- [main]
 			Files prefixed with main indicate they belong to the main storyline.
 			The subsequent "sceneX" helps organize the sequence of events in the main plot.
-
-		Character Routes:
+		
+		- [chara] 
 			Files prefixed with a character's name denote content specific to that character's route.
 			Character routes only happen after the main storyline is completed.
 			Use meaningful names for character prefixes to enhance readability. 
@@ -49,10 +47,10 @@ NAME CONVENTIONS FOR YARN FILES
 	-- Scene ID --
 		There are two ways of identifying each scene:
 			- [sceneX] 
-			Identifies the specific scene within the main storyline or character route.
+				Identifies the specific scene within the main storyline or character route.
 			- [sceneX-X] 
-			This version is used from branching scenes. 
-			When an earlier scene branches itself in two or three new scenes, you can enumerate them.
+				This version is used from branching scenes. 
+				When an earlier scene branches itself in two or three new scenes, you can enumerate them.
 		
 		Examples: 
 			main_scene1_initial.yarn
