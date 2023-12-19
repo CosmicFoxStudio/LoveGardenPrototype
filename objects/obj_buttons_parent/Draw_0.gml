@@ -1,21 +1,19 @@
-// o botao se desenhar
 draw_self();
 
-// desenhar a fonte
+// Draw with font
 draw_set_font(fnt_menu);
 
-// centralizar o a fonte
+// Set alignment to middle center
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 
-// desenhar o texto
-draw_text(x, y, button_text);
+// Draw the text
+if (global.lang == "en") {
+	draw_text(x, y, button_text[0]);
+}
+else if (global.lang == "pt") {
+	draw_text(x, y, button_text[1]);
+}
 
-draw_set_halign(fa_left);
-draw_set_valign(fa_top);
-
-
-
-
-
-
+draw_set_halign(-1);
+draw_set_valign(-1);

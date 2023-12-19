@@ -4,11 +4,10 @@
   "name": "obj_buttons_help",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
-  "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_buttons_parent","path":"objects/obj_buttons_parent/obj_buttons_parent.yy",},"propertyId":{"name":"button_text","path":"objects/obj_buttons_parent/obj_buttons_parent.yy",},"value":"Help",},
-  ],
+  "overriddenProperties": [],
   "parent": {
     "name": "Main Menu",
     "path": "folders/Objects/Main Menu.yy",

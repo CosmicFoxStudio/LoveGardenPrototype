@@ -38,6 +38,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Status","folderPath":"folders/Sprites/Status.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI","folderPath":"folders/Sprites/UI.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Lang","folderPath":"folders/Sprites/UI/Lang.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Lang Menu","folderPath":"folders/Objects/Lang Menu.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"en_dialogues.csv","CopyToMask":-1,"filePath":"datafiles/lang",},

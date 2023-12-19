@@ -1,6 +1,11 @@
 global.DEBUG = true;
 global.lang = "en"; // "en", "pt"
 
+enum e_language {
+	EN,	// ---> 0
+	PT	// ---> 1
+}
+
 global.status = {
 	hidratacao: 10,
 	humor: 0,
