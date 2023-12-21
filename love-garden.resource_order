@@ -14,6 +14,7 @@
     {"name":"Managers","order":2,"path":"folders/Managers.yy",},
     {"name":"Sound","order":3,"path":"folders/Managers/Sound.yy",},
     {"name":"Objects","order":3,"path":"folders/Objects.yy",},
+    {"name":"Lang Menu","order":2,"path":"folders/Objects/Lang Menu.yy",},
     {"name":"Main Menu","order":1,"path":"folders/Objects/Main Menu.yy",},
     {"name":"Status","order":4,"path":"folders/Objects/Status.yy",},
     {"name":"Rooms","order":8,"path":"folders/Rooms.yy",},
@@ -24,7 +25,6 @@
     {"name":"Characters","order":4,"path":"folders/Sprites/Characters.yy",},
     {"name":"Expressions","order":6,"path":"folders/Sprites/Expressions.yy",},
     {"name":"UI","order":1,"path":"folders/Sprites/UI.yy",},
-    {"name":"Lang Menu","order":2,"path":"folders/Objects/Lang Menu.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"ChatterboxIsLoaded","order":2,"path":"scripts/ChatterboxIsLoaded/ChatterboxIsLoaded.yy",},

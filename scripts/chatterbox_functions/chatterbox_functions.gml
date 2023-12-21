@@ -117,7 +117,7 @@ function bad() {
 }
 
 // localization
-function f_load_localization() {
+function LoadLocalization() {
 	// If "English" was selected, load new dialogue lines
 	if (global.lang == "en") {
 		ChatterboxLocalizationLoad("lang/" + global.lang + "_dialogues.csv"); 

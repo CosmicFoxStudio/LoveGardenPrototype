@@ -8,9 +8,8 @@ NAME CONVENTIONS FOR CODE
 		All macros must be written in UPPER_CASE_WITH_UNDERSCORES.
 		
 	-- Functions --
-		Custom functions should start with a " f_ " prefix.
-		They can be written in camelCase or snake_case. But preferably in camelCase.
-			Example: f_myFunction()
+		Custom functions should be written in PascalCase.
+			Example: MyFunction()
 		This will help us differentiate our custom functions from 
 		GameMaker native functions or JujuAdams' libraries functions.
 		

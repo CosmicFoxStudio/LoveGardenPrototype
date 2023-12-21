@@ -26,6 +26,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Managers","folderPath":"folders/Managers.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sound","folderPath":"folders/Managers/Sound.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Objects","folderPath":"folders/Objects.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Lang Menu","folderPath":"folders/Objects/Lang Menu.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Main Menu","folderPath":"folders/Objects/Main Menu.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Status","folderPath":"folders/Objects/Status.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Rooms","folderPath":"folders/Rooms.yy",},
@@ -38,7 +39,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Status","folderPath":"folders/Sprites/Status.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"UI","folderPath":"folders/Sprites/UI.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Lang","folderPath":"folders/Sprites/UI/Lang.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Lang Menu","folderPath":"folders/Objects/Lang Menu.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"en_dialogues.csv","CopyToMask":-1,"filePath":"datafiles/lang",},
@@ -52,7 +52,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.8.2.108",
+    "IDEVersion": "2023.11.1.129",
   },
   "resources": [
     {"id":{"name":"ChatterboxIsLoaded","path":"scripts/ChatterboxIsLoaded/ChatterboxIsLoaded.yy",},},

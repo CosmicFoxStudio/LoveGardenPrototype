@@ -77,7 +77,7 @@ if ChatterboxIsWaiting(chatterbox) {
     }
 
 	// Keyboard input
-	var _key = f_checkVerticalInput();
+	var _key = CheckVerticalInput();
 	repeat(1 + (ChatterboxGetOptionConditionBool(chatterbox, wrap(option_index + _key, 0, _count - 1)) == false)) {
 		option_index = wrap(option_index + _key, 0, _count - 1);
 	}

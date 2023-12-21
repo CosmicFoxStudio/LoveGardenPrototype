@@ -1,7 +1,7 @@
 // Select Phase
 if (selected == false) {
 	// Mover no menu
-	pos += f_checkVerticalInput();
+	pos += CheckVerticalInput();
 
 	// Wrap menu
 	if (pos >= option_length) pos = 0; // volta p/ pos 1
@@ -41,7 +41,7 @@ if (selected == true) {
 		}
 		else if (pos_buttons == 1) {
 			selected_button = "CONFIRM";
-			// f_load_localization() is set at rm_menu_test's creation code
+			// LoadLocalization() is set at rm_menu_test's creation code
 			room_goto_next();
 	    }
 	}

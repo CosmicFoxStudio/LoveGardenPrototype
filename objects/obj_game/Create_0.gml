@@ -26,7 +26,7 @@ global.PRESSED_DOWN = false;
 #region Chatterbox Load Files
 
 // Get filename dynamically
-function f_load_dialogue_files() {
+function LoadDialogueFiles() {
 	global.dialogueList = [];
 	show_debug_message("Looking " + working_directory + "scenes/" + "*.yarn");
 	var _fileCounter = 0;
@@ -45,7 +45,7 @@ function f_load_dialogue_files() {
 	file_find_close();
 }
 
-f_load_dialogue_files();
+LoadDialogueFiles();
 
 #endregion Chatterbox Load Files
 
