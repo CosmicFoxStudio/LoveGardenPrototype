@@ -1,5 +1,9 @@
 NAME CONVENTIONS FOR CODE
 	
+	-- Assets --
+		All asset names should be written in snake_case.
+		This includes: objects, rooms, sprites, sequences, sounds, etc.
+	
 	-- Variables --
 		All variables should be written in camelCase.
 		Additionally, function arguments must be written with a "_" prefix.

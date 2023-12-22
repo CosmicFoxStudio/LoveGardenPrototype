@@ -29,6 +29,9 @@ if (global.DEBUG) {
 			    draw_line(_xx, 0, _xx, room_height);
 			}
 		}
+		// Reset
+		draw_set_color(c_white);
+		draw_set_alpha(1);
 		#endregion GRID
 	#endregion GAME
 	
@@ -37,13 +40,13 @@ if (global.DEBUG) {
 	// Language Menu
 	if (instance_exists(obj_lang_menu)) {
 		draw_text(20, 80, "Menu pos: " + "(" + string(obj_lang_menu.x) + " / " + string(obj_lang_menu.y) + ")");
-		draw_text(20, 120, "Confirm Phase: " + string(obj_lang_menu.confirmPhase));
+		draw_text(20, 120, "Phase: " + string(obj_lang_menu.phase));
 		draw_text(20, 130, "Pressed Space: " + string(global.SPACE_CONFIRM));
 		draw_text(20, 140, "Pressed Cancel: " + string(global.BACKSPACE_CANCEL));
 		draw_text(20, 150,"Button Position: " + string(obj_lang_menu.pos_buttons));
 		draw_text(20, 160, "Button Selected: " + string(obj_lang_menu.selected_button));
 		draw_text(20, 170, "Hovering over CancelBTN: " + string(obj_lang_menu.cancelButtonIsHovering));
-		draw_text(20, 180, "Hovering over CancelBTN: " + string(obj_lang_menu.confirmButtonIsHovering));
+		draw_text(20, 180, "Hovering over ConfirmBTN: " + string(obj_lang_menu.confirmButtonIsHovering));
 		// Checking boundaries for the lang menu based on variables
 		draw_rectangle(obj_lang_menu.x, obj_lang_menu.y, obj_lang_menu.x + obj_lang_menu.width, obj_lang_menu.y + obj_lang_menu.height, true);
 	}

@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_lang_menu_btn_parent",
+  "name": "obj_lang_menu_btn",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":10,"eventType":6,"isDnD":false,},
@@ -28,9 +28,14 @@
   "physicsShape": 1,
   "physicsShapePoints": [],
   "physicsStartAwake": true,
-  "properties": [],
+  "properties": [
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"btnType","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"\"\"","varType":2,},
+  ],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_button_small",
+    "path": "sprites/spr_button_small/spr_button_small.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

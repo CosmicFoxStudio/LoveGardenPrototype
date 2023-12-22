@@ -1,4 +1,4 @@
-/// @description Desenhar menu
+/// @description Draw the menu
 
 draw_set_font(fnt_menu);
 draw_set_valign(fa_middle);
@@ -55,21 +55,20 @@ else if (global.lang == "pt") {
 
 draw_set_font(fnt_dialogue);
 
-// Desenhar as opções
+// Draw language options
 for (var i = 0; i < option_length; i++) {
 
 	var _cor = c_white;
 	
-	// Opção foi selecionada
-	if (pos == i && confirmPhase == true) {
-		// Na iteração atual, a cor do texto muda
+	// Option was selected
+	if (pos == i && phase == "CONFIRM") {
+		// Color changes in current iteration
 		_cor = c_yellow;
 		
 		/* 
 		OBS: 
-			A caixa de seleção tá sendo desenhada 
-			no obj_lang_selection.
-						^-- (middle-click)
+			The selection box is being drawn inside obj_lang_selection.
+														^-- (middle-click)
 		*/
 	}
 	
@@ -95,54 +94,19 @@ for (var i = 0; i < option_length; i++) {
 
 #region Buttons (Confirm Phase)
 
-//var _btn_confirm_alpha = obj_lang_menu_btn_confirm.image_alpha;
-//var _btn_cancel_alpha = obj_lang_menu_btn_cancel.image_alpha;
-
-if (confirmPhase) { 
+if (phase == "CONFIRM") { 
 	if (pos_buttons == 0) {
 		// Selected button
-		obj_lang_menu_btn_cancel.hovered = true;  
 	} 
 	else if (pos_buttons == 1) {
 		// Selected button
-		obj_lang_menu_btn_confirm.hovered = true;
 	}
 }
 else {
 	// Both unavailable
-	obj_lang_menu_btn_confirm.unavailable = true; 
-	obj_lang_menu_btn_cancel.unavailable = true; 	
-}
-
-var _btn_width = 125;
-
-// Cancel Text
-if (global.lang == "en") {
-	draw_text_ext_color(
-		230, 255, translatable_text[e_language.EN][e_lang_menu_options.CANCEL], 1, _btn_width,
-		c_white, c_white, c_white, c_white, obj_lang_menu_btn_cancel.image_alpha
-	);
-}
-else if (global.lang == "pt") {
-	draw_text_ext_color(
-		230, 255, translatable_text[e_language.PT][e_lang_menu_options.CANCEL], 1, _btn_width,
-		c_white, c_white, c_white, c_white, obj_lang_menu_btn_cancel.image_alpha
-	);
+	cancelButton.unavailable = true; 	
+	confirmButton.unavailable = true; 
 	
-}
-
-//Confirm Text
-if (global.lang == "en") {
-	draw_text_ext_color(
-		380, 255, translatable_text[e_language.EN][e_lang_menu_options.CONFIRM], 1, _btn_width,
-		c_white, c_white, c_white, c_white, obj_lang_menu_btn_confirm.image_alpha
-	);
-}
-else if (global.lang == "pt") {
-	draw_text_ext_color(
-		380, 255, translatable_text[e_language.PT][e_lang_menu_options.CONFIRM], 1, _btn_width,
-		c_white, c_white, c_white, c_white, obj_lang_menu_btn_confirm.image_alpha
-	);
 }
 
 #endregion Buttons (Confirm Phase)

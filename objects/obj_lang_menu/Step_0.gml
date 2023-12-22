@@ -1,5 +1,5 @@
 // Select Phase
-if (confirmPhase == false) {
+if (phase == "SELECT") {
 	// Keyboard Input - Move inside menu
 	pos += CheckVerticalInput();
 
@@ -28,13 +28,13 @@ if (confirmPhase == false) {
 	if ( (isMouseHoveringMenu && global.MOUSE_CONFIRM) || global.SPACE_CONFIRM) {
 		switch(pos) {
 			case 0: 
-				confirmPhase = true;
+				phase = "CONFIRM";
 				global.lang = "en";
 				exit;
 			break;
 	
 			case 1: 
-				confirmPhase = true;
+				phase = "CONFIRM";
 				global.lang = "pt";
 				exit;
 			break;
@@ -43,17 +43,20 @@ if (confirmPhase == false) {
 }
 
 // Confirm Phase
-if (confirmPhase == true) {
+if (phase == "CONFIRM") {
 		
 	// Mouse Input
-	cancelButtonIsHovering = obj_lang_menu_btn_cancel.hovering;
-	confirmButtonIsHovering = obj_lang_menu_btn_confirm.hovering;
-	obj_lang_menu_btn_parent.unavailable = false;
+	cancelButtonIsHovering = cancelButton.hovering;
+	confirmButtonIsHovering = confirmButton.hovering;
+	
+	// Make buttons available
+	cancelButton.unavailable = false;
+	confirmButton.unavailable = false;
 
 	// MOUSE ENTER LOGIC
 	if (cancelButtonIsHovering) { // Mouse entered left button area
 		// Change appearance when hovering
-		obj_lang_menu_btn_cancel.selected = true; 
+		cancelButton.selected = true; 
 		pos_buttons = 0;
 		
 	    // Player cancelled the selection
@@ -63,7 +66,7 @@ if (confirmPhase == true) {
 		}
 	} else if (confirmButtonIsHovering) { // Mouse entered right button area
 		// Change appearance when hovering
-		obj_lang_menu_btn_confirm.selected = true;
+		confirmButton.selected = true;
 		pos_buttons = 1;
 	    
 		// Player confirmed the selection
@@ -75,12 +78,12 @@ if (confirmPhase == true) {
 	// MOUSE LEAVE LOGIC
 	if (!cancelButtonIsHovering) {  
 		// Mouse left the left button - Button goes back to unselected appearance
-		obj_lang_menu_btn_cancel.selected = false;
+		cancelButton.selected = false;
 	}
 	
 	if (!confirmButtonIsHovering) { 
 		//  Mouse left the right button - Button goes back to unselected appearance
-		obj_lang_menu_btn_confirm.selected = false;
+		confirmButton.selected = false;
 	}
 
 	// Keyboard Input
@@ -105,16 +108,17 @@ if (confirmPhase == true) {
 
 // Goes back to Select Phase
 if (selected_button == "CANCEL") {
-	confirmPhase = false;
+	phase = "SELECT";
 	selected_button = "NONE";
 			
 	// Reset Button State
-	obj_lang_menu_btn_confirm.unavailable = true;	
+	// confirmButton.unavailable = true;	
 }
 
 // Goes to next room
 if (selected_button == "CONFIRM") {
-	confirmPhase = false;
+	phase = "SELECT";
 	selected_button = "NONE";
+	// (Should probably call a screen transition in here)
 	room_goto_next();
 }

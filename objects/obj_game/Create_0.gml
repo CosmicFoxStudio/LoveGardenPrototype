@@ -6,6 +6,12 @@ enum e_language {
 	PT	// ---> 1
 }
 
+enum e_lang_menu_options {
+	DESCRIPTION,
+	CONFIRM,
+	CANCEL
+}
+
 global.status = {
 	hidratacao: 10,
 	humor: 0,
