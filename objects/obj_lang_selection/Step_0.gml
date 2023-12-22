@@ -13,8 +13,7 @@ var _selected_option = obj_lang_menu.pos;
 // Check if the selected option has changed
 if (_selected_option != previous_selected_option) {
     // Update target position based on the new selection
-    target_y = obj_lang_menu.y +
-	obj_lang_menu.option_margin * _selected_option;
+    target_y = obj_lang_menu.y + obj_lang_menu.option_margin * _selected_option;
     
     // Save the current selected option for the next frame
     previous_selected_option = _selected_option;

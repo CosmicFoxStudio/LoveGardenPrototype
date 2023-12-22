@@ -17,24 +17,16 @@ if (!unavailable) {
 }
 
 // Draw text with the calculated color
-if (global.lang == "en") {
-	draw_text_ext_color(
-	    x, y, 
-	    (btnType == "CANCEL") ? obj_lang_menu.translatable_text[e_language.EN][e_lang_menu_options.CANCEL] : obj_lang_menu.translatable_text[e_language.EN][e_lang_menu_options.CONFIRM], 
-	    1, btnWidth,
-	    textColor, textColor, textColor, textColor, 
-	    image_alpha
-	);
-}
-else if (global.lang == "pt") {
-	draw_text_ext_color(
-	    x, y, 
-	    (btnType == "CANCEL") ? obj_lang_menu.translatable_text[e_language.PT][e_lang_menu_options.CANCEL] : obj_lang_menu.translatable_text[e_language.PT][e_lang_menu_options.CONFIRM], 
-	    1, btnWidth,
-	    textColor, textColor, textColor, textColor, 
-	    image_alpha
-	);	
-}
+var languageIndex = (global.lang == "en") ? e_language.EN : e_language.PT;
+
+
+draw_text_ext_color(
+	x, y, 
+	(btnType == "CANCEL") ? obj_lang_menu.translatable_text[languageIndex][e_lang_menu_options.CANCEL] : obj_lang_menu.translatable_text[languageIndex][e_lang_menu_options.CONFIRM], 
+	1, btnWidth,
+	textColor, textColor, textColor, textColor, 
+	image_alpha
+);
 
 // When the button is unavailable, its alpha is halved
 if (unavailable) {

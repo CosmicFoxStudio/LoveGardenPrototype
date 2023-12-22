@@ -12,6 +12,12 @@ enum e_lang_menu_options {
 	CANCEL
 }
 
+enum e_btnTypes {
+	PLAY,
+	QUIT,
+	HELP
+}
+
 global.status = {
 	hidratacao: 10,
 	humor: 0,

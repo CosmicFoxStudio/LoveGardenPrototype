@@ -3,6 +3,17 @@ NAME CONVENTIONS FOR CODE
 	-- Assets --
 		All asset names should be written in snake_case.
 		This includes: objects, rooms, sprites, sequences, sounds, etc.
+		
+		- USE PREFIXES WHEN NAMING ASSETS!
+		objects		-----	obj_
+		sprites		-----	spr_
+		rooms		-----	rm_
+		scripts		-----	scr_
+		sequences	-----	seq_
+		sfx			-----	snd_ (must be .wav)
+		music		-----	mus_ (must be .ogg)
+		shaders		-----	shd_
+		fonts		-----	fnt_
 	
 	-- Variables --
 		All variables should be written in camelCase.

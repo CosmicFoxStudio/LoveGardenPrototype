@@ -38,7 +38,7 @@ if (global.DEBUG) {
 	#region LANGUAGE --- Press 2
 	draw_text(20, 50, "LANG: " + global.lang); 	
 	// Language Menu
-	if (instance_exists(obj_lang_menu)) {
+	if (instance_exists(obj_lang_menu) && instance_exists(obj_lang_selection)) {
 		draw_text(20, 80, "Menu pos: " + "(" + string(obj_lang_menu.x) + " / " + string(obj_lang_menu.y) + ")");
 		draw_text(20, 120, "Phase: " + string(obj_lang_menu.phase));
 		draw_text(20, 130, "Pressed Space: " + string(global.SPACE_CONFIRM));
@@ -47,6 +47,8 @@ if (global.DEBUG) {
 		draw_text(20, 160, "Button Selected: " + string(obj_lang_menu.selected_button));
 		draw_text(20, 170, "Hovering over CancelBTN: " + string(obj_lang_menu.cancelButtonIsHovering));
 		draw_text(20, 180, "Hovering over ConfirmBTN: " + string(obj_lang_menu.confirmButtonIsHovering));
+		draw_text(20, 190, "Selection box pos: " + "(" + string(obj_lang_selection.x) + " / " + string(obj_lang_selection.y) + ")");
+		draw_text(20, 200, "target_y: " + string(obj_lang_selection.target_y));
 		// Checking boundaries for the lang menu based on variables
 		draw_rectangle(obj_lang_menu.x, obj_lang_menu.y, obj_lang_menu.x + obj_lang_menu.width, obj_lang_menu.y + obj_lang_menu.height, true);
 	}

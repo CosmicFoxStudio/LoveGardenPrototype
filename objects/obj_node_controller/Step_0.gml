@@ -83,13 +83,9 @@ if ChatterboxIsWaiting(chatterbox) {
 	}
 	
     // Confirmação da opção 
-    if  (
-			global.SPACE_CONFIRM || 
-			(global.MOUSE_CONFIRM && option_hovered != -1)
-		) 
-	{
+    if  (global.SPACE_CONFIRM || (global.MOUSE_CONFIRM && option_hovered != -1)) {
         ChatterboxSelect(chatterbox, option_index);
-        audio_play_sound(snd_test, 0, false, 1, 0, random_range(0.8, 1.2));
+        audio_play_sound(snd_option_beep, 0, false, 1, 0, random_range(0.8, 1.2));
 		
         option_index = 0;
         chatterbox_update();

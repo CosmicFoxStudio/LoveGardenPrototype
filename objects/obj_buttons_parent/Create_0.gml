@@ -1,3 +1,0 @@
-/// @description 
-
-button_text = [];

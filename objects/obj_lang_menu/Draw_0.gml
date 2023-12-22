@@ -21,11 +21,7 @@ obj_lang_selection.can_initialize = true;
 // Desenhar a box do menu
 var _scale_x = width*(1/sprite_width); // --> 1
 var _scale_y = height*(1/sprite_height); // --> 1
-draw_sprite_ext( 
-	sprite_index, image_index, x, y, // - _string_height (opção2)
-	_scale_x, _scale_y, // --> Retorna o fator de scale
-	0, c_white, 1
-);
+draw_sprite_ext(sprite_index, image_index, x, y, _scale_x, _scale_y, 0, c_white, 1);
 
 
 #region DESCRIPTION
