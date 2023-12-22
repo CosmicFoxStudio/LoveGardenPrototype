@@ -6,10 +6,12 @@ option_margin = 48;
 
 // Option selection
 pos = 0;
-selected = false;
+confirmPhase = false; // maybe change to just "phase" and make it phase = "Select" or phase = "Confirm"?
+cancelButtonIsHovering = false;
+confirmButtonIsHovering = false;
 
 // Last check selection
-selected_button = "CANCEL"; // "CONFIRM" / "CANCEL" 
+selected_button = "NONE"; // "CONFIRM" || "CANCEL" 
 pos_buttons = 0;
 
 enum e_lang_menu_options {

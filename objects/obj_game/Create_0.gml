@@ -22,6 +22,8 @@ global.SPACE_CONFIRM = false;
 global.BACKSPACE_CANCEL = false;
 global.PRESSED_UP = false;
 global.PRESSED_DOWN = false;
+global.PRESSED_LEFT = false;
+global.PRESSED_RIGHT = false;
 
 #region Chatterbox Load Files
 
@@ -54,5 +56,6 @@ LoadDialogueFiles();
 // Only uncomment this next line when there are NEW dialogue lines to be generated!!
 // (You will also need do disable sandboxing temporarily)
 // ChatterboxLocalizationBuild(global.dialogueList, [("lang/" + "en_dialogues.csv")]);
+// OBS: LoadLocalization() is set at rm_menu_test's creation code
 
 #endregion Chatterbox Localization Build

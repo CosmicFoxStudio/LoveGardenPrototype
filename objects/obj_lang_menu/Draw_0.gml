@@ -1,32 +1,5 @@
 /// @description Desenhar menu
 
-if (global.DEBUG) {
-	draw_text(
-		20, 80, 
-		"Menu pos: " + "(" + string(x) + " / " + string(y) + ")"
-	);
-	draw_text(
-		20, 120,
-		"Selected? " + string(selected)
-	);
-	draw_text(
-		20, 130,
-		"Pressed Space: " + string(global.SPACE_CONFIRM)
-	);
-	draw_text(
-		20, 140,
-		"Pressed Cancel: " + string(global.BACKSPACE_CANCEL)
-	);
-	draw_text(
-		20, 150,
-		"Button Position: " + string(pos_buttons)
-	);
-
-	// Checking path
-	// var _yarnPath = filename_dir(GM_project_filename) + "\\datafiles\\scenes\\";
-	// draw_text(20, 320, _yarnPath);
-}
-
 draw_set_font(fnt_menu);
 draw_set_valign(fa_middle);
 draw_set_halign(fa_center);
@@ -85,9 +58,10 @@ draw_set_font(fnt_dialogue);
 // Desenhar as opções
 for (var i = 0; i < option_length; i++) {
 
-	var _cor = c_white; 
-	// Opção selecionada
-	if (pos == i && selected == true) {
+	var _cor = c_white;
+	
+	// Opção foi selecionada
+	if (pos == i && confirmPhase == true) {
 		// Na iteração atual, a cor do texto muda
 		_cor = c_yellow;
 		
@@ -119,73 +93,59 @@ for (var i = 0; i < option_length; i++) {
 	}
 }
 
-#region Buttons
+#region Buttons (Confirm Phase)
 
-var _btn_confirm_alpha = 1;
-var _btn_cancel_alpha = 1;
+//var _btn_confirm_alpha = obj_lang_menu_btn_confirm.image_alpha;
+//var _btn_cancel_alpha = obj_lang_menu_btn_cancel.image_alpha;
 
-if (selected) { 
+if (confirmPhase) { 
 	if (pos_buttons == 0) {
-		_btn_confirm_alpha = 0.5; 
-		_btn_cancel_alpha = 1; // Selected button
+		// Selected button
+		obj_lang_menu_btn_cancel.hovered = true;  
 	} 
 	else if (pos_buttons == 1) {
-		_btn_confirm_alpha = 1; // Selected button
-		_btn_cancel_alpha = 0.5; 
+		// Selected button
+		obj_lang_menu_btn_confirm.hovered = true;
 	}
 }
 else {
 	// Both unavailable
-	_btn_confirm_alpha = 0.5; 
-	_btn_cancel_alpha = 0.5; 	
+	obj_lang_menu_btn_confirm.unavailable = true; 
+	obj_lang_menu_btn_cancel.unavailable = true; 	
 }
 
 var _btn_width = 125;
-
-// Cancel Button
-draw_sprite_ext(
-	spr_button_small, 
-	0, 250, 260, 1, 1, 0, 
-	c_white, _btn_cancel_alpha
-);
 
 // Cancel Text
 if (global.lang == "en") {
 	draw_text_ext_color(
 		230, 255, translatable_text[e_language.EN][e_lang_menu_options.CANCEL], 1, _btn_width,
-		c_white, c_white, c_white, c_white, _btn_cancel_alpha
+		c_white, c_white, c_white, c_white, obj_lang_menu_btn_cancel.image_alpha
 	);
 }
 else if (global.lang == "pt") {
 	draw_text_ext_color(
 		230, 255, translatable_text[e_language.PT][e_lang_menu_options.CANCEL], 1, _btn_width,
-		c_white, c_white, c_white, c_white, _btn_cancel_alpha
+		c_white, c_white, c_white, c_white, obj_lang_menu_btn_cancel.image_alpha
 	);
 	
 }
-
-//Confirm Button
-draw_sprite_ext(
-	spr_button_small, 
-	0, 390, 260, 1, 1, 0, 
-	c_white, _btn_confirm_alpha
-);
 
 //Confirm Text
 if (global.lang == "en") {
 	draw_text_ext_color(
 		380, 255, translatable_text[e_language.EN][e_lang_menu_options.CONFIRM], 1, _btn_width,
-		c_white, c_white, c_white, c_white, _btn_confirm_alpha
+		c_white, c_white, c_white, c_white, obj_lang_menu_btn_confirm.image_alpha
 	);
 }
 else if (global.lang == "pt") {
 	draw_text_ext_color(
 		380, 255, translatable_text[e_language.PT][e_lang_menu_options.CONFIRM], 1, _btn_width,
-		c_white, c_white, c_white, c_white, _btn_confirm_alpha
+		c_white, c_white, c_white, c_white, obj_lang_menu_btn_confirm.image_alpha
 	);
 }
 
-#endregion Buttons
+#endregion Buttons (Confirm Phase)
 
 // Reset
 draw_set_valign(-1);

@@ -30,7 +30,7 @@ if (keyboard_check_pressed(vk_backspace)) {
 
 #endregion  CANCEL
 
-#region CIMA / BAIXO
+#region UP / DOWN
 
 if	(gamepad_button_check_pressed(0, gp_padu)) ||
 	(keyboard_check_pressed(vk_up)) ||
@@ -50,4 +50,26 @@ if	(gamepad_button_check_pressed(0, gp_padd)) ||
 	global.PRESSED_DOWN = false;
 }
 
-#endregion CIMA/BAIXO
+#endregion UP / DOWN
+
+#region LEFT / RIGHT
+
+if	(gamepad_button_check_pressed(0, gp_padl)) ||
+	(keyboard_check_pressed(vk_left)) ||
+	(keyboard_check_pressed(ord("A"))){
+
+	global.PRESSED_LEFT = true;
+}else{ 
+	global.PRESSED_LEFT = false;
+}
+
+if	(gamepad_button_check_pressed(0, gp_padr)) ||
+	(keyboard_check_pressed(vk_right)) ||
+	(keyboard_check_pressed(ord("D"))){
+
+	global.PRESSED_RIGHT = true;
+}else{
+	global.PRESSED_RIGHT = false;
+}
+
+#endregion LEFT / RIGHT
