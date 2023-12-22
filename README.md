@@ -15,10 +15,9 @@ This repository hosts the game's prototype **only**! For the upcoming Version 1.
 
     🍂 Relaxing lo-fi music
 
-## Upcoming Updates
-Stay tuned for exciting updates and new content over the **next 3 months**, as our team is committed to refine Love Garden to version 1.0! 
+## GameMaker Libraries Used
 
-You can join our [Discord server](https://discord.gg/AJJX5Fvs) for more information and discussions about the game.
+- [Scribble](https://github.com/JujuAdams/Scribble) and [Chatterbox](https://github.com/JujuAdams/Chatterbox) by [JujuAdams](https://github.com/JujuAdams).
 
 ## How to Play
 1. **Download:**
@@ -36,6 +35,12 @@ You can join our [Discord server](https://discord.gg/AJJX5Fvs) for more informat
     libcurl4
     libopenal1
     ```
+
+
+## Upcoming Updates
+Stay tuned for exciting updates and new content over the **next 3 months**, as our team is committed to refine Love Garden to version 1.0! 
+
+You can join our [Discord server](https://discord.gg/AJJX5Fvs) for more information and discussions about the game.
 
 ---
 
