@@ -1,4 +1,4 @@
-global.DEBUG = true;
+global.DEBUG = false;
 global.lang = "en"; // "en", "pt"
 
 enum e_language {

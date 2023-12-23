@@ -3,6 +3,7 @@ NAME CONVENTIONS FOR CODE
 	-- Assets --
 		All asset names should be written in snake_case.
 		This includes: objects, rooms, sprites, sequences, sounds, etc.
+		Exception: Global scripts that store many associated functions.
 		
 		- USE PREFIXES WHEN NAMING ASSETS!
 		objects		-----	obj_
