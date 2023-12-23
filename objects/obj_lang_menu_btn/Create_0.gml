@@ -7,4 +7,4 @@ selected = false;
 image_alpha = 0.5;
 
 // --------- VARIABLE DEFINITIONS --------- //
-// btnType = ""; // Currently possible options: "CANCEL", "CONFIRM"
+// buttonType = ""; // Currently possible options: "CANCEL", "CONFIRM"

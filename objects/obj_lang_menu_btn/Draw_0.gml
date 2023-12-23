@@ -19,10 +19,11 @@ if (!unavailable) {
 // Draw text with the calculated color
 var languageIndex = (global.lang == "en") ? e_language.EN : e_language.PT;
 
-
 draw_text_ext_color(
 	x, y, 
-	(btnType == "CANCEL") ? obj_lang_menu.translatable_text[languageIndex][e_lang_menu_options.CANCEL] : obj_lang_menu.translatable_text[languageIndex][e_lang_menu_options.CONFIRM], 
+	(buttonType == "CANCEL") ? 
+	obj_lang_menu.translatable_text[languageIndex][e_langMenuOptions.CANCEL] 
+	: obj_lang_menu.translatable_text[languageIndex][e_langMenuOptions.CONFIRM], 
 	1, btnWidth,
 	textColor, textColor, textColor, textColor, 
 	image_alpha

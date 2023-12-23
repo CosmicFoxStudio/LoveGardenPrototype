@@ -8,9 +8,9 @@
   "inheritLayers": false,
   "instanceCreationOrder": [
     {"name":"inst_55326FE7","path":"rooms/rm_menu_test/rm_menu_test.yy",},
-    {"name":"inst_C1F898C","path":"rooms/rm_menu_test/rm_menu_test.yy",},
-    {"name":"inst_1E3FD8C6","path":"rooms/rm_menu_test/rm_menu_test.yy",},
     {"name":"inst_3C648290","path":"rooms/rm_menu_test/rm_menu_test.yy",},
+    {"name":"inst_1E3FD8C6","path":"rooms/rm_menu_test/rm_menu_test.yy",},
+    {"name":"inst_C1F898C","path":"rooms/rm_menu_test/rm_menu_test.yy",},
   ],
   "isDnd": false,
   "layers": [

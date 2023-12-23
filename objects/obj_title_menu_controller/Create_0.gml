@@ -16,15 +16,3 @@ for (var i = 0; i < totalButtons; i++) {
 }
 
 option_length = array_length(buttonArray);
-
-function ExecuteButtonAction(_btnType) {
-	switch (_btnType) {
-		case e_btnTypes.PLAY : 
-			room_goto(rm_quarto1);
-		break;
-
-		case e_btnTypes.QUIT : 
-			game_end();
-		break;
-	}
-}

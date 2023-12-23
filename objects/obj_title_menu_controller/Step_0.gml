@@ -19,9 +19,14 @@ if (global.SPACE_CONFIRM) {
     ExecuteButtonAction(pos);
 }
 
-// Mouse Input - Check if the mouse is hovering buttons
-if (instance_position(mouse_x, mouse_y, obj_title_button)) {
-    if (global.MOUSE_CONFIRM) {
-       ExecuteButtonAction(pos);
+// Mouse Input - Check if the mouse is hovering any of the buttons
+for (var i = 0; i < option_length; i++) {
+    var currentButton = buttonArray[i];
+
+    // Check if the mouse is hovering over the current button
+    if (instance_position(mouse_x, mouse_y, currentButton)) {
+        if (global.MOUSE_CONFIRM && currentButton.hovering) {
+            ExecuteButtonAction(currentButton.btnType);
+        }
     }
 }

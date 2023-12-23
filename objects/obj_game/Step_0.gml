@@ -5,7 +5,6 @@
 // Mouse
 if	(mouse_check_button_pressed(mb_left)) {
 		global.MOUSE_CONFIRM = true;
-		//global.PRESSED_CONFIRM = true;
 }else{
 	global.MOUSE_CONFIRM = false;
 }

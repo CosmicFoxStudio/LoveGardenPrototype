@@ -7,9 +7,9 @@ option_margin = 48;
 
 // Create Buttons
 cancelButton = instance_create_layer(239, 264, "Instances", obj_lang_menu_btn); 
-cancelButton.btnType = "CANCEL";
+cancelButton.buttonType = "CANCEL";
 confirmButton = instance_create_layer(383, 264, "Instances", obj_lang_menu_btn);
-confirmButton.btnType = "CONFIRM";
+confirmButton.buttonType = "CONFIRM";
 
 // Option selection
 pos = 0;
@@ -22,7 +22,7 @@ selected_button = "NONE"; // "CONFIRM" || "CANCEL"
 pos_buttons = 0;
 
 
-// ENUMS USED: e_language & e_lang_menu_options
+// ENUMS USED: e_language & e_langMenuOptions
 
 // Array of selectable languages
 option[e_language.EN] = ["ENGLISH", "PORTUGUESE"];	// Button names in English

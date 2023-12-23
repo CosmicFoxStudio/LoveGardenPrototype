@@ -94,6 +94,7 @@ if (phase == "CONFIRM") {
 		pos_buttons = 1;
 	} 
 	
+	// Confirm Input
 	if (global.SPACE_CONFIRM) {
 		// Player cancelled the selection
 		if (pos_buttons == 0) {
@@ -103,6 +104,11 @@ if (phase == "CONFIRM") {
 		else if (pos_buttons == 1) {
 			selected_button = "CONFIRM";
 	    }
+	}
+	
+	// Cancel Input
+	if (global.BACKSPACE_CANCEL) {
+		selected_button = "CANCEL";
 	}
 }
 

@@ -3,6 +3,7 @@
 // --------- VARIABLE DEFINITIONS --------- //
 // btnType = ""; // Currently possible options: "PLAY", "QUIT", "HELP"
 
+hovering = false;
 
 // ENUMS USED: e_language & e_btnTypes
 
