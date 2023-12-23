@@ -6,16 +6,12 @@ enum e_language {
 	PT	// ---> 1
 }
 
-enum e_langMenuOptions {
-	DESCRIPTION,
-	CONFIRM,
-	CANCEL
-}
-
 enum e_btnTypes {
 	PLAY,
 	QUIT,
-	HELP
+	HELP,
+	CONFIRM,
+	CANCEL
 }
 
 global.status = {

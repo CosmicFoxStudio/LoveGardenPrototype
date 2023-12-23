@@ -18,16 +18,8 @@ if (!unavailable) {
 
 // Draw text with the calculated color
 var languageIndex = (global.lang == "en") ? e_language.EN : e_language.PT;
-
-draw_text_ext_color(
-	x, y, 
-	(buttonType == "CANCEL") ? 
-	obj_lang_menu.translatable_text[languageIndex][e_langMenuOptions.CANCEL] 
-	: obj_lang_menu.translatable_text[languageIndex][e_langMenuOptions.CONFIRM], 
-	1, btnWidth,
-	textColor, textColor, textColor, textColor, 
-	image_alpha
-);
+var translatedText = (btnType == "CANCEL") ? btnText[e_btnTypes.CANCEL][languageIndex] : btnText[e_btnTypes.CONFIRM][languageIndex];
+draw_text_ext_color(x, y, translatedText, 1, btnWidth, textColor, textColor, textColor, textColor, image_alpha);
 
 // When the button is unavailable, its alpha is halved
 if (unavailable) {

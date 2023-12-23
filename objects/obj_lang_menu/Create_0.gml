@@ -7,9 +7,9 @@ option_margin = 48;
 
 // Create Buttons
 cancelButton = instance_create_layer(239, 264, "Instances", obj_lang_menu_btn); 
-cancelButton.buttonType = "CANCEL";
+cancelButton.btnType = "CANCEL";
 confirmButton = instance_create_layer(383, 264, "Instances", obj_lang_menu_btn);
-confirmButton.buttonType = "CONFIRM";
+confirmButton.btnType = "CONFIRM";
 
 // Option selection
 pos = 0;
@@ -30,8 +30,8 @@ option[e_language.PT] = ["INGLÊS", "PORTUGUÊS"];	// Button names in Portuguese
 //option[2] = ["Spanish", "Espanhol"];
 
 // Other text
-translatable_text[e_language.EN] = ["Choose a language", "CONFIRM", "CANCEL"];
-translatable_text[e_language.PT] = ["Escolha a linguagem", "CONFIRMAR", "CANCELAR"];
+titleText[e_language.EN] = "Choose a language";
+titleText[e_language.PT] = "Escolha a linguagem";
 
 option_length = array_length(option);
 
