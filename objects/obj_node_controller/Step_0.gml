@@ -1,51 +1,51 @@
 /// @description 
 
 // Number of options
-var _count = ChatterboxGetOptionCount(chatterbox);
+var count = ChatterboxGetOptionCount(chatterbox);
 
 // Waiting for user input or waiting for the user to choose an option
 if ChatterboxIsWaiting(chatterbox) {
     if (global.SPACE_CONFIRM || global.MOUSE_CONFIRM) {
 		#region METADATA 
-		var _once = false;
-	    var _metadata = ChatterboxGetContentMetadata(chatterbox, 0);
+		var once = false;
+	    var metadata = ChatterboxGetContentMetadata(chatterbox, 0);
 		// If current line has metadata
-		if (_once == false) {
-		    if (array_length(_metadata) > 0) {
+		if (once == false) {
+		    if (array_length(metadata) > 0) {
 				// EXPRESSION - Index of the subimage (frame) of the character sprite
-				if (_metadata[0] != "") {
+				if (metadata[0] != "") {
 					
 					// There's some fixing to do regarding expressions (probably in here?)
-					CharacterExpressionOnScreen(real(_metadata[0]));
-					_once = true;
+					CharacterExpressionOnScreen(real(metadata[0]));
+					once = true;
 				}
 				// HIDRATAÇÃO - Adds/removes points from the "hidratacao" status
-		        if (_metadata[1] != "") { 
-					global.status.hidratacao = wrapInside(obj_waterbar.fillBar + real(_metadata[1]), 0, 10); 
+		        if (metadata[1] != "") { 
+					global.status.hidratacao = wrapInside(obj_waterbar.fillBar + real(metadata[1]), 0, 10); 
 					obj_waterbar.fillBar = global.status.hidratacao; 
-					_once = true;
+					once = true;
 				}
 				// HUMOR - Add/remove points from the "humor" status
-		        if (_metadata[2] != "") { 
-					global.status.humor = wrapInside(obj_sunbar.fillBar + real(_metadata[2]), 0, 10); 
+		        if (metadata[2] != "") { 
+					global.status.humor = wrapInside(obj_sunbar.fillBar + real(metadata[2]), 0, 10); 
 					obj_sunbar.fillBar = global.status.humor; 
-					_once = true;
+					once = true;
 				}
 				// NUTRIÇÃO - Add/remove points from "nutricao" status
-		        if (_metadata[3] != "") { 
-					global.status.nutricao = wrapInside(obj_earthbar.fillBar + real(_metadata[3]), 0, 10); 
+		        if (metadata[3] != "") { 
+					global.status.nutricao = wrapInside(obj_earthbar.fillBar + real(metadata[3]), 0, 10); 
 					obj_earthbar.fillBar = global.status.nutricao; 
-					_once = true;
+					once = true;
 				}
 				// SOM - Enter the name of the sound asset
-		        if (_metadata[4] != "" && _metadata[4] != "0") {
-					audio_play_sound(asset_get_index(_metadata[4]), 10, false);
-					_once = true;
+		        if (metadata[4] != "" && metadata[4] != "0") {
+					audio_play_sound(asset_get_index(metadata[4]), 10, false);
+					once = true;
 				}
 				// FLAG - Enter the name of the flag
-		        if (_metadata[5] != "") {
-					flag(_metadata[5]);
-					_once = true;
+		        if (metadata[5] != "") {
+					flag(metadata[5]);
+					once = true;
 				}
 		    }
 		}
@@ -56,41 +56,41 @@ if ChatterboxIsWaiting(chatterbox) {
     }
 	
 // If there are options to choose
-} else if _count {	
+} else if count {	
 	// This variable needs to be restarted on loop start (or else make it local?)
-	option_hovered = -1;
+	optionHovered = -1;
 	
     // Mouse input
-    for (var i = 0; i < _count; i++) {
-        var _xx = room_width / 2;
-        var _yy = (room_height / 6) * (i + 2) - 30;
-        var _width = 450;
-        var _height = 32;
+    for (var i = 0; i < count; i++) {
+        var xx = room_width / 2;
+        var yy = (room_height / 6) * (i + 2) - 30;
+        var width = 450;
+        var height = 32;
 
-        if (point_in_rectangle(mouse_x, mouse_y, _xx - _width / 2, _yy - _height / 2, _xx + _width / 2, _yy + _height / 2)) {
-            option_hovered = i; // Records the option when hovering
-			option_index = i; // Update option_index based on hovered option
+        if (point_in_rectangle(mouse_x, mouse_y, xx - width / 2, yy - height / 2, xx + width / 2, yy + height / 2)) {
+            optionHovered = i; // Records the option when hovering
+			optionIndex = i; // Update optionIndex based on hovered option
 			
 			// Found a selected option, exits the loop
 			break;
         }
 		else {
-			option_hovered = -1;	
+			optionHovered = -1;	
 		}
     }
 
 	// Keyboard input
-	var _key = CheckVerticalInput();
-	repeat(1 + (ChatterboxGetOptionConditionBool(chatterbox, wrap(option_index + _key, 0, _count - 1)) == false)) {
-		option_index = wrap(option_index + _key, 0, _count - 1);
+	var key = CheckVerticalInput();
+	repeat(1 + (ChatterboxGetOptionConditionBool(chatterbox, wrap(optionIndex + key, 0, count - 1)) == false)) {
+		optionIndex = wrap(optionIndex + key, 0, count - 1);
 	}
 	
     // Option confirmation
-    if  (global.SPACE_CONFIRM || (global.MOUSE_CONFIRM && option_hovered != -1)) {
-        ChatterboxSelect(chatterbox, option_index);
+    if  (global.SPACE_CONFIRM || (global.MOUSE_CONFIRM && optionHovered != -1)) {
+        ChatterboxSelect(chatterbox, optionIndex);
         audio_play_sound(snd_option_beep, 0, false, 1, 0, random_range(0.8, 1.2));
 		
-        option_index = 0;
+        optionIndex = 0;
         chatterbox_update();
     }
 }

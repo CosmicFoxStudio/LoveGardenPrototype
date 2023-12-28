@@ -10,4 +10,3 @@
 # Global Game Variables				------------------------->	PRESS 1
 # Language Variables				------------------------->	PRESS 2
 # Character Variables				------------------------->	PRESS 3
-# Dialogue Debug Variables			------------------------->	PRESS ...

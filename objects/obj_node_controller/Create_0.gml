@@ -9,8 +9,10 @@ ChatterboxAddFunction("parque", GetPark);							// Returns park flag
 ChatterboxAddFunction("love", GetLove);								// Love ending flag
 ChatterboxAddFunction("bad", GetBad);								// Bad ending flag
 
-node = "Start";
-sala = "";
-option_index = 0;                                
-option_hovered = -1; 
+node = undefined;
+text = "";
+nodeName = "Start";
+roomName = "";
+optionIndex = 0;                                
+optionHovered = -1; 
 depth = -100;
