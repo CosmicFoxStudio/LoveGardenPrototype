@@ -163,6 +163,7 @@
     {"id":{"name":"snd_room","path":"sounds/snd_room/snd_room.yy",},},
     {"id":{"name":"Textbox","path":"sprites/Textbox/Textbox.yy",},},
     {"id":{"name":"ChatterboxGetContentSpeech","path":"scripts/ChatterboxGetContentSpeech/ChatterboxGetContentSpeech.yy",},},
+    {"id":{"name":"scr_enums","path":"scripts/scr_enums/scr_enums.yy",},},
     {"id":{"name":"lang_functions","path":"scripts/lang_functions/lang_functions.yy",},},
     {"id":{"name":"ChatterboxLocalizationLoad","path":"scripts/ChatterboxLocalizationLoad/ChatterboxLocalizationLoad.yy",},},
     {"id":{"name":"ChatterboxCreate","path":"scripts/ChatterboxCreate/ChatterboxCreate.yy",},},

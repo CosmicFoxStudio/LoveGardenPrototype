@@ -123,6 +123,7 @@
     {"name":"snd_room","order":6,"path":"sounds/snd_room/snd_room.yy",},
     {"name":"Textbox","order":3,"path":"sprites/Textbox/Textbox.yy",},
     {"name":"ChatterboxGetContentSpeech","order":7,"path":"scripts/ChatterboxGetContentSpeech/ChatterboxGetContentSpeech.yy",},
+    {"name":"scr_enums","order":6,"path":"scripts/scr_enums/scr_enums.yy",},
     {"name":"lang_functions","order":3,"path":"scripts/lang_functions/lang_functions.yy",},
     {"name":"ChatterboxLocalizationLoad","order":2,"path":"scripts/ChatterboxLocalizationLoad/ChatterboxLocalizationLoad.yy",},
     {"name":"ChatterboxSourceGetTags","order":8,"path":"scripts/ChatterboxSourceGetTags/ChatterboxSourceGetTags.yy",},
