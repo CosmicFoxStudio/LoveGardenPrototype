@@ -1,3 +1,5 @@
+/// @description Initialization
+
 //------------------- MOUSE ---------------------//
 clickX = 0;
 clickY = 0;

@@ -1,65 +1,69 @@
 /// @description Draw the menu
 
 draw_set_font(fnt_menu);
-draw_set_valign(fa_middle);
-draw_set_halign(fa_center);
+DrawAlign(fa_center, fa_middle);
 
-// Calcular altura do menu dinamicamente com base no número de opções
-// Height
-var _padding = option_padding_v*2;
-// var _string_height = string_height(option[0]);
-var _vertical_space = (option_length-1)*option_margin;
-var _new_height = _padding + _vertical_space; // + _string_height*2 (opção2)
-height = _new_height;
+// Calculate menu height dynamically based on number of options
+var padding = optionPaddingV * 2;
+var verticalSpace = (optionLength - 1) * optionMargin;
+var newHeight = padding + verticalSpace;
+height = newHeight;
 
-// Centralizar o menu
+// Center the menu
 x = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0])/2 - width/2;
 y = camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0])/2 - height/2;
 
-obj_lang_selection.can_initialize = true; 
+obj_lang_selection.canInitialize = true; 
 
-// Desenhar a box do menu
-var _scale_x = width*(1/sprite_width); // --> 1
-var _scale_y = height*(1/sprite_height); // --> 1
-draw_sprite_ext(sprite_index, image_index, x, y, _scale_x, _scale_y, 0, c_white, 1);
+// Draw the menu box
+var scaleX = width*(1/sprite_width); // --> 1
+var scaleY = height*(1/sprite_height); // --> 1
+draw_sprite_ext(sprite_index, image_index, x, y, scaleX, scaleY, 0, c_white, 1);
 
 
 #region DESCRIPTION
-
-// Draw description box
-
-
-
-// Draw description text
 var offset = 100;
+var descriptionX = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0])/2;
+var descriptionY = camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0])/2 - offset;
 if (global.lang == "en") {
-	draw_text(
-			camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0])/2,
-			camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0])/2 - offset,
-			titleText[e_language.EN]
-		);
+    var descriptionText = titleText[e_language.EN];
 }
 else if (global.lang == "pt") {
-	draw_text(
-		camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0])/2,
-		camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0])/2 - offset,
-		titleText[e_language.PT]
-	);
+    var descriptionText = titleText[e_language.PT];
 }
+
+// Get the dimensions of the text
+var textWidth = string_width(descriptionText);
+var textHeight = string_height(descriptionText);
+
+// Set the box dimensions based on text dimensions
+var boxWidth = textWidth + 2 * descriptionPaddingH;
+var boxHeight = textHeight + 2 * descriptionPaddingV;
+
+// Draw the description box
+draw_sprite_ext(
+		sprite_index, image_index, 
+		descriptionX - boxWidth/2, 
+		descriptionY - boxHeight/2,
+		4, 1, 0, c_white, 1
+	);
+
+// Draw the description text inside the box
+draw_text(descriptionX, descriptionY, descriptionText);
 
 #endregion DESCRIPTION
 
 draw_set_font(fnt_dialogue);
 
 // Draw language options
-for (var i = 0; i < option_length; i++) {
+for (var i = 0; i < optionLength; i++) {
 
-	var _cor = c_white;
+	var c = c_white;
 	
 	// Option was selected
 	if (pos == i && phase == "CONFIRM") {
 		// Color changes in current iteration
-		_cor = c_yellow;
+		c = c_yellow;
 		
 		/* 
 		OBS: 
@@ -70,20 +74,14 @@ for (var i = 0; i < option_length; i++) {
 	
 	if (global.lang == "en") {
 		draw_text_color(
-			x + option_padding_h, 
-			y + option_padding_v + option_margin*i, 
-			option[e_language.EN][i], 
-			_cor, _cor, _cor, _cor, 
-			1
+			x + optionPaddingH, y + optionPaddingV + optionMargin*i, 
+			option[e_language.EN][i], c, c, c, c, 1
 		);
 	}
 	else if (global.lang == "pt") {
 		draw_text_color(
-			x + option_padding_h, 
-			y + option_padding_v + option_margin*i, 
-			option[e_language.PT][i], 
-			_cor, _cor, _cor, _cor, 
-			1
+			x + optionPaddingH, y + optionPaddingV + optionMargin*i, 
+			option[e_language.PT][i], c, c, c, c, 1
 		);
 	}
 }
@@ -91,23 +89,24 @@ for (var i = 0; i < option_length; i++) {
 #region Buttons (Confirm Phase)
 
 if (phase == "CONFIRM") { 
-	if (pos_buttons == 0) {
-		// Selected button
+	if (posButtons == 0) {
+		// Cancel button is the selected button
+		cancelButton.selected = true;
+		confirmButton.selected = false;
 	} 
-	else if (pos_buttons == 1) {
-		// Selected button
+	else if (posButtons == 1) {
+		// Confirm button is the selected button
+		cancelButton.selected = false;
+		confirmButton.selected = true;
 	}
 }
 else {
 	// Both unavailable
 	cancelButton.unavailable = true; 	
 	confirmButton.unavailable = true; 
-	
 }
 
 #endregion Buttons (Confirm Phase)
 
 // Reset
-draw_set_valign(-1);
-draw_set_halign(-1);
-draw_set_alpha(1);
+DrawReset();

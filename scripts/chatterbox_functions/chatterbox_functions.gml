@@ -1,7 +1,7 @@
 // Feather disable all
 
 // Function to prevent repeating these lines
-function chatterbox_update() {
+function UpdateChatterbox() {
 	node = ChatterboxGetCurrent(chatterbox);
 	text = ChatterboxGetContent(chatterbox, 0);
 }
@@ -30,24 +30,24 @@ function NextRoom(_room) {
 
 // Function to choose character on screen
 function CharacterOnScreen(_name) {
-	var _sprite = noone;
+	var sprite = noone;
 	if (_name) == "ipe" {
-		_sprite = spr_ipe;
+		sprite = spr_ipe;
 	}
 	else if (_name) == "mandacaru" {
-		_sprite = spr_mandacaru;
+		sprite = spr_mandacaru;
 	}
 	else if (_name) == "mamba" {
-		_sprite = spr_mamba;
+		sprite = spr_mamba;
 	}
 	else if (_name) == "vazio" {
-		_sprite = spr_noone;
+		sprite = spr_noone;
 	}
 	//else {
-	//	_sprite = spr_noone;
+	//	sprite = spr_noone;
 	//}
 	
-	obj_characters.chara = _sprite;
+	obj_characters.chara = sprite;
 }
 
 // Function to choose the character's expression to be displayed (needs improvements!!)
@@ -59,18 +59,18 @@ function CharacterExpressionOnScreen(_num) {
 function LoadDialogueFiles() {
 	global.dialogueList = [];
 	show_debug_message("Looking " + working_directory + "scenes/" + "*.yarn");
-	var _fileCounter = 0;
-	var _fileName = file_find_first(working_directory + "scenes/" + "*.yarn", fa_archive);
-	show_debug_message("File found: " + string(_fileName));
-	ChatterboxLoadFromFile("scenes/" + _fileName);
-	array_push(global.dialogueList, "scenes/" + _fileName);
-	while (_fileName != "") {
-		_fileName = file_find_next();
-		if (_fileName == "") break;
-		show_debug_message("File found: " + string(_fileName));
-		ChatterboxLoadFromFile("scenes/" + _fileName);
-		array_push(global.dialogueList, "scenes/" + _fileName);
-		_fileCounter += 1;
+	var fileCounter = 0;
+	var fileName = file_find_first(working_directory + "scenes/" + "*.yarn", fa_archive);
+	show_debug_message("File found: " + string(fileName));
+	ChatterboxLoadFromFile("scenes/" + fileName);
+	array_push(global.dialogueList, "scenes/" + fileName);
+	while (fileName != "") {
+		fileName = file_find_next();
+		if (fileName == "") break;
+		show_debug_message("File found: " + string(fileName));
+		ChatterboxLoadFromFile("scenes/" + fileName);
+		array_push(global.dialogueList, "scenes/" + fileName);
+		fileCounter += 1;
 	}
 	file_find_close();
 }

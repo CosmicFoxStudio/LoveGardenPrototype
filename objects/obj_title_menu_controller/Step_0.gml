@@ -14,8 +14,8 @@ if (prevPos != pos) {
 }
 
 // Wrap menu
-if (pos >= option_length) pos = 0; // goes back to the first pos
-if pos < 0 pos = option_length - 1; // goes to the last pos
+if (pos >= optionLength) pos = 0; // goes back to the first pos
+if (pos < 0) pos = optionLength - 1; // goes to the last pos
 
 // Keyboard Input
 if (global.SPACE_CONFIRM) {
@@ -23,7 +23,7 @@ if (global.SPACE_CONFIRM) {
 }
 
 // Mouse Input - Check if the mouse is hovering any of the buttons
-for (var i = 0; i < option_length; i++) {
+for (var i = 0; i < optionLength; i++) {
     var currentButton = buttonArray[i];
 
     // Check if the mouse is hovering over the current button

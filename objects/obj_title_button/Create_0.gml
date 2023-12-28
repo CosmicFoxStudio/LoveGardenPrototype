@@ -1,7 +1,6 @@
 /// @description Initialization
 
-// --------- VARIABLE DEFINITIONS --------- //
-// btnType = ""; // Currently possible options: "PLAY", "QUIT", "HELP"
+// Currently possible options: "PLAY", "QUIT", "HELP"
 btnType =  e_btnTypes.HELP;
 hovering = false;
 

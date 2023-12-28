@@ -1,2 +1,2 @@
-// fillBar possui um valor de 0 a 10
-fillBar = global.status.hidratacao;
+/// @description Initialization
+fillBar = global.status.hidratacao; // Has a value from 0 to 10

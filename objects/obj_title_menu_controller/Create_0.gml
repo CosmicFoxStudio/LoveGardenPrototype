@@ -32,4 +32,4 @@ for (var i = 0; i < totalButtons; i++) {
     }
 }
 
-option_length = array_length(buttonArray);
+optionLength = array_length(buttonArray);

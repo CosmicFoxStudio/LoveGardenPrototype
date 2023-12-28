@@ -2,18 +2,15 @@
 draw_self();
 
 draw_set_font(fnt_dialogue);
-draw_set_valign(fa_middle);
-draw_set_halign(fa_center);
+DrawAlign(fa_center, fa_middle);
 
 var textColor = c_white; 
 
 if (!unavailable) {
-    // Check the hovering state based on the button type
-    if (hovering) {
+    // Check if the button is hovering or selected to change the text color accordingly
+    if (hovering || selected) {
         textColor = c_yellow;
-    } else {
-        textColor = c_white;
-    }
+    } 
 }
 
 // Draw text with the calculated color
@@ -31,6 +28,4 @@ else {
 }
 
 // Reset
-draw_set_valign(-1);
-draw_set_halign(-1);
-draw_set_alpha(1);
+DrawReset();

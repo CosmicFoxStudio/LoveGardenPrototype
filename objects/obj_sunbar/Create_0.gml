@@ -1,2 +1,2 @@
-// fillBar possui um valor de 0 a 10
-fillBar = global.status.humor;
+/// @description Initialization
+fillBar = global.status.humor; // Has a value from 0 to 10

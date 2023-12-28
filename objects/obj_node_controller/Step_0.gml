@@ -21,19 +21,19 @@ if ChatterboxIsWaiting(chatterbox) {
 				}
 				// HIDRATAÇÃO - Adds/removes points from the "hidratacao" status
 		        if (metadata[1] != "") { 
-					global.status.hidratacao = wrapInside(obj_waterbar.fillBar + real(metadata[1]), 0, 10); 
+					global.status.hidratacao = WrapInside(obj_waterbar.fillBar + real(metadata[1]), 0, 10); 
 					obj_waterbar.fillBar = global.status.hidratacao; 
 					once = true;
 				}
 				// HUMOR - Add/remove points from the "humor" status
 		        if (metadata[2] != "") { 
-					global.status.humor = wrapInside(obj_sunbar.fillBar + real(metadata[2]), 0, 10); 
+					global.status.humor = WrapInside(obj_sunbar.fillBar + real(metadata[2]), 0, 10); 
 					obj_sunbar.fillBar = global.status.humor; 
 					once = true;
 				}
 				// NUTRIÇÃO - Add/remove points from "nutricao" status
 		        if (metadata[3] != "") { 
-					global.status.nutricao = wrapInside(obj_earthbar.fillBar + real(metadata[3]), 0, 10); 
+					global.status.nutricao = WrapInside(obj_earthbar.fillBar + real(metadata[3]), 0, 10); 
 					obj_earthbar.fillBar = global.status.nutricao; 
 					once = true;
 				}
@@ -44,7 +44,7 @@ if ChatterboxIsWaiting(chatterbox) {
 				}
 				// FLAG - Enter the name of the flag
 		        if (metadata[5] != "") {
-					flag(metadata[5]);
+					SetFlag(metadata[5]);
 					once = true;
 				}
 		    }
@@ -52,7 +52,7 @@ if ChatterboxIsWaiting(chatterbox) {
 		#endregion METADATA 
 
         ChatterboxContinue(chatterbox);
-        chatterbox_update();
+        UpdateChatterbox();
     }
 	
 // If there are options to choose
@@ -81,8 +81,8 @@ if ChatterboxIsWaiting(chatterbox) {
 
 	// Keyboard input
 	var key = CheckVerticalInput();
-	repeat(1 + (ChatterboxGetOptionConditionBool(chatterbox, wrap(optionIndex + key, 0, count - 1)) == false)) {
-		optionIndex = wrap(optionIndex + key, 0, count - 1);
+	repeat(1 + (ChatterboxGetOptionConditionBool(chatterbox, Wrap(optionIndex + key, 0, count - 1)) == false)) {
+		optionIndex = Wrap(optionIndex + key, 0, count - 1);
 	}
 	
     // Option confirmation
@@ -91,7 +91,7 @@ if ChatterboxIsWaiting(chatterbox) {
         audio_play_sound(snd_option_beep, 0, false, 1, 0, random_range(0.8, 1.2));
 		
         optionIndex = 0;
-        chatterbox_update();
+        UpdateChatterbox();
     }
 }
 

@@ -1,4 +1,4 @@
-// Desenhar personagens
+/// @description Draw the character
 
 // Setar tamanho do sprite do personagem
 if (chara != noone) {

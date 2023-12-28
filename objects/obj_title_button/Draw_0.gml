@@ -13,7 +13,6 @@ draw_set_valign(fa_middle);
 	var _c = c_white;
 	if (!hovering) image_alpha = 1;
 	if (obj_title_menu_controller.pos == btnType) {
-		//_c = c_yellow;
 		image_alpha = 0.9;
 	}
 	
@@ -36,5 +35,4 @@ draw_set_valign(fa_middle);
 	}
 
 // Reset
-draw_set_halign(-1);
-draw_set_valign(-1);
+DrawReset();

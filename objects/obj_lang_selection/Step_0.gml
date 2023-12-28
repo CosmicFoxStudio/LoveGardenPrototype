@@ -1,22 +1,22 @@
-if (can_initialize) {
+if (canInitialize) {
 	if (!initialized) {
 		// Centralizar e equalizar posição com a do menu
 	    x = obj_lang_menu.x;
-	    target_y = obj_lang_menu.y;
-	    y = target_y;
+	    targetY = obj_lang_menu.y;
+	    y = targetY;
 	    initialized = true;
 	}
 }
 
-var _selected_option = obj_lang_menu.pos;
+var selectedOption = obj_lang_menu.pos;
 
 // Check if the selected option has changed
-if (_selected_option != previous_selected_option) {
+if (selectedOption != previousSelectedOption) {
     // Update target position based on the new selection
-    target_y = obj_lang_menu.y + obj_lang_menu.option_margin * _selected_option;
+    targetY = obj_lang_menu.y + obj_lang_menu.optionMargin * selectedOption;
     
     // Save the current selected option for the next frame
-    previous_selected_option = _selected_option;
+    previousSelectedOption = selectedOption;
 }
 	// Apply tweening effect to the y-coordinate
-	y += (target_y - y) * tween_speed;
+	y += (targetY - y) * tweenSpeed;
