@@ -2,7 +2,7 @@
 
 // --------- VARIABLE DEFINITIONS --------- //
 // btnType = ""; // Currently possible options: "PLAY", "QUIT", "HELP"
-
+btnType =  e_btnTypes.HELP;
 hovering = false;
 
 // ENUMS USED: e_language & e_btnTypes

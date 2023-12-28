@@ -35,7 +35,19 @@ global.PRESSED_RIGHT = false;
 
 #region Chatterbox Load Files
 
-LoadDialogueFiles();
+if os_browser == browser_not_a_browser {
+	// Not in browser - Load the files dynamically
+	LoadDialogueFiles();
+}
+else {
+	// In browser - load files manually
+	ChatterboxLoadFromFile("scenes/main_scene1_initial.yarn");
+	ChatterboxLoadFromFile("scenes/main_scene2_unicorridor.yarn");
+	ChatterboxLoadFromFile("scenes/main_scene3_unicorridor_afterclass.yarn");
+	ChatterboxLoadFromFile("scenes/main_scene4_mcthoughts.yarn");
+	ChatterboxLoadFromFile("scenes/main_scene5-1_ecopark.yarn");
+	ChatterboxLoadFromFile("scenes/main_scene5-2_dormroom_afternoon.yarn");
+}
 
 #endregion Chatterbox Load Files
 

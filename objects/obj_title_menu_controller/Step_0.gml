@@ -1,5 +1,8 @@
 /// @description Controller for button input
 
+// Re-check array length
+//option_length = array_length(buttonArray);
+
 // Previous position to check for changes
 var prevPos = pos;
 
