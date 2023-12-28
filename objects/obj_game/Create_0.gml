@@ -1,5 +1,8 @@
 Enums();
-global.DEBUG = false;
+#macro DEBUGGING true
+// #macro SCREEN_WIDTH 640
+// #macro SCREEN_HEIGHT 360
+global.debug = false;
 global.lang = "en"; // "en", "pt"
 SetLanguage();
 

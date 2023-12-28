@@ -1,16 +1,16 @@
 // Custom Chatterbox Functions 
-ChatterboxAddFunction("bg", background_set_index);					// Add função para mudar background
-ChatterboxAddFunction("nextRoom", next_room);						// Add função para mudar de cena
-ChatterboxAddFunction("personagem", characterOnScreen);				// Add função para desenhar personagem
-ChatterboxAddFunction("expressao", characterExpressionOnScreen);	// Add função para mudar a expressão do personagem
-ChatterboxAddFunction("hidratacao", hidratacao);					// Add função que retorna hidratacao
-ChatterboxAddFunction("nutricao", nutricao);						// Add função que retorna nutricao
-ChatterboxAddFunction("parque", parque);							// Add função pra saber se vai pro parque
-ChatterboxAddFunction("love", love);								// Love ending
-ChatterboxAddFunction("bad", bad);									// Bad ending
+ChatterboxAddFunction("bg", BackgroundSetIndex);					// Function to change background
+ChatterboxAddFunction("nextRoom", NextRoom);						// Function to change scene
+ChatterboxAddFunction("personagem", CharacterOnScreen);				// Function to draw character
+ChatterboxAddFunction("expressao", CharacterExpressionOnScreen);	// Function to change character expression
+ChatterboxAddFunction("hidratacao", GetHidratacao);					// Returns hidratacao status
+ChatterboxAddFunction("nutricao", GetNutricao);						// Returns nutricao status
+ChatterboxAddFunction("parque", GetPark);							// Returns park flag
+ChatterboxAddFunction("love", GetLove);								// Love ending flag
+ChatterboxAddFunction("bad", GetBad);								// Bad ending flag
 
 node = "Start";
-depth = -100;
 sala = "";
 option_index = 0;                                
 option_hovered = -1; 
+depth = -100;

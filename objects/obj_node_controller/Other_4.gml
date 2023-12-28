@@ -1,8 +1,8 @@
-/// @description 
+/// @description Gets node based on room
 
 sala = room_get_name(room);
 
-// Criar chatterbox
+// Create chatterbox
 	switch (sala) {
 		case "rm_quarto1":
 			chatterbox = ChatterboxCreate("scenes/main_scene1_initial.yarn");

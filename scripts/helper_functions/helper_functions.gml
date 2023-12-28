@@ -1,3 +1,5 @@
+// Please always use an underscore as the first char in a function parameter
+
 /*	Returns:
 	1 if the down key is pressed, 
 	-1 if the up key is pressed, 

@@ -13,12 +13,12 @@ function wrapInside(_val, _min, _max) {
 }
 
 // getHidratacao
-function hidratacao() {
+function GetHidratacao() {
 	return global.status.hidratacao;
 }
 
 // getNutricao
-function nutricao() {
+function GetNutricao() {
 	return global.status.nutricao;
 }
 
@@ -33,16 +33,16 @@ function flag(_nome) {
 }
 
 // getParque
-function parque() {
+function GetPark() {
 	return global.status.parque;
 }
 
 // getLove
-function love() {
+function GetLove() {
 	return global.status.loveending;
 }
 
 // getBad
-function bad() {
+function GetBad() {
 	return global.status.badending;
 }

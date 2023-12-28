@@ -7,7 +7,7 @@ function chatterbox_update() {
 }
 
 // Searches for the background layer and changes to it
-function background_set_index(_arr) {
+function BackgroundSetIndex(_arr) {
 	var lay_id = layer_get_id("Background");
 	var back_id = layer_background_get_id(lay_id);
 	
@@ -15,7 +15,7 @@ function background_set_index(_arr) {
 }
 
 // Chatterbox function to change rooms
-function next_room(_room) {
+function NextRoom(_room) {
 	//show_debug_message(_room);
 	switch (_room) {
 		case "corredor1": room_goto(rm_corredor1); break;
@@ -29,7 +29,7 @@ function next_room(_room) {
 }
 
 // Function to choose character on screen
-function characterOnScreen(_name) {
+function CharacterOnScreen(_name) {
 	var _sprite = noone;
 	if (_name) == "ipe" {
 		_sprite = spr_ipe;
@@ -51,7 +51,7 @@ function characterOnScreen(_name) {
 }
 
 // Function to choose the character's expression to be displayed (needs improvements!!)
-function characterExpressionOnScreen(_num) {
+function CharacterExpressionOnScreen(_num) {
 	obj_characters.characterExpression = _num;
 }
 

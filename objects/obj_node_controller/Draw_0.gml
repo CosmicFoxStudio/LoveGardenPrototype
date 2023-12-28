@@ -1,34 +1,37 @@
-/// @description 
-
-// Desenhar texto e opções
+/// @description Draw text and options
 
 draw_set_font(fnt_dialogue);
-draw_set_valign(fa_middle);
 
-var _marginText = 64;     // Horizontal text margin
+// Set valign to the middle
+DrawAlign(fa_left, fa_middle); 
+
+// Horizontal text margin
+var _marginText = 64;     
 
 if IsChatterbox(chatterbox) and text != undefined {
-	// Desenhar texto
+	// Draw text
 	var _yy = room_height - (_marginText/2) - 22;
+	
+	// Textbox (In case we need one made by code only)
 	//draw_rectangle_center(room_width/2, _yy, room_width - 190, _marginText,  false, c_black, 0.5);
 	
-	draw_set_halign(fa_center);
+	DrawAlign(fa_center);
 	var _xx = room_width/2 + 22;
 	
-	// Desenha o texto de diálogo
+	// Draw dialogue text
 	draw_text(_xx, _yy, ChatterboxGetContentSpeech(chatterbox, 0));
 	
-	// Desenha a nametag
+	// Draw nametag
 	draw_text(room_width/2 - 230, room_height - (_marginText/2) - 8, ChatterboxGetContentSpeaker(chatterbox, 0));
 	
-	// Se tem opções, colocar no meio da tela
+	// If there are options to choose, put them in the middle of the screen
 	if ChatterboxGetOptionCount(chatterbox) {
-		draw_set_halign(fa_center);
+		DrawAlign(fa_center);
 		
 		var _width = 450;
 		var _height = 32;
 		
-		// Lógica para colocar sempre 3 opções
+		// Logic to always have 3 options (?)
 		for (var i = 0; i < ChatterboxGetOptionCount(chatterbox); i++) {
 			if ChatterboxGetOptionConditionBool(chatterbox, i) {
 				_xx = room_width/2;
@@ -47,7 +50,4 @@ if IsChatterbox(chatterbox) and text != undefined {
 }
 		
 // Reset
-draw_set_color(c_white);
-draw_set_halign(-1);
-draw_set_valign(-1);
-draw_set_alpha(1);
+DrawReset();

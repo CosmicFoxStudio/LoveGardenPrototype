@@ -1,9 +1,8 @@
 // Set global.lang based on the OS language
 function SetLanguage() {
-	// Check the OS language
-	var osLanguage = os_get_language();
+	var osLang = os_get_language();
 
-	switch (osLanguage) {
+	switch (osLang) {
 	    case "pt":
 	        global.lang = "pt";
 	        break;
@@ -14,7 +13,7 @@ function SetLanguage() {
 	        break;
 	}
 
-	show_debug_message("OS Language: " + osLanguage);
+	show_debug_message("OS Language: " + osLang);
 	show_debug_message("Game Language: " + global.lang);
 }
 
