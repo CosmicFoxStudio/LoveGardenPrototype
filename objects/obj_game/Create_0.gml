@@ -1,7 +1,4 @@
 Enums();
-#macro DEBUGGING true
-// #macro SCREEN_WIDTH 640
-// #macro SCREEN_HEIGHT 360
 global.debug = false;
 global.lang = "en"; // "en", "pt"
 SetLanguage();
@@ -43,11 +40,20 @@ else {
 
 #endregion Chatterbox Load Files
 
-#region Chatterbox Localization Build
+//  ---------------- Data structure to get node based on room  ------------------  //
+
+// Room-to-yarn map
+global.roomYarnMap = ds_map_create();
+global.roomYarnMap[? "rm_quarto1"	]		= "scenes/main_scene1_initial.yarn";
+global.roomYarnMap[? "rm_corredor1"	]		= "scenes/main_scene2_unicorridor.yarn";
+global.roomYarnMap[? "rm_corredor2"	]		= "scenes/main_scene3_unicorridor_afterclass.yarn";
+global.roomYarnMap[? "rm_pensamento"]		= "scenes/main_scene4_mcthoughts.yarn";
+global.roomYarnMap[? "rm_parque"	]		= "scenes/main_scene5-1_ecopark.yarn";
+global.roomYarnMap[? "rm_quarto2"	]		= "scenes/main_scene5-2_dormroom_afternoon.yarn";
+
+// ----------------------- Chatterbox Localization Build -----------------------  //
 
 // Only uncomment this next line when there are NEW dialogue lines to be generated!!
 // (You will also need do disable sandboxing temporarily)
 // ChatterboxLocalizationBuild(global.dialogueList, [("lang/" + "en_dialogues.csv")]);
 // OBS: LoadLocalization() is set at rm_menu_test's creation code
-
-#endregion Chatterbox Localization Build

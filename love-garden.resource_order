@@ -94,6 +94,7 @@
     {"name":"spr_button","order":1,"path":"sprites/spr_button/spr_button.yy",},
     {"name":"__ChatterboxSplitBody","order":14,"path":"scripts/__ChatterboxSplitBody/__ChatterboxSplitBody.yy",},
     {"name":"status_functions","order":5,"path":"scripts/status_functions/status_functions.yy",},
+    {"name":"MACROS","order":8,"path":"scripts/MACROS/MACROS.yy",},
     {"name":"ChatterboxSourceNodeExists","order":10,"path":"scripts/ChatterboxSourceNodeExists/ChatterboxSourceNodeExists.yy",},
     {"name":"snd_option_beep","order":8,"path":"sounds/snd_option_beep/snd_option_beep.yy",},
     {"name":"__ChatterboxClassNode","order":4,"path":"scripts/__ChatterboxClassNode/__ChatterboxClassNode.yy",},
