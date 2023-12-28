@@ -12,8 +12,8 @@
   "conversionMode": 0,
   "duration": 73.66528,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Themes",
+    "path": "folders/Sounds/Themes.yy",
   },
   "preload": false,
   "sampleRate": 44100,

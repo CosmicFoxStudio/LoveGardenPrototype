@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "snd_class",
+  "name": "snd_corridor",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
@@ -12,12 +12,12 @@
   "conversionMode": 0,
   "duration": 112.50938,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Themes",
+    "path": "folders/Sounds/Themes.yy",
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "snd_class.mp3",
+  "soundFile": "snd_corridor.mp3",
   "type": 0,
   "volume": 0.11,
 }
