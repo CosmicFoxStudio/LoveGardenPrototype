@@ -12,14 +12,14 @@ JukeboxStopMusic = function() {
     }
 }
 
-JukeboxPlayMusic = function(music) {
+JukeboxPlayMusic = function(_music) {
     // Check if the current music is different from the new one
-    if (currentMusic != music) {
+    if (currentMusic != _music) {
         // Stop the current music (if there's one)
         JukeboxStopMusic();
         // Play the new music
-        audio_play_sound(music, 0, true);
+        audio_play_sound(_music, 0, true);
         // Update the current music variable
-        currentMusic = music;
+        currentMusic = _music;
     }
 }
