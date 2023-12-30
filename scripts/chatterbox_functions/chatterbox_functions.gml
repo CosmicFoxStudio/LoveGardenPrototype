@@ -57,7 +57,6 @@ function CharacterExpressionOnScreen(_num) {
 
 // Get filename dynamically
 function LoadDialogueFiles() {
-	global.dialogueList = [];
 	show_debug_message("Looking " + working_directory + "scenes/" + "*.yarn");
 	var fileCounter = 0;
 	var fileName = file_find_first(working_directory + "scenes/" + "*.yarn", fa_archive);

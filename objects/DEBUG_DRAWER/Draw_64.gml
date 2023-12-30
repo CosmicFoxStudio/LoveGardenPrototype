@@ -21,6 +21,7 @@ if (global.debug) {
 		draw_text(20, 20, "Last click (y): " + string(clickY));
 		draw_text(20, 30, "mouse pos: " + "(" + string(mouse_x) + " / " + string(mouse_y) + ")");
 		draw_text(20, 40, "mouse GUI pos: " + "(" + string(clickGuiX) + " / " + string(clickGuiY) + ")");
+		draw_text(20, 50, "Directory: " + filename_dir(GM_project_filename));	
 	}
 	#endregion GAME
 	

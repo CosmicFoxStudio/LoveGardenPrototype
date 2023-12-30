@@ -24,6 +24,8 @@ global.PRESSED_RIGHT = false;
 
 #region Chatterbox Load Files
 
+global.dialogueList = [];
+	
 if os_browser == browser_not_a_browser {
 	// Not in browser - Load the files dynamically
 	LoadDialogueFiles();

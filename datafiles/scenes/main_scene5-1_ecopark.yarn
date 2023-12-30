@@ -27,7 +27,7 @@ IPÊ: Eu sempre tive muito medo das pessoas.\nMedo de, sei lá, elas brigarem co
 VOCÊ: ... #8 #0 #0 #0 #0 #0 #line:4db09d
 VOCÊ: Entendi. #8 #0 #0 #0 #0 #0 #line:276e1b
 VOCÊ: Entendi. #8 #0 #0 #0 #0 #0 #line:f560d1
--> Não há nada que você não possa vencer agora.\nEu acredito em você. #4 #0 #0 #0 #0 #0 #line:ccd382
+-> Não há nada que você não possa vencer agora.\nEu acredito em você. #0 #0 #0 #0 #0 #0 #line:ccd382
 	IPÊ: Obrigade... #4 #0 #0 #0 #0 #0 #line:4a8a9f
 	IPÊ: Eu acredito que as coisas serão melhores agora. #4 #0 #0 #0 #0 #0 #line:8d2e7e
 	IPÊ: Aliás, já está sendo. #0 #0 #0 #+2 #0 #0 #line:2e6350
@@ -45,9 +45,9 @@ __PrivCrochet_tags:
 title: Chitchat
 ---
 IPÊ: Aquelas épocas... O sentimento era algo\nbem diferente de como me sinto aqui com você. #4 #0 #0 #0 #0 #0 #line:f4eb03
-IPÊ: Me sinto bem mais segure... #7 #0 #0 #0 #0 #0 #line:aa41d6
-IPÊ: ... #6 #0 #0 #0 #0 #0 #line:6f4c2c
-IPÊ: Ahh...! Desculpe, espero que não tenha soado estranho... #6 #0 #0 #0 #0 #0 #line:ca4ff2
+IPÊ: Me sinto bem mais segure... #5 #0 #0 #0 #0 #0 #line:aa41d6
+IPÊ: ... #5 #0 #0 #0 #0 #0 #line:6f4c2c
+IPÊ: Ahh...! Desculpe, espero que não tenha soado estranho... #5 #0 #0 #0 #0 #0 #line:ca4ff2
 <<if love()>>
     Você viu nesse momento a sua chance\nde demonstrar seus sentimentos. #3 #0 #0 #0 #0 #0 #line:4d300d
     VOCÊ: Eu na verdade queria dizer o mesmo. #7 #0 #0 #0 #0 #0 #line:654ae2
@@ -118,4 +118,3 @@ Assim, o primeiro dia na universidade se\nencerra com uma nova amizade brotando,
 CONTINUA... #0 #0 #0 #0 #0 #0 #line:6575da
 <<nextRoom("menu")>>
 ===
-  
